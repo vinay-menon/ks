@@ -97,7 +97,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 @media (max-width: 670px) {
     .logo-group {
-        flex-direction: row;
+/*        flex-direction: row;*/
         align-items: flex-end;
         }
     }
@@ -166,7 +166,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2.3rem;
         }
     .logo-title br {
-        display: block;
+/*        display: block;*/
         }
     }
 .logo-address {

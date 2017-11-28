@@ -83,6 +83,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 670px) {
     .logo {
         margin: auto;
+        text-align: center;
         }
     }
 .logo-group {
@@ -98,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 670px) {
     .logo-group {
 /*        flex-direction: row;*/
-        align-items: flex-end;
+        align-items: center;
         }
     }
 .logo-text {
@@ -182,6 +183,11 @@ h1, h2, h3, h4, h5, h6 {
 .phone {
     margin-right: 40px;
     }
+@media (max-width: 670px) {
+    .phone {
+        margin-right: 0;
+        }
+    }
 @media (max-width: 920px) {
     .logo-contact {
         flex-direction: column;
@@ -191,11 +197,19 @@ h1, h2, h3, h4, h5, h6 {
 .socmed {
     display: flex;
     justify-content: space-between;
-    width: 24px;
-    height: 24px;
     }
 .socmed img {
     margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    }
+@media (min-width: 670px) {
+    .socmed {
+        justify-content: center;
+        }
+    .socmed img {
+        margin-right: 0;
+        }
     }
 
 .empanelled-logo {

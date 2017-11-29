@@ -535,7 +535,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     order: 2;
     }
-@media (max-width: 1012px) {
+@media (max-width: 1030px) {
     .about-map {
         max-width: 100%;
         width: 100%;

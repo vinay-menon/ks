@@ -40,10 +40,15 @@ h1, h2, h3, h4, h5, h6 {
     padding: 30px;
     }
 
-.viewport-wrap {
+.viewport-fold {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    }
+@media (max-width: 670px) {
+    .viewport-fold {
+        padding-top: 30px;
+        }
     }
 
 .main-header {
@@ -289,6 +294,23 @@ h1, h2, h3, h4, h5, h6 {
         }
     .nav-item:nth-child(n+4) {
         margin-top: 0;
+        }
+    }
+
+.main-nav-trigger {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 4;
+    
+    background-color: white;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    display: none;
+    }
+@media (max-width: 670px) {
+    .main-nav-trigger {
+        display: block;
         }
     }
 

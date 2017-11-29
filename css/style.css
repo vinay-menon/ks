@@ -337,7 +337,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 670px) {
     .banner {
         width: 50%;
-        height: 200px;
+        min-height: 200px;
         }
     }
 .banner-training {
@@ -475,6 +475,12 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
     padding: 0 20px;
     }    
+.about-intro_text p {
+    line-height: 1.5;
+    }
+.about-intro_text p + p {
+    margin-top: 20px;
+    }
 @media (max-width: 456px) {
     .about-intro_text {
         padding: 0 0 20px;
@@ -539,6 +545,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .main-shows {
     margin-bottom: 5px;
+    }
+.main-shows h2 {
+    padding: 10px 30px;
     }
 .show-cell {
     width: 30%;

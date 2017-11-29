@@ -248,6 +248,19 @@ h1, h2, h3, h4, h5, h6 {
     }
 .nav-item {
     width: 33.333%;
+    transition: .3s;
+    background-size: 0 3px;
+    background-position: bottom left;
+    padding-bottom: 8px;
+    }
+.nav-item:hover {
+    background-image: 
+        linear-gradient(
+            90deg,
+            #d92222,
+            #a11eb9);
+    background-size: 100% 3px;
+    background-repeat: no-repeat;
     }
 .nav-item:not(.nav-item:nth-child(n+3)) {
     padding-right: 10px;
@@ -280,6 +293,9 @@ h1, h2, h3, h4, h5, h6 {
     .nav-item h2 {
         font-weight: normal;
         font-size: .9rem;
+        }
+    .nav-item:hover h2 {
+        text-decoration: none;
         }
     .nav-item p {
         display: none;

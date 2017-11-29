@@ -506,6 +506,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
     width: 100%;
     }
+@media (max-width: 1030px) {
+    .about-intro_img {
+        min-width: 300px;
+        }
+    }
 @media (max-width: 456px) {
     .about-intro_img {
         margin-bottom: 10px;

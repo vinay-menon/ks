@@ -78,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 670px) {
     .main-header {
         padding: 20px 10px;
+        order: 1;
         }
     }
 .logo {
@@ -321,6 +322,8 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 5px;
+    
+    order: 1;
     }
 .banner {
     width: 25%;

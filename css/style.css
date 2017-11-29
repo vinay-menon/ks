@@ -578,6 +578,16 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
     min-width: 300px;
     }
+@media (max-width: 1000px) {
+    .show-cell {
+        padding: 20px;
+        }
+    }
+@media (max-width: 670px) {
+    .show-cell {
+        padding: 10px;
+        }
+    }
 .show-cell:hover {
     background-color: hsl(0, 0%, 90%);
     }
@@ -586,6 +596,9 @@ h1, h2, h3, h4, h5, h6 {
     }
 .show-icon {
     margin-bottom: 10px;
+    }
+.show-icon img {
+    max-width: 80px;
     }
 .show-photo {
     margin-bottom: 10px;

@@ -167,7 +167,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2.3rem;
         }
     .logo-title br {
-        display: block;
+/*        display: block;*/
         }
     }
 .logo-address {
@@ -308,6 +308,12 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-end;
     text-decoration: none;
     background-size: cover
+    }
+@media (max-width: 670px) {
+    .banner {
+        width: 50%;
+        height: 200px;
+        }
     }
 .banner-training {
     background-image: url(../images/banner/train_0.jpg);

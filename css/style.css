@@ -440,14 +440,29 @@ h1, h2, h3, h4, h5, h6 {
 .about-intro {
     display: flex;
     }
+@media (max-width: 456px) {
+    .about-intro {
+        flex-direction: column;
+        }
+    }
 .about-intro_text {
     display: flex;
     flex-direction: column;
     padding: 0 20px;
     }    
+@media (max-width: 456px) {
+    .about-intro_text {
+        padding: 0 0 20px;
+        } 
+    }
 .about-intro_img {
     margin-bottom: 30px;
     width: 100%;
+    }
+@media (max-width: 456px) {
+    .about-intro_img {
+        margin-bottom: 10px;
+        }
     }
 .about-intro_img img {
     display: block;

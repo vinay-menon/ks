@@ -1,0 +1,43 @@
+.main-shows {
+    margin-bottom: 5px;
+    }
+.main-shows h2 {
+    padding: 10px 30px;
+    }
+.show-cell {
+    width: 30%;
+    padding: 30px;
+    background-color: white;
+    color: inherit;
+    text-decoration: none;
+    min-width: 300px;
+    }
+@media (max-width: 1000px) {
+    .show-cell {
+        padding: 20px;
+        }
+    }
+@media (max-width: 670px) {
+    .show-cell {
+        padding: 10px;
+        }
+    }
+.show-cell:hover {
+    background-color: hsl(0, 0%, 90%);
+    }
+.show-cell + .show-cell {
+    margin-left: 5px;
+    }
+.show-icon {
+    margin-bottom: 10px;
+    }
+.show-icon img {
+    max-width: 80px;
+    }
+.show-photo {
+    margin-bottom: 10px;
+    }
+.show-photo img {
+    width: 100%;
+    max-width: 100%;
+    }

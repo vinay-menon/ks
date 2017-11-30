@@ -1,0 +1,21 @@
+.p30 {
+    padding: 30px;
+    }
+
+.viewport-fold {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    }
+@media (max-width: 670px) {
+    .viewport-fold {
+        padding-top: 30px;
+        }
+    }
+
+.col-wrap {
+    display: flex;
+    }
+.col-wrap > * {
+    flex: 1;
+    }

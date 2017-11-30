@@ -1,0 +1,118 @@
+.main-banners {
+    min-height: 300px;
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    
+    order: 1;
+    }
+.banner {
+    width: 25%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover
+    }
+@media (max-width: 670px) {
+    .banner {
+        width: 50%;
+        min-height: 200px;
+        }
+    }
+.banner-training {
+    background-image: url(../images/banner/train_0.jpg);
+    }
+.banner-artists {
+    background-image: url(../images/banner/artists_0.jpg);
+    }
+.banner-productions {
+    background-image: url(../images/banner/productions_0.jpg);
+    }
+.banner-artforms {
+    background-image: url(../images/banner/artforms_0.jpg);
+    }
+.banner + .banner {
+    border-left: 1px solid white;
+    }
+.banner a {
+    color: inherit;
+    }
+.banner-header {
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0; right: 0;
+    z-index: 2;
+    }
+.banner-training .banner-header {
+    background-image: 
+        radial-gradient(
+            circle,
+            rgba(30, 144, 255, 0.7),
+            rgba(75, 0, 130, 0.7)
+            );
+    }
+.banner-artists .banner-header {
+    background-image: 
+        radial-gradient(
+            circle,
+            rgba(13, 168, 0, 0.83),
+            rgba(0, 130, 125, 0.7)
+            );
+    }
+.banner-productions .banner-header {
+    background-image: 
+        radial-gradient(
+            circle,
+            rgba(255, 30, 91, 0.7),
+            rgba(21, 36, 219, 0.7)
+            );
+    }
+.banner-artforms .banner-header {
+    background-image: 
+        radial-gradient(
+            circle,
+            rgba(255, 30, 220, 0.72),
+            rgba(255, 130, 23, 0.7)
+            );
+    }
+.banner-header h2 {
+    background-image: url(../images/assets/arrow-r.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 20px auto;
+    }
+@media (max-width: 1000px) {
+    .banner-header {
+        padding: 20px
+        }
+    .banner-header h2 {
+        font-size: 1rem;
+        }
+    }
+
+/*
+.banner-images {
+    width: 100%;
+    }
+.banner-images img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    transition: 10s;
+    transition-timing-function: linear;
+    }
+@media (max-width: 1000px) {
+    .banner-images img {
+        height: 300px;
+        }
+    .banner-header h2 {
+        font-size: 1rem;
+        }
+    }
+*/

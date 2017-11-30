@@ -1,11 +1,9 @@
 <svg role="img" aria-label="Instagram" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient id="lgrad" x1="0%" y1="98%" x2="100%" y2="2%" >
-            <stop offset="0%" style="stop-color:rgb(255,220,23);" />
-            <stop offset="8%" style="stop-color:rgb(255,220,23);" />
-            <stop offset="37%" style="stop-color:rgb(104, 41, 245);" />
-            <stop offset="79%" style="stop-color:rgb(199, 42, 133);" />
-            <stop offset="100%" style="stop-color:rgb(199, 42, 72);" />
+            <stop offset="8%" style="stop-color:rgb(255, 255, 83);" />
+            <stop offset="37%" style="stop-color:rgb(96, 41, 245);" />
+            <stop offset="75%" style="stop-color:rgb(227, 38, 38);" />
         </linearGradient>
     </defs>
     <rect height="512" rx="15%" width="512" fill="url(#lgrad)"/>

@@ -41,8 +41,17 @@ h1 {
   padding: 30px;
 }
 
+h2 {
+  margin-bottom: 20px;
+}
+
 .p30 {
   padding: 30px;
+}
+
+.v-pad {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .viewport-fold {
@@ -341,6 +350,7 @@ h1 {
 .nav-item h2 {
   font-weight: 900;
   font-size: 1rem;
+  margin-bottom: 0;
 }
 
 .nav-item p {
@@ -415,6 +425,17 @@ h1 {
   align-items: flex-end;
   text-decoration: none;
   background-size: cover;
+  opacity: 0;
+  transform: scale(0, 0);
+  transform-origin: center center;
+  animation: .7s fade-in ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
 }
 
 @media (max-width: 670px) {
@@ -426,14 +447,17 @@ h1 {
 
 .banner-training {
   background-image: url(../images/banner/train_0.jpg);
+  animation-delay: .3s;
 }
 
 .banner-artists {
   background-image: url(../images/banner/artists_0.jpg);
+  animation-delay: .2s;
 }
 
 .banner-productions {
   background-image: url(../images/banner/productions_0.jpg);
+  animation-delay: .1s;
 }
 
 .banner-artforms {
@@ -458,19 +482,19 @@ h1 {
 }
 
 .banner-training .banner-header {
-  background-image: radial-gradient(circle, rgba(30, 144, 255, 0.7), rgba(75, 0, 130, 0.7));
+  background-color: rgba(4, 144, 4, 0.639);
 }
 
 .banner-artists .banner-header {
-  background-image: radial-gradient(circle, rgba(13, 168, 0, 0.83), rgba(0, 130, 125, 0.7));
+  background-color: rgba(4, 102, 144, 0.639);
 }
 
 .banner-productions .banner-header {
-  background-image: radial-gradient(circle, rgba(255, 30, 91, 0.7), rgba(21, 36, 219, 0.7));
+  background-color: rgba(144, 128, 4, 0.639);
 }
 
 .banner-artforms .banner-header {
-  background-image: radial-gradient(circle, rgba(255, 30, 220, 0.72), rgba(255, 130, 23, 0.7));
+  background-color: rgba(144, 4, 137, 0.639);
 }
 
 .banner-header h2 {
@@ -478,6 +502,7 @@ h1 {
   background-repeat: no-repeat;
   background-position: center right;
   background-size: 20px auto;
+  margin-bottom: 0;
 }
 
 @media (max-width: 1000px) {
@@ -569,12 +594,7 @@ h1 {
 .about-intro_img {
   margin-bottom: 30px;
   width: 100%;
-}
-
-@media (max-width: 1030px) {
-  .about-intro_img {
-    min-width: 300px;
-  }
+  min-width: 300px;
 }
 
 @media (max-width: 456px) {
@@ -746,6 +766,7 @@ h1 {
 
 .events-nav-item h2 {
   font-size: 1.2rem;
+  margin-bottom: 0;
 }
 
 .events-nav-item p {

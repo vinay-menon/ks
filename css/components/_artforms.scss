@@ -1,0 +1,20 @@
+.artforms-main {
+    display: flex;
+    min-height: 450px;
+
+    .artform-block {
+        flex: 1;
+        border: 2px solid green;
+        }
+    }
+
+.artforms-multi-col {
+    column-count: 3;
+    column-gap: 0;
+
+    .artform-block {
+        height: 300px;
+        border: 2px solid green;
+        }
+    }
+

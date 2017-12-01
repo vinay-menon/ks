@@ -74,10 +74,6 @@ h2 {
   flex: 1;
 }
 
-.block-link {
-  display: block;
-}
-
 .flickity-prev-next-button {
   border-radius: 0;
 }
@@ -853,6 +849,16 @@ h2 {
   width: 50%;
   display: flex;
   margin-bottom: 30px;
+  background-color: grey;
+  min-height: 300px;
+}
+
+.training-artform-block:nth-child(odd) {
+  border-right: 10px solid #FFEDE2;
+}
+
+.training-artform-block:nth-child(even) {
+  border-left: 10px solid #FFEDE2;
 }
 
 .training-artform-img {
@@ -862,10 +868,39 @@ h2 {
 .training-artform-img img {
   width: 100%;
   max-width: 100%;
+  display: block;
 }
 
 .training-block-info {
   padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+}
+
+.kathakali-training {
+  background-size: cover;
+}
+
+.artforms-main {
+  display: flex;
+  min-height: 450px;
+}
+
+.artforms-main .artform-block {
+  flex: 1;
+  border: 2px solid green;
+}
+
+.artforms-multi-col {
+  column-count: 3;
+  column-gap: 0;
+}
+
+.artforms-multi-col .artform-block {
+  height: 300px;
+  border: 2px solid green;
 }
  
 

@@ -6,6 +6,9 @@
 
 @import "components/common-header";
 @import "components/main-nav"; 
+@import "components/content"; 
+
+@import "components/common-footer";
 
 @import "components/main-banners";
 @import "components/main-about";
@@ -15,4 +18,4 @@
 @import "components/event-nav";
 @import "components/events-list"; 
 
-@import "components/common-footer"; 
+@import "components/training"; 

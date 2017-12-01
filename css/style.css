@@ -74,6 +74,10 @@ h2 {
   flex: 1;
 }
 
+.block-link {
+  display: block;
+}
+
 .flickity-prev-next-button {
   border-radius: 0;
 }
@@ -841,6 +845,27 @@ h2 {
 
 .training-artforms {
   padding: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.training-artform-block {
+  width: 50%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.training-artform-img {
+  max-width: 250px;
+}
+
+.training-artform-img img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.training-block-info {
+  padding: 0 30px;
 }
  
 

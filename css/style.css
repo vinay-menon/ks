@@ -923,12 +923,16 @@ h2 {
 .artforms-multi-col .artform-block {
   padding: 10px;
   margin-bottom: 5px;
-  border: 1px solid white;
+  border: 1px solid #8e8e8e;
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
   break-inside: avoid-column;
   break-inside: avoid;
   overflow: hidden;
+}
+
+.artform-block-img {
+  margin-bottom: 10px;
 }
 
 .artform-block-img img {

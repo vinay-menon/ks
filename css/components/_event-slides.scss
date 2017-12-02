@@ -10,19 +10,34 @@
     object-fit: cover;
     }
 .event-slides {
+    width: 100%;
+    height: calc(100vh - 100px);
     margin-bottom: 5px;
-    flex: 1;
-    order: 1;
     }
 .slide {
-    min-width: 100%;
-    min-height: 100%;
-    background-color: red;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+
+    background-size: cover;
+    }
+
+.slide-national-2015 {
+    background-image: url(../images/event-highlights/national2015.jpg);
+    }
+.slide-iffk-2011 {
+    background-image: url(../images/event-highlights/iffk2011.jpg);
+    }
+.slide-ipl-2011 {
+    background-image: url(../images/event-highlights/ipl2011.jpg);
+    }
+.slide-anandotsavam {
+    background-image: url(../images/event-highlights/anandotsavam.jpg);
     }
 
 .slide-info {
-    position: absolute;
-    top: 30px; left: 30px;
     background-color: hsla(0,0%,0%,.7);
     color: white;
     z-index: 9;
@@ -35,3 +50,5 @@
     width: 100%;
     object-fit: cover;
     }
+
+

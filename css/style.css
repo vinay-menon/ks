@@ -15,9 +15,9 @@ body {
   border: 5px solid #da4444;
   border: 5px solid #ffe138;
   background-color: white;
-  background-color: rgba(255, 230, 214, 0.7);
+  background-color: #ebebeb;
   min-height: 100vh;
-  color: #333333;
+  color: #363636;
 }
 
 @media (max-width: 670px) {

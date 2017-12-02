@@ -1,20 +1,42 @@
 .artforms-main {
     display: flex;
-    min-height: 450px;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 5px;
 
     .artform-block {
-        flex: 1;
+        width: 25%;
+        min-height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &:nth-child(4n) ~ .artform-block {
+            border-top: 1px solid white;
+            }
 
         + .artform-block {
             border-left: 1px solid white;
             }
         }
+    .artform-block-header {
+        padding: 20px;
+        background-color: hsla(0,0,0,.6);
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            font-size: 1.2rem;
+            }
+        a {
+            color: white;
+            }
+        }
     }
 
 .artform-block {
+    background-size: cover;
     &.kathakali {
         background-image: url(../images/banner/artists_0.jpg);
         }
@@ -22,7 +44,7 @@
         background-image: url(../images/banner/artforms_0.jpg);
         }
     &.kalaripayyattu {
-        background-image: url(../images/banner/train_0.jpg);
+        background-image: url(../images/artforms/kalari.jpg);
         }
     &.bharathanatyam {
         background-image: url(../images/banner/productions_0.jpg);

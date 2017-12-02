@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700,800,900");
 * {
@@ -38,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1:not(:only-child) {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 h2 {
@@ -72,6 +73,16 @@ h2 {
 
 .col-wrap > * {
   flex: 1;
+}
+
+.lnk-prom {
+  padding: 10px;
+  background-color: #57d657;
+  color: white;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: flex-start;
 }
 
 .flickity-prev-next-button {
@@ -791,45 +802,65 @@ h2 {
 }
 
 .events-nav-item {
-  height: 100px;
+  min-height: 100px;
   background-color: dodgerblue;
   color: white;
   text-decoration: none;
-  padding: 10px 30px;
+  padding: 10px 20px;
   flex: 1;
+}
+
+.events-nav-item:hover {
+  background-color: #257bd0;
 }
 
 .events-nav-item + .events-nav-item {
   /*    margin-left: 1px;*/
 }
 
-.events-nav-item:hover {
-  opacity: .6;
-}
-
 .events-nav-item h2 {
   font-size: 1.2rem;
   margin-bottom: 0;
+  background-image: url(../images/assets/arrow-r.svg);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: 20px auto;
 }
 
 .events-nav-item p {
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 .events-nav-item:nth-child(2) {
   background-color: #d54f4f;
 }
 
+.events-nav-item:nth-child(2):hover {
+  background-color: #a55656;
+}
+
 .events-nav-item:nth-child(3) {
   background-color: #32a288;
+}
+
+.events-nav-item:nth-child(3):hover {
+  background-color: #426960;
 }
 
 .events-nav-item:nth-child(4) {
   background-color: #e66124;
 }
 
+.events-nav-item:nth-child(4):hover {
+  background-color: #a85c39;
+}
+
 .events-nav-item:nth-child(5) {
   background-color: #b12d9f;
+}
+
+.events-nav-item:nth-child(5):hover {
+  background-color: #75406e;
 }
 
 .events-list {
@@ -856,7 +887,7 @@ h2 {
 }
 
 .training-artforms {
-  padding: 30px;
+  padding: 0 30px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -878,6 +909,7 @@ h2 {
 }
 
 .training-artform-img {
+  width: 100%;
   max-width: 250px;
 }
 
@@ -901,18 +933,45 @@ h2 {
 
 .artforms-main {
   display: flex;
-  min-height: 450px;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 5px;
 }
 
 .artforms-main .artform-block {
-  flex: 1;
+  width: 25%;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.artforms-main .artform-block:nth-child(4n) ~ .artform-block {
+  border-top: 1px solid white;
 }
 
 .artforms-main .artform-block + .artform-block {
   border-left: 1px solid white;
+}
+
+.artforms-main .artform-block-header {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.artforms-main .artform-block-header h2 {
+  font-size: 1.2rem;
+}
+
+.artforms-main .artform-block-header a {
+  color: white;
+}
+
+.artform-block {
+  background-size: cover;
 }
 
 .artform-block.kathakali {
@@ -924,7 +983,7 @@ h2 {
 }
 
 .artform-block.kalaripayyattu {
-  background-image: url(../images/banner/train_0.jpg);
+  background-image: url(../images/artforms/kalari.jpg);
 }
 
 .artform-block.bharathanatyam {
@@ -955,6 +1014,70 @@ h2 {
   width: 100%;
   max-width: 100%;
   display: block;
+}
+
+.artform-selection {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.artform-item {
+  width: 20%;
+  padding: 5px;
+  background-size: cover;
+  border: 1px solid #fff;
+}
+
+.artform-item input {
+  display: none;
+}
+
+.artform-item.is-selected {
+  background-image: linear-gradient(#33a533, #47cf47);
+  background-repeat: no-repeat;
+  background-size: calc(100%) calc(100%);
+}
+
+.artform-item.is-selected:after {
+  content: "✔";
+  position: absolute;
+  z-index: 9;
+  top: 5px;
+  right: 5px;
+  color: white;
+  padding: 5px;
+  background-color: #47cf47;
+}
+
+.artform-item.is-selected .artform-item-label {
+  color: #fff;
+}
+
+.artform-item img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.artform-item-label {
+  color: #222;
+  padding: 5px 0;
+}
+
+.artform-item-label .name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.artform-item-label .desc {
+  font-size: .9rem;
+}
+
+.hide {
+  display: none;
 }
  
 

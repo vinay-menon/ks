@@ -3,35 +3,57 @@
     /* margin-bottom: 5px; */
     }
 .events-nav-item {
-    height: 100px;
+    min-height: 100px;
     background-color: dodgerblue;
     color: white;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 10px 20px;
     flex: 1;
+
+    &:hover {
+        background-color: desaturate(darken(dodgerblue, 8),30);
+        }
     }
 .events-nav-item + .events-nav-item {
 /*    margin-left: 1px;*/
     }
-.events-nav-item:hover {
-    opacity: .6;
-    }
+
 .events-nav-item h2 {
     font-size: 1.2rem;
     margin-bottom: 0;
+    background-image: url(../images/assets/arrow-r.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 20px auto;
     }
 .events-nav-item p {
-    font-size: .9rem;
+    font-size: .8rem;
     }
 .events-nav-item:nth-child(2) {
     background-color: #d54f4f;
+
+    &:hover {
+        background-color: desaturate(darken(#d54f4f, 8),30);
+        }
     }
 .events-nav-item:nth-child(3) {
     background-color: #32a288;
+
+    &:hover {
+        background-color: desaturate(darken(#32a288, 8),30);
+        }
     }
 .events-nav-item:nth-child(4) {
     background-color: #e66124;
+
+    &:hover {
+        background-color: desaturate(darken(#e66124, 8),30);
+        }
     }
 .events-nav-item:nth-child(5) {
     background-color: #b12d9f;
+
+    &:hover {
+        background-color: desaturate(darken(#b12d9f, 8),30);
+        }
     }

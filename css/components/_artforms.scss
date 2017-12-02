@@ -1,10 +1,30 @@
 .artforms-main {
     display: flex;
     min-height: 450px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 
     .artform-block {
         flex: 1;
-        border: 2px solid green;
+
+        + .artform-block {
+            border-left: 1px solid white;
+            }
+        }
+    }
+
+.artform-block {
+    &.kathakali {
+        background-image: url(../images/banner/artists_0.jpg);
+        }
+    &.mohiniyattam {
+        background-image: url(../images/banner/artforms_0.jpg);
+        }
+    &.kalaripayyattu {
+        background-image: url(../images/banner/train_0.jpg);
+        }
+    &.bharathanatyam {
+        background-image: url(../images/banner/productions_0.jpg);
         }
     }
 

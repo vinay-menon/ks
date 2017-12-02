@@ -17,7 +17,7 @@ body {
   background-color: white;
   background-color: #ebebeb;
   min-height: 100vh;
-  color: #363636;
+  color: #454545;
 }
 
 @media (max-width: 670px) {
@@ -37,7 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900;
 }
 
-h1 {
+h1:not(:only-child) {
   margin-bottom: 30px;
 }
 
@@ -886,11 +886,32 @@ h2 {
 .artforms-main {
   display: flex;
   min-height: 450px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .artforms-main .artform-block {
   flex: 1;
-  border: 2px solid green;
+}
+
+.artforms-main .artform-block + .artform-block {
+  border-left: 1px solid white;
+}
+
+.artform-block.kathakali {
+  background-image: url(../images/banner/artists_0.jpg);
+}
+
+.artform-block.mohiniyattam {
+  background-image: url(../images/banner/artforms_0.jpg);
+}
+
+.artform-block.kalaripayyattu {
+  background-image: url(../images/banner/train_0.jpg);
+}
+
+.artform-block.bharathanatyam {
+  background-image: url(../images/banner/productions_0.jpg);
 }
 
 .artforms-multi-col {

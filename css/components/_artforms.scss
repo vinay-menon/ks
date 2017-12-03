@@ -37,6 +37,8 @@
 
 .artform-block {
     background-size: cover;
+    background-position: center center;
+    
     &.kathakali {
         background-image: url(../images/banner/artists_0.jpg);
         }
@@ -48,6 +50,9 @@
         }
     &.bharathanatyam {
         background-image: url(../images/banner/productions_0.jpg);
+        }
+    &.chutti {
+        background-image: url(../images/artforms/chutti.jpg);
         }
     }
 

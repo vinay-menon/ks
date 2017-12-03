@@ -1,3 +1,44 @@
 .content-header {
-    padding: 30px;
+    margin-bottom: 1px;
+
+    display: flex;
+
+    h1 {
+        flex: 1;
+        padding: 30px;
+        min-width: 25%;
+        max-width: 25%;
+        padding-bottom: 60px;
+        margin-right: 1px;
+        background-color: #fff;
+        font-size: 2.4rem;
+        }
+    }
+
+.content-header-body {
+    p {
+        padding: 30px;
+        background-color: white;
+        margin-bottom: 1px;
+        font-size: 1.2rem;
+        }
+    }
+.content-header-lnk-group {
+    display: flex;
+    align-self: flex-end;
+
+    a {
+        padding: 30px;
+        flex: 1;
+        background-color: white;
+        color: inherit;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-right: 1px;
+            }
+        &:hover {
+            background-color: transparentize(white, .4)
+            }
+        }
     }

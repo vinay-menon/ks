@@ -142,11 +142,11 @@
         </nav>
     </header>
     
-    <section class="main-content" id="content">
+    <section class="main-content on-step-1" id="content">
         <header class="content-header">
             <h1>Book art forms</h1>
 
-            <div class="content-header-body on-step-1">
+            <div class="content-header-body">
                 <div class="steps">
                     <p class="step-1">
                         Please select art forms you wish to be presented in your event.
@@ -185,7 +185,7 @@
             <input class="checkbox-hax" type="checkbox" id="poothankali">
             <input class="checkbox-hax" type="checkbox" id="nilakavadi">
 
-            <div class="artform-selection">
+            <div class="artform-selection" id="form-part-1">
                 <label class="artform-item" for="kathakali">
                     <img src="images/select-artforms/kathakali.jpg" alt="">
                     <div class="artform-item-label">
@@ -359,7 +359,30 @@
             </div>
 
             <div id="form-part-3">
-                
+                <div class="user-form">
+                    <label for="user-name">
+                        <div class="label">Name</div>
+                        <input type="text" id="user-name">
+                    </label>
+                    <label for="user-email">
+                        <div class="label">Email</div>
+                        <input type="text" id="user-email">
+                    </label>
+                    <label for="user-phone">
+                        <div class="label">Phone</div>
+                        <input type="text" id="user-phone">
+                    </label>
+                    <label for="user-place">
+                        <div class="label">Place</div>
+                        <input type="text" id="user-place">
+                    </label>
+                    <label for="user-message">
+                        <div class="label">Message</div>
+                        <textarea name="" id="user-message" rows="15"></textarea>
+                    </label>
+
+                    <button>Send</button>
+                </div>
             </div>
         </form>
         
@@ -419,21 +442,15 @@
 
     $(".progress-1").on("click", function(e) {
         e.preventDefault();
-        $(".artform-selection").removeClass("hide-section");
-        $("#form-part-2").removeClass("unhide-section").addClass("hide-section");
-        $(".content-header-body").removeClass("on-step-2").removeClass("on-step-3").addClass("on-step-1");
-        $(".progress-tracker > button").removeClass("is-active");
+        $("#content").removeClass("on-step-2").removeClass("on-step-3").addClass("on-step-1");
     });
     $(".progress-2").on("click", function(e) {
         e.preventDefault();
-        $(".artform-selection").addClass("hide-section");
-        $("#form-part-2").removeClass("hide-section").addClass("unhide-section");
-        $(".content-header-body").removeClass("on-step-1").removeClass("on-step-3").addClass("on-step-2");
+        $("#content").removeClass("on-step-1").removeClass("on-step-3").addClass("on-step-2");
     });
     $(".progress-3").on("click", function(e) {
         e.preventDefault();
-        $("#form-part-2").removeClass("unhide-section").addClass("hide-section");
-        $(".content-header-body").removeClass("on-step-1").removeClass("on-step-2").addClass("on-step-3");
+        $("#content").removeClass("on-step-1").removeClass("on-step-2").addClass("on-step-3");
     });
 </script>
 

@@ -1264,12 +1264,65 @@ h2 {
   flex-direction: column;
 }
 
-#form-part-2 {
+#form-part-1,
+#form-part-2,
+#form-part-3 {
   display: none;
 }
 
-#form-part-2.unhide-section {
+.on-step-1 #form-part-1 {
   display: flex;
+}
+
+.on-step-2 #form-part-2 {
+  display: flex;
+}
+
+.on-step-3 #form-part-3 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 30px;
+}
+
+.on-step-3 #form-part-3 .user-form {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.on-step-3 #form-part-3 label {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.on-step-3 #form-part-3 .label {
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 10px;
+}
+
+.on-step-3 #form-part-3 input, .on-step-3 #form-part-3 textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #999;
+  font-family: inherit;
+}
+
+.on-step-3 #form-part-3 button {
+  padding: 20px;
+  width: 200px;
+  border: 0;
+  margin-left: auto;
+  margin-right: 10px;
+  background-color: #57d657;
+  color: white;
+  font-weight: bold;
 }
 
 .artform-input-fields {

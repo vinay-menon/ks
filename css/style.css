@@ -70,7 +70,7 @@ h2 {
   min-width: 25%;
   max-width: 25%;
   padding-bottom: 60px;
-  margin-right: 1px;
+  border-right: 1px solid #dddddd;
   margin-bottom: 1px;
   background-color: #fff;
 }
@@ -457,7 +457,7 @@ h2 {
 .content-header-body p {
   padding: 30px;
   background-color: white;
-  margin-bottom: 1px;
+  border-bottom: 1px solid #dddddd;
   font-size: 1.2rem;
 }
 
@@ -475,7 +475,7 @@ h2 {
 }
 
 .content-header-lnk-group a:not(:last-child) {
-  margin-right: 1px;
+  border-right: 1px solid #dddddd;
 }
 
 .content-header-lnk-group a:hover {
@@ -503,6 +503,31 @@ h2 {
 
 .main-footer .socmed {
   margin-bottom: 20px;
+}
+
+.quick-access-links {
+  display: flex;
+  justify-content: flex-end;
+  background-color: white;
+  margin-bottom: 1px;
+}
+
+.quick-access-links h2 {
+  font-size: .9rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  min-width: 120px;
+  padding: 20px 10px;
+}
+
+.quick-access-links a {
+  color: inherit;
+  padding: 20px 10px;
+  border-left: 1px solid #dddddd;
+}
+
+.quick-access-links a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .main-banners {

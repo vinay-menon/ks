@@ -2,29 +2,42 @@
     display: flex;
     flex-wrap: wrap;
     margin: 0 -5px;
-    transition: .5s;
+    transition: 2s;
 
     &.hide-section {
-        animation: .5s hide-away forwards;
+        display: none;
         }
     }
 
-@keyframes hide-away {
-    to {
-        opacity: 0;
-        transform: translateX(-100%);
+.steps {
+    flex: 1;
+    background-color: white;
+    overflow: hidden;
+
+    &> [class^="step-"] {
         position: absolute;
+        top: 0; right: 0;
+        z-index: 9;
+        transition: .5s;
+        }
+    .step-2 {
+        position: absolute;
+        transform: translateY(100%);
+        opacity: 0;
+        z-index: -2;
         }
     }
 
 .progress-trigger {
     display: flex;
+    flex: 1;
     justify-content: flex-end;
-    background-color: hsla(0,0,100,.87);
+    background-color: hsla(0,0,100,1);
 
     &.is-fixed {
         position: fixed;
         top: 0; left: 0; right: 0;
+        background-color: hsla(0,0,100,0);
         z-index: 99;
         }
 
@@ -41,9 +54,23 @@
 
         background-image: url(../images/assets/arrow-r.svg);
         background-repeat: no-repeat;
-        background-position: center left;
+        background-position: 0 26px;
         }
+    
+    &.on-step-2 {
+        .step-1 {
+            opacity: 0;
+            z-index: -2;
+            transform: translateY(-100%);
+            }
+        .step-2 {
+            opacity: 1;
+            z-index: 9;
+            transform: translateY(0);
+            }
+        }   
     }
+
     
 .artform-input-fields > [for^="art-"] {
     display: none;
@@ -90,23 +117,33 @@
             }
         }
     
-    &#kathakali:checked ~ .rest-of-form [for="art-kathakali"],
-    &#mohiniyattam:checked ~ .rest-of-form [for="art-mohiniyattam"],
-    &#kalaripayattu:checked ~ .rest-of-form [for="art-kalaripayattu"],
-    &#bharathanatyam:checked ~ .rest-of-form [for="art-bharathanatyam"],
-    &#theyyam:checked ~ .rest-of-form [for="art-theyyam"],
-    &#thiruvathirakali:checked ~ .rest-of-form [for="art-thiruvathirakali"],
-    &#panchavadhyam:checked ~ .rest-of-form [for="art-panchavadhyam"],
-    &#pookkavadi:checked ~ .rest-of-form [for="art-pookkavadi"],
-    &#kuchipudi:checked ~ .rest-of-form [for="art-kuchipudi"],
-    &#mayooranritham:checked ~ .rest-of-form [for="art-mayooranritham"],
-    &#poothankali:checked ~ .rest-of-form [for="art-poothankali"],
-    &#poothan-thira:checked ~ .rest-of-form [for="art-poothan-thira"],
-    &#pulikali:checked ~ .rest-of-form [for="art-pulikali"],
-    &#kummatti:checked ~ .rest-of-form [for="art-kummatti"],
-    &#poothankali:checked ~ .rest-of-form [for="art-poothankali"],
-    &#nilakavadi:checked ~ .rest-of-form [for="art-nilakavadi"] {
-        display: block;
+    &#kathakali:checked ~ #rest-of-form [for="art-kathakali"],
+    &#mohiniyattam:checked ~ #rest-of-form [for="art-mohiniyattam"],
+    &#kalaripayattu:checked ~ #rest-of-form [for="art-kalaripayattu"],
+    &#bharathanatyam:checked ~ #rest-of-form [for="art-bharathanatyam"],
+    &#theyyam:checked ~ #rest-of-form [for="art-theyyam"],
+    &#thiruvathirakali:checked ~ #rest-of-form [for="art-thiruvathirakali"],
+    &#panchavadhyam:checked ~ #rest-of-form [for="art-panchavadhyam"],
+    &#pookkavadi:checked ~ #rest-of-form [for="art-pookkavadi"],
+    &#kuchipudi:checked ~ #rest-of-form [for="art-kuchipudi"],
+    &#mayooranritham:checked ~ #rest-of-form [for="art-mayooranritham"],
+    &#poothankali:checked ~ #rest-of-form [for="art-poothankali"],
+    &#poothan-thira:checked ~ #rest-of-form [for="art-poothan-thira"],
+    &#pulikali:checked ~ #rest-of-form [for="art-pulikali"],
+    &#kummatti:checked ~ #rest-of-form [for="art-kummatti"],
+    &#poothankali:checked ~ #rest-of-form [for="art-poothankali"],
+    &#nilakavadi:checked ~ #rest-of-form [for="art-nilakavadi"] {
+        display: flex;
+        flex-direction: column;
+        }
+    }
+
+#rest-of-form {
+    display: none;
+    
+    &.unhide-section {
+        display: flex;
+        flex-direction: column;
         }
     }
 
@@ -140,4 +177,4 @@
 
 .hide {
     display: none;
-}
+    }

@@ -75,6 +75,10 @@ h2 {
   background-color: #fff;
 }
 
+.section-header {
+  padding: 30px;
+}
+
 .lnk-prom {
   padding: 10px;
   background-color: #57d657;
@@ -1088,25 +1092,39 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -5px;
-  transition: .5s;
+  transition: 2s;
 }
 
 .artform-selection.hide-section {
-  animation: .5s hide-away forwards;
+  display: none;
 }
 
-@keyframes hide-away {
-  to {
-    opacity: 0;
-    transform: translateX(-100%);
-    position: absolute;
-  }
+.steps {
+  flex: 1;
+  background-color: white;
+  overflow: hidden;
+}
+
+.steps > [class^="step-"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  transition: .5s;
+}
+
+.steps .step-2 {
+  position: absolute;
+  transform: translateY(100%);
+  opacity: 0;
+  z-index: -2;
 }
 
 .progress-trigger {
   display: flex;
+  flex: 1;
   justify-content: flex-end;
-  background-color: rgba(255, 255, 255, 0.87);
+  background-color: white;
 }
 
 .progress-trigger.is-fixed {
@@ -1114,6 +1132,7 @@ h2 {
   top: 0;
   left: 0;
   right: 0;
+  background-color: rgba(255, 255, 255, 0);
   z-index: 99;
 }
 
@@ -1125,11 +1144,23 @@ h2 {
   font-size: 1.4rem;
   background-image: url(../images/assets/arrow-r.svg);
   background-repeat: no-repeat;
-  background-position: center left;
+  background-position: 0 26px;
 }
 
 .progress-trigger a:hover {
   background-color: #ebc700;
+}
+
+.progress-trigger.on-step-2 .step-1 {
+  opacity: 0;
+  z-index: -2;
+  transform: translateY(-100%);
+}
+
+.progress-trigger.on-step-2 .step-2 {
+  opacity: 1;
+  z-index: 9;
+  transform: translateY(0);
 }
 
 .artform-input-fields > [for^="art-"] {
@@ -1206,23 +1237,33 @@ h2 {
   color: #fff;
 }
 
-.checkbox-hax#kathakali:checked ~ .rest-of-form [for="art-kathakali"],
-.checkbox-hax#mohiniyattam:checked ~ .rest-of-form [for="art-mohiniyattam"],
-.checkbox-hax#kalaripayattu:checked ~ .rest-of-form [for="art-kalaripayattu"],
-.checkbox-hax#bharathanatyam:checked ~ .rest-of-form [for="art-bharathanatyam"],
-.checkbox-hax#theyyam:checked ~ .rest-of-form [for="art-theyyam"],
-.checkbox-hax#thiruvathirakali:checked ~ .rest-of-form [for="art-thiruvathirakali"],
-.checkbox-hax#panchavadhyam:checked ~ .rest-of-form [for="art-panchavadhyam"],
-.checkbox-hax#pookkavadi:checked ~ .rest-of-form [for="art-pookkavadi"],
-.checkbox-hax#kuchipudi:checked ~ .rest-of-form [for="art-kuchipudi"],
-.checkbox-hax#mayooranritham:checked ~ .rest-of-form [for="art-mayooranritham"],
-.checkbox-hax#poothankali:checked ~ .rest-of-form [for="art-poothankali"],
-.checkbox-hax#poothan-thira:checked ~ .rest-of-form [for="art-poothan-thira"],
-.checkbox-hax#pulikali:checked ~ .rest-of-form [for="art-pulikali"],
-.checkbox-hax#kummatti:checked ~ .rest-of-form [for="art-kummatti"],
-.checkbox-hax#poothankali:checked ~ .rest-of-form [for="art-poothankali"],
-.checkbox-hax#nilakavadi:checked ~ .rest-of-form [for="art-nilakavadi"] {
-  display: block;
+.checkbox-hax#kathakali:checked ~ #rest-of-form [for="art-kathakali"],
+.checkbox-hax#mohiniyattam:checked ~ #rest-of-form [for="art-mohiniyattam"],
+.checkbox-hax#kalaripayattu:checked ~ #rest-of-form [for="art-kalaripayattu"],
+.checkbox-hax#bharathanatyam:checked ~ #rest-of-form [for="art-bharathanatyam"],
+.checkbox-hax#theyyam:checked ~ #rest-of-form [for="art-theyyam"],
+.checkbox-hax#thiruvathirakali:checked ~ #rest-of-form [for="art-thiruvathirakali"],
+.checkbox-hax#panchavadhyam:checked ~ #rest-of-form [for="art-panchavadhyam"],
+.checkbox-hax#pookkavadi:checked ~ #rest-of-form [for="art-pookkavadi"],
+.checkbox-hax#kuchipudi:checked ~ #rest-of-form [for="art-kuchipudi"],
+.checkbox-hax#mayooranritham:checked ~ #rest-of-form [for="art-mayooranritham"],
+.checkbox-hax#poothankali:checked ~ #rest-of-form [for="art-poothankali"],
+.checkbox-hax#poothan-thira:checked ~ #rest-of-form [for="art-poothan-thira"],
+.checkbox-hax#pulikali:checked ~ #rest-of-form [for="art-pulikali"],
+.checkbox-hax#kummatti:checked ~ #rest-of-form [for="art-kummatti"],
+.checkbox-hax#poothankali:checked ~ #rest-of-form [for="art-poothankali"],
+.checkbox-hax#nilakavadi:checked ~ #rest-of-form [for="art-nilakavadi"] {
+  display: flex;
+  flex-direction: column;
+}
+
+#rest-of-form {
+  display: none;
+}
+
+#rest-of-form.unhide-section {
+  display: flex;
+  flex-direction: column;
 }
 
 .artform-item {

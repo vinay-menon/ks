@@ -145,14 +145,19 @@
     <section class="main-content" id="content">
         <header class="content-header">
             <h1>Book art forms</h1>
-            <p>
-                Select art forms you wish to be presented in your event.
-            </p>
-        </header>
 
-        <div class="progress-trigger">
-            <a href="#form-next-step">Proceed</a>
-        </div>
+            <div class="content-header-body progress-trigger">
+                <div class="steps">
+                    <p class="step-1">
+                        Please select art forms you wish to be presented in your event.
+                    </p>
+                    <p class="step-2">
+                        Please select the number of artists from each art form you selected.
+                    </p>
+                </div>
+                <a href="#form-next-step">Proceed</a>
+            </div>
+        </header>
 
         <form action="">
             <input class="checkbox-hax" type="checkbox" id="kathakali">
@@ -280,8 +285,7 @@
                 </label>
             </div><!-- .artform-selection -->
 
-            <div class="rest-of-form">
-                <h2>Please select the number of artists from each art form:</h2>
+            <div id="rest-of-form">
                 <div class="artform-input-fields">
                     <label for="art-kathakali">
                         <div class="label">Kathakali</div>
@@ -401,6 +405,8 @@
     $(".progress-trigger").on("click", function(e) {
         e.preventDefault();
         $(".artform-selection").addClass("hide-section");
+        $("#rest-of-form").addClass("unhide-section");
+        $(this).addClass("on-step-2");
     });
 </script>
 

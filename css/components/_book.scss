@@ -122,28 +122,28 @@
             }
         }
     
-    &#kathakali:checked ~ #rest-of-form [for="art-kathakali"],
-    &#mohiniyattam:checked ~ #rest-of-form [for="art-mohiniyattam"],
-    &#kalaripayattu:checked ~ #rest-of-form [for="art-kalaripayattu"],
-    &#bharathanatyam:checked ~ #rest-of-form [for="art-bharathanatyam"],
-    &#theyyam:checked ~ #rest-of-form [for="art-theyyam"],
-    &#thiruvathirakali:checked ~ #rest-of-form [for="art-thiruvathirakali"],
-    &#panchavadhyam:checked ~ #rest-of-form [for="art-panchavadhyam"],
-    &#pookkavadi:checked ~ #rest-of-form [for="art-pookkavadi"],
-    &#kuchipudi:checked ~ #rest-of-form [for="art-kuchipudi"],
-    &#mayooranritham:checked ~ #rest-of-form [for="art-mayooranritham"],
-    &#poothankali:checked ~ #rest-of-form [for="art-poothankali"],
-    &#poothan-thira:checked ~ #rest-of-form [for="art-poothan-thira"],
-    &#pulikali:checked ~ #rest-of-form [for="art-pulikali"],
-    &#kummatti:checked ~ #rest-of-form [for="art-kummatti"],
-    &#poothankali:checked ~ #rest-of-form [for="art-poothankali"],
-    &#nilakavadi:checked ~ #rest-of-form [for="art-nilakavadi"] {
+    &#kathakali:checked ~ #form-part-2 [for="art-kathakali"],
+    &#mohiniyattam:checked ~ #form-part-2 [for="art-mohiniyattam"],
+    &#kalaripayattu:checked ~ #form-part-2 [for="art-kalaripayattu"],
+    &#bharathanatyam:checked ~ #form-part-2 [for="art-bharathanatyam"],
+    &#theyyam:checked ~ #form-part-2 [for="art-theyyam"],
+    &#thiruvathirakali:checked ~ #form-part-2 [for="art-thiruvathirakali"],
+    &#panchavadhyam:checked ~ #form-part-2 [for="art-panchavadhyam"],
+    &#pookkavadi:checked ~ #form-part-2 [for="art-pookkavadi"],
+    &#kuchipudi:checked ~ #form-part-2 [for="art-kuchipudi"],
+    &#mayooranritham:checked ~ #form-part-2 [for="art-mayooranritham"],
+    &#poothankali:checked ~ #form-part-2 [for="art-poothankali"],
+    &#poothan-thira:checked ~ #form-part-2 [for="art-poothan-thira"],
+    &#pulikali:checked ~ #form-part-2 [for="art-pulikali"],
+    &#kummatti:checked ~ #form-part-2 [for="art-kummatti"],
+    &#poothankali:checked ~ #form-part-2 [for="art-poothankali"],
+    &#nilakavadi:checked ~ #form-part-2 [for="art-nilakavadi"] {
         display: flex;
         flex-direction: column;
         }
     }
 
-#rest-of-form {
+#form-part-2 {
     display: none;
     
     &.unhide-section {
@@ -163,6 +163,11 @@
 
         + label {
             margin-left: 1px;
+            }
+
+        &:nth-child(5n),
+        &:nth-child(5n) ~ label {
+            margin-top: 2px;
             }
         }
     .label {
@@ -190,6 +195,7 @@
         object-fit: cover;
         }
     }
+
 .artform-item-label {
     color: #222;
     padding: 5px 0;

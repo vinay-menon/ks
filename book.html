@@ -293,7 +293,7 @@
                 </label>
             </div><!-- .artform-selection -->
 
-            <div id="rest-of-form">
+            <div id="form-part-2">
                 <div class="artform-input-fields">
                     <label for="art-kathakali">
                         <div class="label">Kathakali</div>
@@ -357,6 +357,10 @@
                     </label>
                 </div>
             </div>
+
+            <div id="form-part-3">
+                
+            </div>
         </form>
         
     </section><!-- #content -->
@@ -416,19 +420,19 @@
     $(".progress-1").on("click", function(e) {
         e.preventDefault();
         $(".artform-selection").removeClass("hide-section");
-        $("#rest-of-form").removeClass("unhide-section").addClass("hide-section");
+        $("#form-part-2").removeClass("unhide-section").addClass("hide-section");
         $(".content-header-body").removeClass("on-step-2").removeClass("on-step-3").addClass("on-step-1");
         $(".progress-tracker > button").removeClass("is-active");
     });
     $(".progress-2").on("click", function(e) {
         e.preventDefault();
         $(".artform-selection").addClass("hide-section");
-        $("#rest-of-form").removeClass("hide-section").addClass("unhide-section");
+        $("#form-part-2").removeClass("hide-section").addClass("unhide-section");
         $(".content-header-body").removeClass("on-step-1").removeClass("on-step-3").addClass("on-step-2");
     });
     $(".progress-3").on("click", function(e) {
         e.preventDefault();
-        $("#rest-of-form").removeClass("unhide-section").addClass("hide-section");
+        $("#form-part-2").removeClass("unhide-section").addClass("hide-section");
         $(".content-header-body").removeClass("on-step-1").removeClass("on-step-2").addClass("on-step-3");
     });
 </script>

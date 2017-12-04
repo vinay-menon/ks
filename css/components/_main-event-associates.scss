@@ -1,8 +1,10 @@
 .main-shows {
     margin-bottom: 5px;
     }
-.main-shows h2 {
-    padding: 10px 30px;
+.main-shows .main-heading {
+    padding: 30px;
+    width: 30%;
+    max-width: 30%;
     }
 .show-cell {
     width: 30%;
@@ -26,7 +28,7 @@
     background-color: hsl(0, 0%, 90%);
     }
 .show-cell + .show-cell {
-    margin-left: 5px;
+    margin-left: 1px;
     }
 .show-icon {
     margin-bottom: 10px;

@@ -112,6 +112,14 @@
     .banner-header h2 {
         font-size: 1rem;
         }
+    .banner-header p {
+        font-size: .8rem;
+        }
+    }
+@media (max-width: 670px) {
+    .banner-header p {
+        display: none;
+        }
     }
 
 /*

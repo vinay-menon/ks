@@ -1,10 +1,13 @@
-
-
 .main-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 600px;
+    max-width: 800px;
+    }
+@media (max-width: 1374px) {
+    .main-nav {
+        max-width: 600px;
+        }
     }
 @media (max-width: 1000px) {
     .main-nav {
@@ -19,7 +22,7 @@
 .nav-item {
     width: 33.333%;
     transition: .3s;
-    background-size: 0 3px;
+    background-size: 0% 3px;
     background-position: bottom left;
     padding-bottom: 8px;
     }

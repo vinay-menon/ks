@@ -44,7 +44,11 @@
         background-position: center left;
         }
     }
-
+    
+.artform-input-fields > [for^="art-"] {
+    display: none;
+    }
+    
 .checkbox-hax {
     display: none;
 
@@ -84,6 +88,25 @@
         .artform-item-label {
             color: #fff;
             }
+        }
+    
+    &#kathakali:checked ~ .rest-of-form [for="art-kathakali"],
+    &#mohiniyattam:checked ~ .rest-of-form [for="art-mohiniyattam"],
+    &#kalaripayattu:checked ~ .rest-of-form [for="art-kalaripayattu"],
+    &#bharathanatyam:checked ~ .rest-of-form [for="art-bharathanatyam"],
+    &#theyyam:checked ~ .rest-of-form [for="art-theyyam"],
+    &#thiruvathirakali:checked ~ .rest-of-form [for="art-thiruvathirakali"],
+    &#panchavadhyam:checked ~ .rest-of-form [for="art-panchavadhyam"],
+    &#pookkavadi:checked ~ .rest-of-form [for="art-pookkavadi"],
+    &#kuchipudi:checked ~ .rest-of-form [for="art-kuchipudi"],
+    &#mayooranritham:checked ~ .rest-of-form [for="art-mayooranritham"],
+    &#poothankali:checked ~ .rest-of-form [for="art-poothankali"],
+    &#poothan-thira:checked ~ .rest-of-form [for="art-poothan-thira"],
+    &#pulikali:checked ~ .rest-of-form [for="art-pulikali"],
+    &#kummatti:checked ~ .rest-of-form [for="art-kummatti"],
+    &#poothankali:checked ~ .rest-of-form [for="art-poothankali"],
+    &#nilakavadi:checked ~ .rest-of-form [for="art-nilakavadi"] {
+        display: block;
         }
     }
 

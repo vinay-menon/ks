@@ -9,44 +9,27 @@
         }
     }
 
-.steps {
+.progress-tracker {
     flex: 1;
-    background-color: white;
-    overflow: hidden;
-
-    &> [class^="step-"] {
-        position: absolute;
-        top: 0; right: 0;
-        z-index: 9;
-        transition: .5s;
-        }
-    .step-2 {
-        position: absolute;
-        transform: translateY(100%);
-        opacity: 0;
-        z-index: -2;
-        }
-    }
-
-.progress-trigger {
-    display: flex;
-    flex: 1;
-    justify-content: flex-end;
     background-color: hsla(0,0,100,1);
 
     &.is-fixed {
         position: fixed;
         top: 0; left: 0; right: 0;
+        display: flex;
+        flex-direction: row;
         background-color: hsla(0,0,100,0);
         z-index: 99;
         }
 
-    a {
+    button {
+        display: block;
+        border: 0;
+        flex: 1;
         padding: 30px;
-        background-color: hsl(51, 100%, 61%);
         text-decoration: none;
         color: #222;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
 
         &:hover {
             background-color: darken(hsl(51, 100%, 61%), 15);
@@ -56,20 +39,42 @@
         background-repeat: no-repeat;
         background-position: 0 26px;
         }
-    
-    &.on-step-2 {
-        .step-1 {
-            opacity: 0;
-            z-index: -2;
-            transform: translateY(-100%);
-            }
-        .step-2 {
-            opacity: 1;
-            z-index: 9;
-            transform: translateY(0);
-            }
-        }   
     }
+
+.on-step-1 .progress-1,
+.on-step-2 .progress-2,
+.on-step-3 .progress-3 {
+    background-color: hsl(51, 100%, 61%);
+    }
+
+.steps {
+    flex: 1;
+    background-color: white;
+    overflow: hidden;
+
+    .step-2,
+    .step-3 {
+        display: none;
+        }
+    }
+
+.on-step-2 {
+    .step-1 {
+        display: none;
+        }
+    .step-2 {
+        display: block;
+        }
+    } 
+.on-step-3 {
+    .step-1,
+    .step-2 {
+        display: none;
+        }
+    .step-3 {
+        display: block;
+        }
+    }   
 
     
 .artform-input-fields > [for^="art-"] {
@@ -143,7 +148,30 @@
     
     &.unhide-section {
         display: flex;
-        flex-direction: column;
+        }
+    }
+
+.artform-input-fields {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+        padding: 30px;
+        width: calc(20% - 2px);
+        background-color: white;
+
+        + label {
+            margin-left: 1px;
+            }
+        }
+    .label {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        }
+    [type=number] {
+        border: 1px solid #999;
+        padding: 10px;
         }
     }
 

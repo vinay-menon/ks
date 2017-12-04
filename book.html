@@ -146,7 +146,7 @@
         <header class="content-header">
             <h1>Book art forms</h1>
 
-            <div class="content-header-body progress-trigger">
+            <div class="content-header-body on-step-1">
                 <div class="steps">
                     <p class="step-1">
                         Please select art forms you wish to be presented in your event.
@@ -154,8 +154,16 @@
                     <p class="step-2">
                         Please select the number of artists from each art form you selected.
                     </p>
+                    <p class="step-3">
+                        Please fill in your details.
+                    </p>
                 </div>
-                <a href="#form-next-step">Proceed</a>
+                
+                <div class="content-header-lnk-group progress-tracker">
+                    <button class="progress-1">Select Art Forms.</buton>
+                    <button class="progress-2">Select No. of Artists</button>
+                    <button class="progress-3">Fill in Your Details</button>
+                </div>
             </div>
         </header>
 
@@ -377,7 +385,7 @@
 <script>
     $(function () {
 
-        var sticky = $('.progress-trigger');
+        var sticky = $('.content-header-lnk-group');
 
         var top = sticky.offset().top - parseFloat(sticky.css('margin-top').replace(/auto/, 0));
 
@@ -402,11 +410,26 @@
 </script>
 
 <script>
-    $(".progress-trigger").on("click", function(e) {
+    // REFACTOR
+    // TODO: VERIFY BEFORE NEXT STEP
+
+    $(".progress-1").on("click", function(e) {
+        e.preventDefault();
+        $(".artform-selection").removeClass("hide-section");
+        $("#rest-of-form").removeClass("unhide-section").addClass("hide-section");
+        $(".content-header-body").removeClass("on-step-2").removeClass("on-step-3").addClass("on-step-1");
+        $(".progress-tracker > button").removeClass("is-active");
+    });
+    $(".progress-2").on("click", function(e) {
         e.preventDefault();
         $(".artform-selection").addClass("hide-section");
-        $("#rest-of-form").addClass("unhide-section");
-        $(this).addClass("on-step-2");
+        $("#rest-of-form").removeClass("hide-section").addClass("unhide-section");
+        $(".content-header-body").removeClass("on-step-1").removeClass("on-step-3").addClass("on-step-2");
+    });
+    $(".progress-3").on("click", function(e) {
+        e.preventDefault();
+        $("#rest-of-form").removeClass("unhide-section").addClass("hide-section");
+        $(".content-header-body").removeClass("on-step-1").removeClass("on-step-2").addClass("on-step-3");
     });
 </script>
 

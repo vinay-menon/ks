@@ -450,6 +450,10 @@ h2 {
   font-size: 2.4rem;
 }
 
+.content-header-body {
+  flex: 1;
+}
+
 .content-header-body p {
   padding: 30px;
   background-color: white;
@@ -1099,68 +1103,71 @@ h2 {
   display: none;
 }
 
+.progress-tracker {
+  flex: 1;
+  background-color: white;
+}
+
+.progress-tracker.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 99;
+}
+
+.progress-tracker button {
+  display: block;
+  border: 0;
+  flex: 1;
+  padding: 30px;
+  text-decoration: none;
+  color: #222;
+  font-size: 1.2rem;
+  background-image: url(../images/assets/arrow-r.svg);
+  background-repeat: no-repeat;
+  background-position: 0 26px;
+}
+
+.progress-tracker button:hover {
+  background-color: #ebc700;
+}
+
+.on-step-1 .progress-1,
+.on-step-2 .progress-2,
+.on-step-3 .progress-3 {
+  background-color: #ffe138;
+}
+
 .steps {
   flex: 1;
   background-color: white;
   overflow: hidden;
 }
 
-.steps > [class^="step-"] {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 9;
-  transition: .5s;
+.steps .step-2,
+.steps .step-3 {
+  display: none;
 }
 
-.steps .step-2 {
-  position: absolute;
-  transform: translateY(100%);
-  opacity: 0;
-  z-index: -2;
+.on-step-2 .step-1 {
+  display: none;
 }
 
-.progress-trigger {
-  display: flex;
-  flex: 1;
-  justify-content: flex-end;
-  background-color: white;
+.on-step-2 .step-2 {
+  display: block;
 }
 
-.progress-trigger.is-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(255, 255, 255, 0);
-  z-index: 99;
+.on-step-3 .step-1,
+.on-step-3 .step-2 {
+  display: none;
 }
 
-.progress-trigger a {
-  padding: 30px;
-  background-color: #ffe138;
-  text-decoration: none;
-  color: #222;
-  font-size: 1.4rem;
-  background-image: url(../images/assets/arrow-r.svg);
-  background-repeat: no-repeat;
-  background-position: 0 26px;
-}
-
-.progress-trigger a:hover {
-  background-color: #ebc700;
-}
-
-.progress-trigger.on-step-2 .step-1 {
-  opacity: 0;
-  z-index: -2;
-  transform: translateY(-100%);
-}
-
-.progress-trigger.on-step-2 .step-2 {
-  opacity: 1;
-  z-index: 9;
-  transform: translateY(0);
+.on-step-3 .step-3 {
+  display: block;
 }
 
 .artform-input-fields > [for^="art-"] {
@@ -1263,7 +1270,32 @@ h2 {
 
 #rest-of-form.unhide-section {
   display: flex;
-  flex-direction: column;
+}
+
+.artform-input-fields {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.artform-input-fields label {
+  padding: 30px;
+  width: calc(20% - 2px);
+  background-color: white;
+}
+
+.artform-input-fields label + label {
+  margin-left: 1px;
+}
+
+.artform-input-fields .label {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.artform-input-fields [type=number] {
+  border: 1px solid #999;
+  padding: 10px;
 }
 
 .artform-item {

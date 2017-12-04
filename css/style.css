@@ -152,7 +152,6 @@ h2 {
 
 .logo-group {
   display: flex;
-  align-items: flex-end;
   text-decoration: none;
   color: inherit;
 }
@@ -177,12 +176,12 @@ h2 {
   text-transform: uppercase;
   font-family: segoe ui;
   font-size: .8rem;
+  justify-content: space-between;
 }
 
 .logo-img {
   width: 80px;
   margin-right: 10px;
-  margin-bottom: 10px;
 }
 
 .logo-img img {
@@ -198,6 +197,7 @@ h2 {
 @media (max-width: 1080px) {
   .logo-img {
     width: 50px;
+    margin-bottom: 10px;
   }
 }
 
@@ -265,7 +265,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: 16px 16px;
   background-position: center left;
-  padding: 4px 0;
+  padding: 10px 0;
   padding-left: 18px;
 }
 
@@ -503,7 +503,7 @@ h2 {
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 5px;
+  margin-bottom: 1px;
   order: 1;
 }
 

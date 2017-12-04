@@ -150,9 +150,21 @@
     display: flex;
     margin: 10px 0;
     font-size: .9rem;
+
+    .phone, .email {
+        background-repeat: no-repeat;
+        background-size: 16px 16px;
+        background-position: center left;
+        padding: 4px 0;
+        padding-left: 18px;
+        }
+    }
+.email {
+    background-image: url(../images/assets/ico_msg.png);
     }
 .phone {
-    margin-right: 40px;
+    margin-right: 20px;
+    background-image: url(../images/assets/ico_call.png);
     }
 @media (max-width: 670px) {
     .phone {

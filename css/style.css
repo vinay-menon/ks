@@ -1088,6 +1088,19 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -5px;
+  transition: .5s;
+}
+
+.artform-selection.hide-section {
+  animation: .5s hide-away forwards;
+}
+
+@keyframes hide-away {
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+    position: absolute;
+  }
 }
 
 .progress-trigger {

@@ -332,7 +332,10 @@
 </script>
 
 <script>
-    
+    $(".progress-trigger").on("click", function(e) {
+        e.preventDefault();
+        $(".artform-selection").addClass("hide-section");
+    });
 </script>
 
 <script src="js/flickity.pkgd.min.js"></script>

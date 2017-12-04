@@ -4,18 +4,53 @@
     margin: 0 -5px;
     }
 
-.artform-item {
-    width: 20%;
-    padding: 5px;
+.progress-trigger {
+    display: flex;
+    justify-content: flex-end;
+    background-color: hsla(0,0,100,.87);
 
-    background-size: cover;
-    border: 1px solid #fff;
-
-    input {
-        display: none;
+    &.is-fixed {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        z-index: 99;
         }
 
-    &.is-selected {
+    a {
+        padding: 30px;
+        background-color: hsl(51, 100%, 61%);
+        text-decoration: none;
+        color: #222;
+        font-size: 1.4rem;
+
+        &:hover {
+            background-color: darken(hsl(51, 100%, 61%), 15);
+            }
+
+        background-image: url(../images/assets/arrow-r.svg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        }
+    }
+
+.checkbox-hax {
+    display: none;
+
+    &#kathakali:checked ~ .artform-selection label[for="kathakali"],
+    &#mohiniyattam:checked ~ .artform-selection label[for="mohiniyattam"],
+    &#kalaripayattu:checked ~ .artform-selection label[for="kalaripayattu"],
+    &#bharathanatyam:checked ~ .artform-selection label[for="bharathanatyam"],
+    &#theyyam:checked ~ .artform-selection label[for="theyyam"],
+    &#thiruvathirakali:checked ~ .artform-selection label[for="thiruvathirakali"],
+    &#panchavadhyam:checked ~ .artform-selection label[for="panchavadhyam"],
+    &#pookkavadi:checked ~ .artform-selection label[for="pookkavadi"],
+    &#kuchipudi:checked ~ .artform-selection label[for="kuchipudi"],
+    &#mayooranritham:checked ~ .artform-selection label[for="mayooranritham"],
+    &#poothankali:checked ~ .artform-selection label[for="poothankali"],
+    &#poothan-thira:checked ~ .artform-selection label[for="poothan-thira"],
+    &#pulikali:checked ~ .artform-selection label[for="pulikali"],
+    &#kummatti:checked ~ .artform-selection label[for="kummatti"],
+    &#poothankali:checked ~ .artform-selection label[for="poothankali"],
+    &#nilakavadi:checked ~ .artform-selection label[for="nilakavadi"] {
         background-image: linear-gradient(
             rgb(51, 165, 51),
             rgb(71, 207, 71)
@@ -37,6 +72,14 @@
             color: #fff;
             }
         }
+    }
+
+.artform-item {
+    width: 20%;
+    padding: 5px;
+
+    background-size: cover;
+    border: 1px solid #fff;
     
     img {
         display: block;

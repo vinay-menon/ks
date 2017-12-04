@@ -1090,24 +1090,76 @@ h2 {
   margin: 0 -5px;
 }
 
-.artform-item {
-  width: 20%;
-  padding: 5px;
-  background-size: cover;
-  border: 1px solid #fff;
+.progress-trigger {
+  display: flex;
+  justify-content: flex-end;
+  background-color: rgba(255, 255, 255, 0.87);
 }
 
-.artform-item input {
+.progress-trigger.is-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.progress-trigger a {
+  padding: 30px;
+  background-color: #ffe138;
+  text-decoration: none;
+  color: #222;
+  font-size: 1.4rem;
+  background-image: url(../images/assets/arrow-r.svg);
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.progress-trigger a:hover {
+  background-color: #ebc700;
+}
+
+.checkbox-hax {
   display: none;
 }
 
-.artform-item.is-selected {
+.checkbox-hax#kathakali:checked ~ .artform-selection label[for="kathakali"],
+.checkbox-hax#mohiniyattam:checked ~ .artform-selection label[for="mohiniyattam"],
+.checkbox-hax#kalaripayattu:checked ~ .artform-selection label[for="kalaripayattu"],
+.checkbox-hax#bharathanatyam:checked ~ .artform-selection label[for="bharathanatyam"],
+.checkbox-hax#theyyam:checked ~ .artform-selection label[for="theyyam"],
+.checkbox-hax#thiruvathirakali:checked ~ .artform-selection label[for="thiruvathirakali"],
+.checkbox-hax#panchavadhyam:checked ~ .artform-selection label[for="panchavadhyam"],
+.checkbox-hax#pookkavadi:checked ~ .artform-selection label[for="pookkavadi"],
+.checkbox-hax#kuchipudi:checked ~ .artform-selection label[for="kuchipudi"],
+.checkbox-hax#mayooranritham:checked ~ .artform-selection label[for="mayooranritham"],
+.checkbox-hax#poothankali:checked ~ .artform-selection label[for="poothankali"],
+.checkbox-hax#poothan-thira:checked ~ .artform-selection label[for="poothan-thira"],
+.checkbox-hax#pulikali:checked ~ .artform-selection label[for="pulikali"],
+.checkbox-hax#kummatti:checked ~ .artform-selection label[for="kummatti"],
+.checkbox-hax#poothankali:checked ~ .artform-selection label[for="poothankali"],
+.checkbox-hax#nilakavadi:checked ~ .artform-selection label[for="nilakavadi"] {
   background-image: linear-gradient(#33a533, #47cf47);
   background-repeat: no-repeat;
   background-size: calc(100%) calc(100%);
 }
 
-.artform-item.is-selected:after {
+.checkbox-hax#kathakali:checked ~ .artform-selection label[for="kathakali"]:after,
+.checkbox-hax#mohiniyattam:checked ~ .artform-selection label[for="mohiniyattam"]:after,
+.checkbox-hax#kalaripayattu:checked ~ .artform-selection label[for="kalaripayattu"]:after,
+.checkbox-hax#bharathanatyam:checked ~ .artform-selection label[for="bharathanatyam"]:after,
+.checkbox-hax#theyyam:checked ~ .artform-selection label[for="theyyam"]:after,
+.checkbox-hax#thiruvathirakali:checked ~ .artform-selection label[for="thiruvathirakali"]:after,
+.checkbox-hax#panchavadhyam:checked ~ .artform-selection label[for="panchavadhyam"]:after,
+.checkbox-hax#pookkavadi:checked ~ .artform-selection label[for="pookkavadi"]:after,
+.checkbox-hax#kuchipudi:checked ~ .artform-selection label[for="kuchipudi"]:after,
+.checkbox-hax#mayooranritham:checked ~ .artform-selection label[for="mayooranritham"]:after,
+.checkbox-hax#poothankali:checked ~ .artform-selection label[for="poothankali"]:after,
+.checkbox-hax#poothan-thira:checked ~ .artform-selection label[for="poothan-thira"]:after,
+.checkbox-hax#pulikali:checked ~ .artform-selection label[for="pulikali"]:after,
+.checkbox-hax#kummatti:checked ~ .artform-selection label[for="kummatti"]:after,
+.checkbox-hax#poothankali:checked ~ .artform-selection label[for="poothankali"]:after,
+.checkbox-hax#nilakavadi:checked ~ .artform-selection label[for="nilakavadi"]:after {
   content: "✔";
   position: absolute;
   z-index: 9;
@@ -1118,8 +1170,30 @@ h2 {
   background-color: #47cf47;
 }
 
-.artform-item.is-selected .artform-item-label {
+.checkbox-hax#kathakali:checked ~ .artform-selection label[for="kathakali"] .artform-item-label,
+.checkbox-hax#mohiniyattam:checked ~ .artform-selection label[for="mohiniyattam"] .artform-item-label,
+.checkbox-hax#kalaripayattu:checked ~ .artform-selection label[for="kalaripayattu"] .artform-item-label,
+.checkbox-hax#bharathanatyam:checked ~ .artform-selection label[for="bharathanatyam"] .artform-item-label,
+.checkbox-hax#theyyam:checked ~ .artform-selection label[for="theyyam"] .artform-item-label,
+.checkbox-hax#thiruvathirakali:checked ~ .artform-selection label[for="thiruvathirakali"] .artform-item-label,
+.checkbox-hax#panchavadhyam:checked ~ .artform-selection label[for="panchavadhyam"] .artform-item-label,
+.checkbox-hax#pookkavadi:checked ~ .artform-selection label[for="pookkavadi"] .artform-item-label,
+.checkbox-hax#kuchipudi:checked ~ .artform-selection label[for="kuchipudi"] .artform-item-label,
+.checkbox-hax#mayooranritham:checked ~ .artform-selection label[for="mayooranritham"] .artform-item-label,
+.checkbox-hax#poothankali:checked ~ .artform-selection label[for="poothankali"] .artform-item-label,
+.checkbox-hax#poothan-thira:checked ~ .artform-selection label[for="poothan-thira"] .artform-item-label,
+.checkbox-hax#pulikali:checked ~ .artform-selection label[for="pulikali"] .artform-item-label,
+.checkbox-hax#kummatti:checked ~ .artform-selection label[for="kummatti"] .artform-item-label,
+.checkbox-hax#poothankali:checked ~ .artform-selection label[for="poothankali"] .artform-item-label,
+.checkbox-hax#nilakavadi:checked ~ .artform-selection label[for="nilakavadi"] .artform-item-label {
   color: #fff;
+}
+
+.artform-item {
+  width: 20%;
+  padding: 5px;
+  background-size: cover;
+  border: 1px solid #fff;
 }
 
 .artform-item img {

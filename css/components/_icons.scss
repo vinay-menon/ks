@@ -1,0 +1,19 @@
+[class*="icon-"] {
+    &:before {
+        opacity: .8;
+        padding: 8px 0;
+        margin-right: 8px;
+        position: relative;
+        top: 2px;
+        }
+    }
+
+.icon-info:before {
+    content: url(../images/assets/icons/info.png);
+    }
+.icon-call:before {
+    content: url(../images/assets/icons/call.png);
+    }
+.icon-msg:before {
+    content: url(../images/assets/icons/msg.png);
+    }

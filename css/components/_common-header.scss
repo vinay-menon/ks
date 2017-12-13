@@ -1,5 +1,6 @@
 .main-header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 /*
@@ -22,7 +23,7 @@
 */
     background-color: white;
     background-size: cover;
-    padding: 15px 30px;
+    padding: 30px;
     
     margin-bottom: 1px;
     }
@@ -121,8 +122,8 @@
         }
     }
 .logo-title {
-    // font-family: "Poppins", sans-serif;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: "Poppins", sans-serif;
+    // font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
     color: inherit;
     font-size: 2.2rem;
@@ -158,26 +159,29 @@
     color: inherit;
     }
 
-.logo-contact {
+.contact-items {
     width: 100%;
     display: flex;
-    margin: 10px 0;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    // padding-top: 10px;
+    // margin: 10px 0;
+    margin-top: 10px;
+    // order: -1;
+    }
+
+.logo-contact {
+    display: flex;
     font-size: .9rem;
+    // margin-right: 20px;
 
     .phone, .email {
-        background-repeat: no-repeat;
-        background-size: 16px 16px;
-        background-position: center left;
         padding: 10px 0;
-        padding-left: 18px;
         }
-    }
-.email {
-    background-image: url(../images/assets/ico_msg.png);
     }
 .phone {
     margin-right: 20px;
-    background-image: url(../images/assets/ico_call.png);
     }
 @media (max-width: 670px) {
     .phone {

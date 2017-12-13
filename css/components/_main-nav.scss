@@ -22,18 +22,22 @@
 .nav-item {
     width: 33.333%;
     transition: .3s;
-    background-size: 0% 3px;
-    background-position: bottom left;
+    // background-size: 0% 3px;
+    // background-position: bottom left;
     padding-bottom: 8px;
     }
 .nav-item:hover {
-    background-image: 
-        linear-gradient(
-            90deg,
-            #d92222,
-            #a11eb9);
-    background-size: 100% 3px;
-    background-repeat: no-repeat;
+    // background-image: 
+    //     linear-gradient(
+    //         90deg,
+    //         #d92222,
+    //         #a11eb9);
+    // background-size: 100% 3px;
+    // background-repeat: no-repeat;
+
+    h2 {
+        text-decoration: underline;
+        }
     }
 .nav-item:not(.nav-item:nth-child(n+3)) {
     padding-right: 10px;
@@ -47,8 +51,8 @@
     display: block;
     }
 .nav-item h2 {
-    font-weight: bold;
-    font-size: 1rem;
+    // font-weight: normal;
+    font-size: 1.4rem;
     margin-bottom: 0;
     }
 .nav-item p {
@@ -63,8 +67,8 @@
         text-align: center;
         }
     .nav-item h2 {
-        font-weight: normal;
-        font-size: .9rem;
+        // font-weight: normal;
+        font-size: 1.2rem;
         }
     .nav-item p {
         display: none;

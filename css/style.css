@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700");
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
 }
 
 h2 {
@@ -95,7 +95,7 @@ h2 {
 
 .main-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   /*
     background-image: 
@@ -117,12 +117,18 @@ h2 {
 */
   background-color: white;
   background-size: cover;
-  padding: 30px;
+  padding: 15px 30px;
   margin-bottom: 1px;
 }
 
 .main-fold .main-header {
   order: 2;
+}
+
+@media (max-width: 1200px) {
+  .main-header {
+    align-items: flex-start;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -158,11 +164,12 @@ h2 {
   display: flex;
   text-decoration: none;
   color: inherit;
+  flex-direction: column;
+  text-align: center;
 }
 
 @media (max-width: 750px) {
   .logo-group {
-    flex-direction: column;
     align-items: flex-start;
   }
 }
@@ -185,7 +192,8 @@ h2 {
 
 .logo-img {
   width: 80px;
-  margin-right: 10px;
+  margin: auto;
+  margin-bottom: 10px;
 }
 
 .logo-img img {
@@ -201,7 +209,6 @@ h2 {
 @media (max-width: 1080px) {
   .logo-img {
     width: 50px;
-    margin-bottom: 10px;
   }
 }
 
@@ -221,13 +228,17 @@ h2 {
 }
 
 .logo-title {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   text-transform: uppercase;
   color: inherit;
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   line-height: .75;
   font-weight: 900;
   padding-bottom: 10px;
+}
+
+.logo-title br {
+  display: none;
 }
 
 @media (max-width: 1080px) {
@@ -360,15 +371,11 @@ h2 {
 .nav-item {
   width: 33.333%;
   transition: .3s;
-  background-size: 0% 3px;
-  background-position: bottom left;
   padding-bottom: 8px;
 }
 
-.nav-item:hover {
-  background-image: linear-gradient(90deg, #d92222, #a11eb9);
-  background-size: 100% 3px;
-  background-repeat: no-repeat;
+.nav-item:hover h2 {
+  text-decoration: underline;
 }
 
 .nav-item:not(.nav-item:nth-child(n+3)) {
@@ -386,8 +393,7 @@ h2 {
 }
 
 .nav-item h2 {
-  font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-bottom: 0;
 }
 
@@ -405,8 +411,7 @@ h2 {
     text-align: center;
   }
   .nav-item h2 {
-    font-weight: normal;
-    font-size: .9rem;
+    font-size: 1.2rem;
   }
   .nav-item p {
     display: none;
@@ -517,7 +522,7 @@ h2 {
 }
 
 .quick-access-links h2 {
-  font-size: .9rem;
+  font-size: 1.2rem;
   font-weight: normal;
   margin-bottom: 0;
   min-width: 120px;
@@ -600,7 +605,7 @@ h2 {
 }
 
 .banner-header {
-  padding: 30px;
+  padding: 15px 30px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -609,19 +614,19 @@ h2 {
 }
 
 .banner-training .banner-header {
-  background-color: rgba(4, 144, 4, 0.639);
+  background-color: rgba(9, 154, 9, 0.707);
 }
 
 .banner-artists .banner-header {
-  background-color: rgba(4, 102, 144, 0.639);
+  background-color: rgba(14, 53, 68, 0.755);
 }
 
 .banner-productions .banner-header {
-  background-color: rgba(144, 128, 4, 0.639);
+  background-color: rgba(138, 48, 6, 0.769);
 }
 
 .banner-artforms .banner-header {
-  background-color: rgba(144, 4, 137, 0.639);
+  background-color: rgba(144, 4, 137, 0.803);
 }
 
 .banner-header h2 {
@@ -1124,7 +1129,6 @@ h2 {
 .artform-selection {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -5px;
   transition: 2s;
 }
 

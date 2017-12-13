@@ -25,7 +25,7 @@
     background-size: cover;
     padding: 30px;
     
-    margin-bottom: 1px;
+    border-bottom: 1px solid rgb(221,221,221);
     }
 .main-fold .main-header {
     order: 2;
@@ -165,7 +165,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    // padding-top: 10px;
+    padding-top: 10px;
     // margin: 10px 0;
     margin-top: 10px;
     // order: -1;
@@ -177,7 +177,7 @@
     // margin-right: 20px;
 
     .phone, .email {
-        padding: 10px 0;
+        // padding: 10px 0 0;
         }
     }
 .phone {
@@ -203,6 +203,10 @@
 .socmed a {
     margin-right: 10px;
     display: block;
+
+    &:last-child {
+        margin-right: 0;
+        }
     }
 .socmed img {
     display: block;

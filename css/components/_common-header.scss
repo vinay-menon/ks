@@ -153,13 +153,10 @@
 .main-contact {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-size: .9rem;
     padding: 15px;
     // margin-right: 20px;
-
-    > *:not(:first-child) {
-        margin-top: 10px;
-        }
 
     .phone, .email {
         // padding: 10px 0 0;

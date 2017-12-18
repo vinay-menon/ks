@@ -370,7 +370,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   padding: 10px;
-  margin: 0 auto;
+  margin-left: auto;
   border-left: 1px solid #ddd;
 }
 

@@ -371,13 +371,14 @@ h2 {
 
 .main-extra .socmed {
   flex-direction: column;
+  justify-content: space-between;
   padding: 10px;
   margin: 0 auto;
+  border-left: 1px solid #ddd;
 }
 
 .main-extra .socmed a {
   margin-right: 0;
-  margin-bottom: 10px;
 }
 
 .main-extra .socmed a:last-child {

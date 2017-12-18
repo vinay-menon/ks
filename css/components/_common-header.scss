@@ -23,7 +23,7 @@
 */
     background-color: white;
     background-size: cover;
-    padding: 30px;
+    padding-top: 30px;
     
     border-bottom: 1px solid rgb(221,221,221);
     }
@@ -52,7 +52,7 @@
 .logo {
     display: flex;
     flex-direction: column;
-    padding-right: 10px;
+    padding-right: 60px;
     }
 @media (max-width: 670px) {
     .logo {
@@ -69,6 +69,7 @@
     // text-align: center;
     border-bottom: 1px solid #dddddd;
     padding-bottom: 20px;
+    padding-left: 30px;
     }
 @media (max-width: 750px) {
     .logo-group {
@@ -84,7 +85,7 @@
 .logo-text {
     display: flex;
     flex-direction: column;
-    // text-transform: uppercase;
+    text-transform: uppercase;
     font-family: segoe ui;      
     // font-size: .8rem;
     // justify-content: space-between;
@@ -128,6 +129,9 @@
 .logo-about {
     text-align: justify
     }
+.logo-location {
+    margin-top: auto;
+    }
 .logo-address {
     color: inherit;
     }
@@ -145,11 +149,16 @@
     // order: -1;
     }
 
-.logo-contact {
+.main-contact {
     display: flex;
+    flex-direction: column;
     font-size: .9rem;
-    margin-top: auto;
+    padding: 15px;
     // margin-right: 20px;
+
+    > *:not(:first-child) {
+        margin-top: 10px;
+        }
 
     .phone, .email {
         // padding: 10px 0 0;
@@ -231,15 +240,18 @@
 .empanelled {
     display: flex;
     width: 100%;
-    margin-top: 10px; 
+    padding-left: 30px;
     }
-.emp-iccr-logo {
+.emp-logo {
     max-width: 80px;
-    padding: 10px;
+    padding: 20px 10px;
     border-right: 1px solid #dddddd;
     }
-.emp-iccr-logo img {
+.emp-logo img {
     width: 100%;
     max-width: 100%;
     display: block;
+    }
+.emp-mcr {
+    max-width: 100px;
     }

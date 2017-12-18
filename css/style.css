@@ -241,6 +241,7 @@ h2 {
 
 .logo-location {
   margin-top: auto;
+  font-size: .8rem;
 }
 
 .logo-address {
@@ -346,7 +347,7 @@ h2 {
   }
 }
 
-.empanelled {
+.main-extra {
   display: flex;
   width: 100%;
   padding-left: 30px;
@@ -368,11 +369,27 @@ h2 {
   max-width: 100px;
 }
 
+.main-extra .socmed {
+  flex-direction: column;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.main-extra .socmed a {
+  margin-right: 0;
+  margin-bottom: 10px;
+}
+
+.main-extra .socmed a:last-child {
+  margin-bottom: 0;
+}
+
 .main-nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex: 1;
+  padding-right: 30px;
 }
 
 @media (max-width: 1000px) {

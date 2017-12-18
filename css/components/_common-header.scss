@@ -131,6 +131,7 @@
     }
 .logo-location {
     margin-top: auto;
+    font-size: .8rem;
     }
 .logo-address {
     color: inherit;
@@ -237,7 +238,7 @@
         }
     }
 
-.empanelled {
+.main-extra {
     display: flex;
     width: 100%;
     padding-left: 30px;
@@ -254,4 +255,19 @@
     }
 .emp-mcr {
     max-width: 100px;
+    }
+
+.main-extra .socmed {
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 auto;
+
+    a {
+        margin-right: 0;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+            }
+        }
     }

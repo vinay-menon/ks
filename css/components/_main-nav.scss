@@ -6,7 +6,7 @@
     }
 @media (max-width: 1374px) {
     .main-nav {
-        max-width: 600px;
+        // max-width: 600px;
         }
     }
 @media (max-width: 1000px) {
@@ -48,7 +48,8 @@
 .nav-item h2 {
     // font-weight: normal;
     font-size: 1rem;
-    margin-bottom: 0;
+    line-height: .75;
+    margin-bottom: 10px;
     }
 .nav-item p {
     font-size: .9rem;

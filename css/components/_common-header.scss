@@ -1,7 +1,7 @@
 .main-header {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 /*
     background-image: 
@@ -65,8 +65,10 @@
     // align-items: flex-end;
     text-decoration: none;
     color: inherit;
-    flex-direction: column;
-    text-align: center;
+    // flex-direction: column;
+    // text-align: center;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 20px;
     }
 @media (max-width: 750px) {
     .logo-group {
@@ -76,23 +78,102 @@
 @media (max-width: 670px) {
     .logo-group {
 /*        flex-direction: row;*/
-        align-items: center;
+        // align-items: center;
         }
     }
 .logo-text {
     display: flex;
     flex-direction: column;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-family: segoe ui;      
-    font-size: .8rem;
-    justify-content: space-between
+    // font-size: .8rem;
+    // justify-content: space-between;
+    }
+.logo-title {
+    font-family: "Poppins", sans-serif;
+    // font-family: 'Cormorant Garamond', serif;
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 2.2rem;
+    line-height: .75;
+    font-weight: 900;
+    // padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    }
+.logo-title br {
+    display: none;
+    }
+@media (max-width: 1080px) {
+    .logo-title {
+        font-size: 2rem;
+        }
+    }
+@media (max-width: 750px) {
+    .logo-title {
+        font-size: 1.4rem;
+        }
+    .logo-title br {
+        display: none;
+        }
+    }
+@media (max-width: 670px) {
+    .logo-title {
+        font-size: 2.3rem;
+        }
+    .logo-title br {
+/*        display: block;*/
+        }
+    }
+.logo-about {
+    text-align: justify
+    }
+.logo-address {
+    color: inherit;
+    }
+
+.contact-items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    // margin: 10px 0;
+    margin-top: 20px;
+    border-top: 1px solid rgb(221,221,221);
+    // order: -1;
+    }
+
+.logo-contact {
+    display: flex;
+    font-size: .9rem;
+    margin-top: auto;
+    // margin-right: 20px;
+
+    .phone, .email {
+        // padding: 10px 0 0;
+        }
+    }
+.phone {
+    margin-right: 20px;
+    }
+@media (max-width: 670px) {
+    .phone {
+        margin-right: 0;
+        }
+    }
+@media (max-width: 920px) {
+    .logo-contact {
+        flex-direction: column;
+        }
     }
 .logo-img {
     width: 80px;
-    // margin-right: 10px;
-    margin: auto;
+    margin-right: 10px;
+    // margin: auto;
     // display: none;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
     }
 .logo-img img {
     display: block;
@@ -121,78 +202,6 @@
         padding-left: 10px;
         }
     }
-.logo-title {
-    font-family: "Poppins", sans-serif;
-    // font-family: 'Cormorant Garamond', serif;
-    text-transform: uppercase;
-    color: inherit;
-    font-size: 2.2rem;
-    line-height: .75;
-    font-weight: 900;
-    padding-bottom: 10px;
-    }
-.logo-title br {
-    display: none;
-    }
-@media (max-width: 1080px) {
-    .logo-title {
-        font-size: 2rem;
-        }
-    }
-@media (max-width: 750px) {
-    .logo-title {
-        font-size: 1.4rem;
-        }
-    .logo-title br {
-        display: none;
-        }
-    }
-@media (max-width: 670px) {
-    .logo-title {
-        font-size: 2.3rem;
-        }
-    .logo-title br {
-/*        display: block;*/
-        }
-    }
-.logo-address {
-    color: inherit;
-    }
-
-.contact-items {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 10px;
-    // margin: 10px 0;
-    margin-top: 10px;
-    // order: -1;
-    }
-
-.logo-contact {
-    display: flex;
-    font-size: .9rem;
-    // margin-right: 20px;
-
-    .phone, .email {
-        // padding: 10px 0 0;
-        }
-    }
-.phone {
-    margin-right: 20px;
-    }
-@media (max-width: 670px) {
-    .phone {
-        margin-right: 0;
-        }
-    }
-@media (max-width: 920px) {
-    .logo-contact {
-        flex-direction: column;
-        }
-    }
 
 .socmed {
     display: flex;
@@ -219,17 +228,18 @@
         }
     }
 
-.empanelled-logo {
-    min-width: 100px;
-    width: 100px;
+.empanelled {
+    display: flex;
+    width: 100%;
+    margin-top: 10px; 
     }
-.empanelled-logo img {
+.emp-iccr-logo {
+    max-width: 80px;
+    padding: 10px;
+    border-right: 1px solid #dddddd;
+    }
+.emp-iccr-logo img {
     width: 100%;
     max-width: 100%;
     display: block;
-    }
-@media (max-width: 750px) {
-    .empanelled-logo {
-        display: none;
-        }
     }

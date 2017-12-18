@@ -37,15 +37,15 @@
     animation-delay: .3s;
     }
 .banner-artists {
-    background-image: url(../images/banner/artists_0.jpg);
+    background-image: url(../images/banner/book-artforms.jpg); 
     animation-delay: .2s;
     }
 .banner-productions {
-    background-image: url(../images/banner/productions_0.jpg);
+    background-image: url(../images/banner/productions.jpg);
     animation-delay: .1s;
     }
-.banner-artforms {
-    background-image: url(../images/banner/artforms_0.jpg);
+.banner-performances {
+    background-image: url(../images/banner/performances.jpg);
     }
 .banner + .banner {
     border-left: 1px solid white;
@@ -67,7 +67,7 @@
     //         rgba(12, 80, 144, 0.7),
     //         rgba(75, 0, 130, 0.7)
     //         );
-    background-color: rgba(9, 154, 9, 0.707);
+    background-color: rgba(22, 75, 93, 0.612);
     }
 .banner-artists .banner-header {
     // background-image: 
@@ -76,7 +76,8 @@
     //         rgba(13, 168, 0, 0.83),
     //         rgba(0, 130, 125, 0.7)
     //         );
-    background-color: rgba(14, 53, 68, 0.755);
+    background-color: rgba(226, 219, 0, 0.755);
+    color: rgb(60, 48, 127);
     }
 .banner-productions .banner-header {
     // background-image: 
@@ -87,14 +88,14 @@
     //         );
     background-color: rgba(138, 48, 6, 0.769);
     }
-.banner-artforms .banner-header {
+.banner-performances .banner-header {
     // background-image: 
     //     radial-gradient(
     //         circle,
     //         rgba(255, 30, 220, 0.72),
     //         rgba(255, 130, 23, 0.7)
     //         );
-    background-color: rgba(144, 4, 137, 0.803);
+    background-color: rgba(225, 50, 187, 0.803);
     }
 .banner-header h2 {
     background-image: url(../images/assets/arrow-r.svg);

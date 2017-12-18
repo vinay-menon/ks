@@ -592,6 +592,10 @@ h2 {
   content: url(../images/assets/icons/msg.png);
 }
 
+.icon-fwd-c:before {
+  content: url(../images/assets/icons/fwd-c.png);
+}
+
 .main-banners {
   min-height: 450px;
   display: flex;

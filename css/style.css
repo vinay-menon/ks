@@ -77,7 +77,6 @@ h2 {
   max-width: 25%;
   border-right: 1px solid #dddddd;
   margin-bottom: 1px;
-  background-color: #fff;
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -484,6 +483,7 @@ h2 {
 
 .content-header-nav {
   flex-direction: column;
+  padding-bottom: 30px;
 }
 
 .content-header-nav h1 {
@@ -494,8 +494,12 @@ h2 {
 .content-header-links {
   display: flex;
   flex-direction: column;
-  padding-left: 55px;
+  padding-left: 50px;
+  margin-left: 5px;
   border-left: 5px solid #ddd;
+  text-transform: capitalize;
+  font-weight: normal;
+  font-size: 1.2rem;
 }
 
 .content-header-links a {
@@ -504,14 +508,18 @@ h2 {
   margin-top: 20px;
 }
 
+.content-header-links a:hover {
+  color: dodgerblue;
+}
+
 .content-header-links a:before {
   content: '';
   position: absolute;
-  top: 50%;
-  left: -55px;
+  bottom: 0;
+  left: -50px;
   background-color: #ddd;
   height: 5px;
-  width: 50px;
+  width: 45px;
 }
 
 .content-header-body {
@@ -522,7 +530,6 @@ h2 {
 
 .content-header-body p {
   padding: 30px;
-  background-color: white;
   font-size: 1.2rem;
 }
 
@@ -535,7 +542,6 @@ h2 {
 .content-header-lnk-group a {
   padding: 30px;
   flex: 1;
-  background-color: white;
   color: inherit;
   text-align: center;
   transition: .17s background-color;
@@ -572,33 +578,53 @@ h2 {
   margin-bottom: 20px;
 }
 
-.quick-access-links {
+.quick-nav {
   display: flex;
-  justify-content: flex-end;
-  background-color: white;
+  justify-content: space-between;
   border-bottom: 1px solid #dddddd;
 }
 
-.quick-access-links h2 {
+.quick-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.quick-nav a:hover {
+  color: dodgerblue;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding: 20px;
+}
+
+.breadcrumbs a + a:before {
+  content: "»";
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.quick-links {
+  display: flex;
+  align-items: center;
+  border-left: 1px solid #ddd;
+}
+
+.quick-links h2 {
   font-size: 1rem;
   font-weight: normal;
   margin-bottom: 0;
   min-width: 120px;
-  padding: 20px 10px;
+  padding: 10px;
   color: dodgerblue;
 }
 
-.quick-access-links a {
-  color: inherit;
-  padding: 20px 10px;
+.quick-links a {
   border-left: 1px solid #dddddd;
+  padding: 10px;
 }
 
-.quick-access-links a:hover {
-  color: dodgerblue;
-}
-
-.quick-access-links:hover h2 {
+.quick-links:hover h2 {
   color: inherit;
 }
 

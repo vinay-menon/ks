@@ -1,0 +1,51 @@
+.quick-nav {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(221,221,221);
+    
+    a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+            color: dodgerblue;
+            }
+        }
+    }
+
+.breadcrumbs {
+    display: flex;
+    padding: 20px;
+
+    a + a:before {
+        content: "»";
+        padding: 0 10px;
+        text-decoration: none;
+        }
+    }
+
+.quick-links {
+    display: flex;
+    align-items: center;
+    border-left: 1px solid #ddd;
+    
+    h2 {
+        font-size: 1rem;
+        font-weight: normal;
+        margin-bottom: 0;
+        min-width: 120px;
+        padding: 10px;
+        color: dodgerblue;
+        }
+    
+    a {
+        border-left: 1px solid rgb(221,221,221);
+        padding: 10px;
+        }
+
+    &:hover {
+        h2 {
+            color: inherit;
+            }
+        }
+    }

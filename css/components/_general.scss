@@ -17,6 +17,13 @@ body {
     background-color: hsl(51, 100%, 100%);
     background-color: rgb(235, 235, 235);
     background-color: white;
+	// background-image:
+	// 	linear-gradient(
+    //         15deg,
+	// 		rgb(61, 34, 81),
+	// 		rgb(38, 29, 52),
+	// 		rgb(245, 0, 0)
+	// 		);
     // filter: invert(1);
     // background-image: 
     //     linear-gradient(
@@ -26,6 +33,7 @@ body {
     //         );
     min-height: 100vh;
     color: rgb(69, 69, 69);
+    // color: white;
     } 
 @media (max-width: 670px) {
     body {

@@ -104,26 +104,12 @@ h2 {
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
-  /*
-    background-image: 
-        linear-gradient(
-            60deg,
-            hsla(113, 46%, 96%, 0.47),
-            hsla(328, 41%, 93%, 0.54),
-            hsl(18, 100%, 91%)
-            );
-*/
-  /*
-    background-image: 
-        linear-gradient(
-            60deg,
-            hsla(51, 100%, 70%, 0.88),
-            hsla(23, 100%, 60%, 0.63),
-            hsl(18, 100%, 91%)
-            );
-*/
   background-size: cover;
   border-bottom: 1px solid #dddddd;
+}
+
+.main-header.-secondary {
+  justify-content: flex-start;
 }
 
 .main-fold .main-header {
@@ -170,7 +156,6 @@ h2 {
   display: flex;
   text-decoration: none;
   color: inherit;
-  border-bottom: 1px solid #dddddd;
   padding-bottom: 20px;
   padding-left: 30px;
 }
@@ -266,6 +251,10 @@ h2 {
   padding: 15px;
 }
 
+.-secondary .main-contact {
+  justify-content: space-around;
+}
+
 .phone {
   margin-right: 20px;
 }
@@ -322,6 +311,14 @@ h2 {
   display: flex;
   width: 100%;
   padding-left: 30px;
+  border-top: 1px solid #dddddd;
+}
+
+.-secondary .main-extra {
+  width: auto;
+  align-self: stretch;
+  padding-left: 0;
+  align-items: stretch;
 }
 
 .emp-logo {
@@ -330,10 +327,15 @@ h2 {
   border-right: 1px solid #dddddd;
 }
 
+.-secondary .emp-logo {
+  display: flex;
+}
+
 .emp-logo img {
   width: 100%;
   max-width: 100%;
   display: block;
+  align-self: center;
 }
 
 .emp-mcr {
@@ -379,6 +381,10 @@ h2 {
 
 .main-extra .socmed a:last-child {
   margin-bottom: 0;
+}
+
+.-secondary .socmed {
+  justify-content: space-around;
 }
 
 .main-nav {
@@ -494,9 +500,6 @@ h2 {
 .content-header-links {
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
-  margin-left: 5px;
-  border-left: 5px solid #ddd;
   text-transform: capitalize;
   font-weight: normal;
   font-size: 1.2rem;
@@ -505,21 +508,11 @@ h2 {
 .content-header-links a {
   display: block;
   color: inherit;
-  margin-top: 20px;
+  padding: 10px 0;
 }
 
 .content-header-links a:hover {
   color: dodgerblue;
-}
-
-.content-header-links a:before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: -50px;
-  background-color: #ddd;
-  height: 5px;
-  width: 45px;
 }
 
 .content-header-body {
@@ -531,6 +524,7 @@ h2 {
 .content-header-body p {
   padding: 30px;
   font-size: 1.2rem;
+  margin: auto;
 }
 
 .content-header-lnk-group {
@@ -580,6 +574,7 @@ h2 {
 
 .quick-nav {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   border-bottom: 1px solid #dddddd;
 }
@@ -596,6 +591,7 @@ h2 {
 .breadcrumbs {
   display: flex;
   padding: 20px;
+  order: 2;
 }
 
 .breadcrumbs a + a:before {
@@ -611,7 +607,7 @@ h2 {
 }
 
 .quick-links h2 {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: normal;
   margin-bottom: 0;
   min-width: 120px;
@@ -709,7 +705,7 @@ h2 {
 }
 
 .banner + .banner {
-  border-left: 1px solid white;
+  border-left: 1px solid #ddd;
 }
 
 .banner a {
@@ -1533,6 +1529,4 @@ h2 {
 .hide {
   display: none;
 }
- 
-
- /*# sourceMappingURL= style.css.map */
+/*# sourceMappingURL=style.css.map */

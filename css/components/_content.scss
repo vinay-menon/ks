@@ -17,9 +17,9 @@
 .content-header-links {
     display: flex;
     flex-direction: column;
-    padding-left: 50px;
-    margin-left: 5px;
-    border-left: 5px solid #ddd;
+    // padding-left: 50px;
+    // margin-left: 5px;
+    // border-left: 5px solid #ddd;
     text-transform: capitalize;
     font-weight: normal;
     font-size: 1.2rem;
@@ -27,20 +27,23 @@
     a  {
         display: block;
         color: inherit;
-        margin-top: 20px;
+        // margin-top: 20px;
+        padding: 10px 0;
+        // padding-left: 30px;
+        // border-top: 1px solid #ddd;
 
         &:hover {
             color: dodgerblue;
             }
 
-        &:before {
-            content: '';
-            position: absolute;
-            bottom: 0; left: -50px;
-            background-color: #ddd;
-            height: 5px;
-            width: 45px;
-            }
+        // &:before {
+        //     content: '';
+        //     position: absolute;
+        //     bottom: 0; left: -50px;
+        //     background-color: #ddd;
+        //     height: 5px;
+        //     width: 45px;
+        //     }
         }
     }
 
@@ -51,6 +54,7 @@
     p {
         padding: 30px;
         font-size: 1.2rem;
+        margin: auto;
         }
     }
 .content-header-lnk-group {

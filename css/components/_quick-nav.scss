@@ -1,5 +1,6 @@
 .quick-nav {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
     border-bottom: 1px solid rgb(221,221,221);
     
@@ -16,6 +17,7 @@
 .breadcrumbs {
     display: flex;
     padding: 20px;
+    order: 2;
 
     a + a:before {
         content: "»";
@@ -30,7 +32,7 @@
     border-left: 1px solid #ddd;
     
     h2 {
-        font-size: 1rem;
+        font-size: .9rem;
         font-weight: normal;
         margin-bottom: 0;
         min-width: 120px;

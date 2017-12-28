@@ -48,7 +48,7 @@
     background-image: url(../images/banner/performances.jpg);
     }
 .banner + .banner {
-    border-left: 1px solid #ddd;
+    // border-left: 1px solid #ddd;
     }
 .banner a {
     color: inherit;
@@ -61,41 +61,16 @@
     z-index: 2;
     }
 .banner-training .banner-header {
-    // background-image: 
-    //     radial-gradient(
-    //         circle,
-    //         rgba(12, 80, 144, 0.7),
-    //         rgba(75, 0, 130, 0.7)
-    //         );
-    background-color: rgba(22, 75, 93, 0.612);
+    background-color: rgba(73, 67, 43, 0.599);
     }
 .banner-artists .banner-header {
-    // background-image: 
-    //     radial-gradient(
-    //         circle,
-    //         rgba(13, 168, 0, 0.83),
-    //         rgba(0, 130, 125, 0.7)
-    //         );
-    background-color: rgba(226, 219, 0, 0.755);
-    color: rgb(60, 48, 127);
+    background-color: rgba(145, 85, 47, 0.707);
     }
 .banner-productions .banner-header {
-    // background-image: 
-    //     radial-gradient(
-    //         circle,
-    //         rgba(255, 30, 91, 0.7),
-    //         rgba(21, 36, 219, 0.7)
-    //         );
-    background-color: rgba(138, 48, 6, 0.769);
+    background-color: rgba(196, 48, 43, 0.701);
     }
 .banner-performances .banner-header {
-    // background-image: 
-    //     radial-gradient(
-    //         circle,
-    //         rgba(255, 30, 220, 0.72),
-    //         rgba(255, 130, 23, 0.7)
-    //         );
-    background-color: rgba(225, 50, 187, 0.803);
+    background-color: rgba(236, 173, 25, 0.707);
     }
 .banner-header h2 {
     background-image: url(../images/assets/arrow-r.svg);
@@ -103,6 +78,7 @@
     background-position: center right;
     background-size: 20px auto;
     margin-bottom: 0;
+    text-transform: uppercase;
     }
 @media (max-width: 1000px) {
     .banner-header {

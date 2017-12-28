@@ -31,21 +31,21 @@ body {
     //         rgb(255, 229, 158),
     //         rgb(255, 166, 248)
     //         );
-    background-image: 
-        radial-gradient(
-            farthest-corner at 0 0,
-            rgba(255, 162, 119, 0.6),
-            hsla(0, 80, 67,0) 50%
-            ),
-        radial-gradient(
-            farthest-corner at 100% 0,
-            rgba(255, 239, 160, 0.762),
-            rgba(255, 232, 115, 0) 50%
-            ),
-        radial-gradient(
-            rgba(85, 255, 0, 0.224),
-            rgba(194, 235, 255, 0.524)
-            );
+    // background-image: 
+    //     radial-gradient(
+    //         farthest-corner at 0 0,
+    //         rgba(255, 162, 119, 0.6),
+    //         hsla(0, 80, 67,0) 50%
+    //         ),
+    //     radial-gradient(
+    //         farthest-corner at 100% 0,
+    //         rgba(255, 239, 160, 0.762),
+    //         rgba(255, 232, 115, 0) 50%
+    //         ),
+    //     radial-gradient(
+    //         rgba(85, 255, 0, 0.224),
+    //         rgba(194, 235, 255, 0.524)
+    //         );
     background-attachment: fixed;
     min-height: 100vh;
     color: rgb(69, 69, 69);

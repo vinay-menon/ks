@@ -37,7 +37,6 @@
 .logo {
     display: flex;
     flex-direction: column;
-    padding-top: 30px;
 
     border-right: 1px solid $sectionBorderColor;
     }
@@ -50,11 +49,14 @@
 .logo-group {
     display: flex;
     // align-items: flex-end;
+    background-color: rgb(149, 81, 50);
+    color: white;
     text-decoration: none;
-    color: inherit;
+    // color: inherit;
     // flex-direction: column;
     // text-align: center;
     padding-bottom: 20px;
+    padding-top: 30px;
     padding-left: 30px;
     }
 @media (max-width: 750px) {

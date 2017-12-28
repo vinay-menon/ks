@@ -143,7 +143,6 @@ h2 {
 .logo {
   display: flex;
   flex-direction: column;
-  padding-top: 30px;
   border-right: 1px solid #cccccc;
 }
 
@@ -156,9 +155,11 @@ h2 {
 
 .logo-group {
   display: flex;
+  background-color: #955132;
+  color: white;
   text-decoration: none;
-  color: inherit;
   padding-bottom: 20px;
+  padding-top: 30px;
   padding-left: 30px;
 }
 
@@ -421,7 +422,7 @@ h2 {
 }
 
 .nav-item:nth-child(n+4) {
-  margin-top: 30px;
+  margin-top: 60px;
 }
 
 .nav-item a {
@@ -495,6 +496,16 @@ h2 {
   padding-bottom: 30px;
 }
 
+.content-header-nav.kathakali {
+  background-color: rgba(60, 176, 54, 0.803);
+  color: #ffffff;
+}
+
+.content-header-nav.training {
+  background-color: rgba(54, 129, 176, 0.803);
+  color: #ffffff;
+}
+
 .content-header-nav h1 {
   font-size: 2.4rem;
   font-weight: 300;
@@ -549,7 +560,7 @@ h2 {
 }
 
 .content-header-lnk-group a:hover {
-  background-color: #e6e6e6;
+  background-color: #ffffff;
 }
 
 .main-footer {
@@ -668,7 +679,6 @@ h2 {
   flex: 1;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 1px;
 }
 
 .banner {

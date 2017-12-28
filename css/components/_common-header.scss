@@ -10,7 +10,7 @@
 
     background-size: cover;
     
-    border-bottom: 1px solid rgb(221,221,221);
+    border-bottom: 1px solid $sectionBorderColor;
     }
 .main-fold .main-header {
     order: 2;
@@ -39,7 +39,7 @@
     flex-direction: column;
     padding-top: 30px;
 
-    border-right: 1px solid #ddd;
+    border-right: 1px solid $sectionBorderColor;
     }
 @media (max-width: 670px) {
     .logo {
@@ -133,7 +133,7 @@
     padding-top: 10px;
     // margin: 10px 0;
     margin-top: 20px;
-    border-top: 1px solid rgb(221,221,221);
+    border-top: 1px solid $sectionBorderColor;
     // order: -1;
     }
 
@@ -203,7 +203,7 @@
     display: flex;
     width: 100%;
     padding-left: 30px;
-    border-top: 1px solid #dddddd;
+    border-top: 1px solid $sectionBorderColor;
     }
 .-secondary .main-extra {
     width: auto;
@@ -214,7 +214,7 @@
 .emp-logo {
     max-width: 80px;
     padding: 20px 10px;
-    border-right: 1px solid #dddddd;
+    border-right: 1px solid $sectionBorderColor;
     }
 .-secondary .emp-logo {
     display: flex;
@@ -256,7 +256,7 @@
     justify-content: space-between;
     padding: 10px 15px;
     margin-left: auto;
-    border-left: 1px solid #ddd;
+    border-left: 1px solid $sectionBorderColor;
 
     a {
         margin-right: 0;

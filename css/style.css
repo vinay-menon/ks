@@ -21,6 +21,8 @@ body {
   background-color: white;
   background-color: #ebebeb;
   background-color: white;
+  background-image: radial-gradient(farthest-corner at 100% 0, rgba(255, 162, 119, 0.6), rgba(238, 104, 104, 0) 50%), radial-gradient(farthest-corner at 0 0, rgba(255, 239, 160, 0.762), rgba(255, 232, 115, 0) 50%), radial-gradient(rgba(129, 255, 66, 0.224), rgba(194, 235, 255, 0.524));
+  background-attachment: fixed;
   min-height: 100vh;
   color: #454545;
 }
@@ -75,7 +77,7 @@ h2 {
   padding: 20px 30px;
   min-width: 25%;
   max-width: 25%;
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #cccccc;
   margin-bottom: 1px;
   text-transform: uppercase;
   font-weight: 900;
@@ -105,7 +107,7 @@ h2 {
   align-items: flex-start;
   justify-content: space-between;
   background-size: cover;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #cccccc;
 }
 
 .main-header.-secondary {
@@ -142,7 +144,7 @@ h2 {
   display: flex;
   flex-direction: column;
   padding-top: 30px;
-  border-right: 1px solid #ddd;
+  border-right: 1px solid #cccccc;
 }
 
 @media (max-width: 670px) {
@@ -240,7 +242,7 @@ h2 {
   justify-content: space-between;
   padding-top: 10px;
   margin-top: 20px;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #cccccc;
 }
 
 .main-contact {
@@ -311,7 +313,7 @@ h2 {
   display: flex;
   width: 100%;
   padding-left: 30px;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #cccccc;
 }
 
 .-secondary .main-extra {
@@ -324,7 +326,7 @@ h2 {
 .emp-logo {
   max-width: 80px;
   padding: 20px 10px;
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #cccccc;
 }
 
 .-secondary .emp-logo {
@@ -372,7 +374,7 @@ h2 {
   justify-content: space-between;
   padding: 10px 15px;
   margin-left: auto;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #cccccc;
 }
 
 .main-extra .socmed a {
@@ -530,7 +532,7 @@ h2 {
 .content-header-lnk-group {
   display: flex;
   margin-top: auto;
-  border-top: 1px solid #dddddd;
+  border-top: 1px solid #cccccc;
 }
 
 .content-header-lnk-group a {
@@ -542,7 +544,7 @@ h2 {
 }
 
 .content-header-lnk-group a:not(:last-child) {
-  border-right: 1px solid #dddddd;
+  border-right: 1px solid #cccccc;
 }
 
 .content-header-lnk-group a:hover {
@@ -576,7 +578,7 @@ h2 {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #cccccc;
 }
 
 .quick-nav a {
@@ -591,7 +593,12 @@ h2 {
 .breadcrumbs {
   display: flex;
   padding: 20px;
+  padding-left: 30px;
   order: 2;
+}
+
+.breadcrumbs a {
+  display: block;
 }
 
 .breadcrumbs a + a:before {
@@ -646,6 +653,10 @@ h2 {
 
 .icon-fwd-c:before {
   content: url(../images/assets/icons/fwd-c.png);
+}
+
+.icon-home:before {
+  content: url(../images/assets/icons/home.png);
 }
 
 .main-banners {

@@ -60,7 +60,7 @@
 .content-header-lnk-group {
     display: flex;
     margin-top: auto;
-    border-top: 1px solid rgb(221, 221, 221);
+    border-top: 1px solid $sectionBorderColor;
 
     a {
         padding: 30px;
@@ -70,7 +70,7 @@
         transition: .17s background-color;
 
         &:not(:last-child) {
-            border-right: 1px solid rgb(221, 221, 221);
+            border-right: 1px solid $sectionBorderColor;
             }
         &:hover {
             background-color: #e6e6e6;

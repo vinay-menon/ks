@@ -9,22 +9,9 @@ body {
     font-family: "Segoe UI", sans-serif;
     font-family: 'Lato', "Segoe UI", sans-serif;
     font-family: 'Barlow Semi Condensed', sans-serif;
-    // padding: 5px;
-    border: 5px solid hsl(0, 67%, 56%);
-    background-color: hsl(51, 100%, 61%);
-    border: 5px solid hsl(0, 67%, 56%);
     border: 5px solid hsl(51, 100%, 61%);
-    background-color: hsl(51, 100%, 100%);
     background-color: rgb(235, 235, 235);
     background-color: rgb(255, 255, 255);
-	// background-image:
-	// 	linear-gradient(
-    //         15deg,
-	// 		rgb(61, 34, 81),
-	// 		rgb(38, 29, 52),
-	// 		rgb(245, 0, 0)
-	// 		);
-    // filter: invert(1);
     // background-image: 
     //     linear-gradient(
     //         65deg,
@@ -46,10 +33,16 @@ body {
     //         rgba(85, 255, 0, 0.224),
     //         rgba(194, 235, 255, 0.524)
     //         );
+    background-image: 
+        linear-gradient(
+            65deg,
+            rgb(30, 85, 93),
+            rgb(76, 60, 16)
+            );
     background-attachment: fixed;
     min-height: 100vh;
     color: rgb(69, 69, 69);
-    // color: white;
+    color: rgb(221, 221, 221);
     } 
 @media (max-width: 670px) {
     body {

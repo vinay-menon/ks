@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Lato:400,400i");
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700");
 @import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
 * {
@@ -21,7 +21,7 @@ body {
   background-color: white;
   background-color: #ebebeb;
   background-color: white;
-  background-image: radial-gradient(farthest-corner at 100% 0, rgba(255, 162, 119, 0.6), rgba(238, 104, 104, 0) 50%), radial-gradient(farthest-corner at 0 0, rgba(255, 239, 160, 0.762), rgba(255, 232, 115, 0) 50%), radial-gradient(rgba(129, 255, 66, 0.224), rgba(194, 235, 255, 0.524));
+  background-image: radial-gradient(farthest-corner at 0 0, rgba(255, 162, 119, 0.6), rgba(238, 104, 104, 0) 50%), radial-gradient(farthest-corner at 100% 0, rgba(255, 239, 160, 0.762), rgba(255, 232, 115, 0) 50%), radial-gradient(rgba(85, 255, 0, 0.224), rgba(194, 235, 255, 0.524));
   background-attachment: fixed;
   min-height: 100vh;
   color: #454545;
@@ -80,7 +80,7 @@ h2 {
   border-right: 1px solid #cccccc;
   margin-bottom: 1px;
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 .section-header {
@@ -497,7 +497,7 @@ h2 {
 
 .content-header-nav h1 {
   font-size: 2.4rem;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 .content-header-links {

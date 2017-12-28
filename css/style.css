@@ -321,6 +321,7 @@ h2 {
   align-self: stretch;
   padding-left: 0;
   align-items: stretch;
+  border-top: 0;
 }
 
 .emp-logo {
@@ -597,8 +598,10 @@ h2 {
   order: 2;
 }
 
-.breadcrumbs a {
+.breadcrumbs img {
   display: block;
+  margin-top: 1px;
+  opacity: .8;
 }
 
 .breadcrumbs a + a:before {
@@ -610,7 +613,7 @@ h2 {
 .quick-links {
   display: flex;
   align-items: center;
-  border-left: 1px solid #ddd;
+  border-left: 1px solid #cccccc;
 }
 
 .quick-links h2 {

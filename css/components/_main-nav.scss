@@ -27,7 +27,9 @@
     // background-position: bottom left;
     // padding-bottom: 8px;
     // padding: 10px;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 
     &:hover {
         h2 {
@@ -45,6 +47,8 @@
     text-decoration: none;
     color: inherit;
     display: block;
+
+    max-width: 85%;
     }
 .nav-item h2 {
     // font-weight: normal;

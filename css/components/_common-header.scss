@@ -200,7 +200,7 @@
 .main-extra {
     display: flex;
     width: 100%;
-    padding-left: 30px;
+    // padding-left: 30px;
     border-top: 1px solid $sectionBorderColor;
     }
 .-secondary .main-extra {
@@ -212,16 +212,23 @@
     }
 .emp-logo {
     display: flex;
-    max-width: 80px;
-    padding: 20px 10px;
+    padding: 10px;
     border-right: 1px solid $sectionBorderColor;
+
+    // background-color: #fff;
+
+    // filter: invert(1);
+
+    &:first-child {
+        padding-left: 30px;
+        }
     }
 .-secondary .emp-logo {
     // display: flex;
     }
 .emp-logo img {
-    width: 100%;
-    max-width: 100%;
+    min-width: 80px;
+    max-width: 80px;
     display: block;
     align-self: center;
     }

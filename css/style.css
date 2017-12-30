@@ -309,7 +309,6 @@ h2 {
 .main-extra {
   display: flex;
   width: 100%;
-  padding-left: 30px;
   border-top: 1px solid #cccccc;
 }
 
@@ -323,14 +322,17 @@ h2 {
 
 .emp-logo {
   display: flex;
-  max-width: 80px;
-  padding: 20px 10px;
+  padding: 10px;
   border-right: 1px solid #cccccc;
 }
 
+.emp-logo:first-child {
+  padding-left: 30px;
+}
+
 .emp-logo img {
-  width: 100%;
-  max-width: 100%;
+  min-width: 80px;
+  max-width: 80px;
   display: block;
   align-self: center;
 }

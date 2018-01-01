@@ -3,7 +3,7 @@
     flex-wrap: wrap;
     flex: 1;
     align-self: center;
-    padding: 0 30px;
+    padding: 0;
     }
 @media (max-width: 1374px) {
     .main-nav {
@@ -28,8 +28,7 @@
     // padding-bottom: 8px;
     // padding: 10px;
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    padding: 0 30px;
 
     &:hover {
         h2 {
@@ -48,7 +47,7 @@
     color: inherit;
     display: block;
 
-    max-width: 85%;
+    // max-width: 85%;
     }
 .nav-item h2 {
     // font-weight: normal;
@@ -56,10 +55,12 @@
     line-height: .75;
     margin-bottom: 10px;
     font-weight: 300;
-    text-transform: uppercase
+    text-transform: uppercase;
+    // letter-spacing: 2px;
     }
 .nav-item p {
     font-size: .9rem;
+    opacity: .8;
     // padding-right: 20px;
     }
 .extended-links {

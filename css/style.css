@@ -330,6 +330,10 @@ h2 {
   padding-left: 30px;
 }
 
+.-secondary .emp-logo:first-child {
+  padding-left: 10px;
+}
+
 .emp-logo img {
   min-width: 80px;
   max-width: 80px;
@@ -391,7 +395,7 @@ h2 {
   flex-wrap: wrap;
   flex: 1;
   align-self: center;
-  padding: 0 30px;
+  padding: 0;
 }
 
 @media (max-width: 1000px) {
@@ -410,8 +414,7 @@ h2 {
   width: 33.333%;
   transition: .3s;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  padding: 0 30px;
 }
 
 .nav-item:hover h2 {
@@ -426,7 +429,6 @@ h2 {
   text-decoration: none;
   color: inherit;
   display: block;
-  max-width: 85%;
 }
 
 .nav-item h2 {
@@ -439,6 +441,7 @@ h2 {
 
 .nav-item p {
   font-size: .9rem;
+  opacity: .8;
 }
 
 .extended-links {
@@ -647,7 +650,7 @@ h2 {
 
 [class*="icon-"]:before {
   opacity: .8;
-  padding: 8px 0;
+  padding: 0 0;
   margin-right: 8px;
   position: relative;
 }
@@ -670,6 +673,14 @@ h2 {
 
 .icon-home:before {
   content: url(../images/assets/icons/home.png);
+}
+
+.icon-white-block:before {
+  content: '';
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  opacity: .5;
 }
 
 .main-banners {
@@ -738,6 +749,7 @@ h2 {
   left: 0;
   right: 0;
   z-index: 2;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
 }
 
 .banner-training .banner-header {
@@ -763,6 +775,7 @@ h2 {
   background-size: 20px auto;
   margin-bottom: 0;
   text-transform: uppercase;
+  letter-spacing: 0px;
 }
 
 @media (max-width: 1000px) {

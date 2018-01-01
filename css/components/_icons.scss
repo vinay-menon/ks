@@ -1,7 +1,7 @@
 [class*="icon-"] {
     &:before {
         opacity: .8;
-        padding: 8px 0;
+        padding: 0 0;
         margin-right: 8px;
         position: relative;
         // top: 2px;
@@ -22,4 +22,11 @@
     }
 .icon-home:before {
     content: url(../images/assets/icons/home.png);
+    }
+.icon-white-block:before {
+    content: '';
+    height: 16px;
+    width: 16px;
+    background-color: #fff;
+    opacity: .5;
     }

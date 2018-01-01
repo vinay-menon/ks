@@ -223,8 +223,9 @@
         padding-left: 30px;
         }
     }
-.-secondary .emp-logo {
-    // display: flex;
+    
+.-secondary .emp-logo:first-child {
+    padding-left: 10px;
     }
 .emp-logo img {
     min-width: 80px;

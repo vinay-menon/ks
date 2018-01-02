@@ -504,7 +504,7 @@ h2 {
 }
 
 .content-header-nav.kathakali {
-  background-color: rgba(60, 176, 54, 0.803);
+  background-color: rgba(46, 159, 37, 0.803);
   color: #ffffff;
 }
 
@@ -1607,6 +1607,22 @@ h2 {
 
 .navarasam-header {
   width: 500px;
+  padding-right: 30px;
+}
+
+.navarasam-header h2 {
+  display: flex;
+}
+
+.navarasam-header h2:after {
+  content: '';
+  display: block;
+  flex: 1;
+  margin-left: 10px;
+  background-image: linear-gradient(white, white);
+  background-size: 100% 3px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .navarasam-content {
@@ -1617,12 +1633,24 @@ h2 {
 
 .navarasam-item {
   width: 33.333%;
-  background: #222;
+  padding: 10px;
 }
 
 .navarasam-img img {
   max-width: 100%;
   width: 100%;
-  padding: 10px;
+}
+
+.navarasam-img figcaption {
+  text-align: center;
+}
+
+.navarasam-name {
+  font-size: 2rem;
+}
+
+.navarasam-name-translation {
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
 /*# sourceMappingURL=style.css.map */

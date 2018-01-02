@@ -85,6 +85,9 @@
 .navarasam-header {
     width: 500px;
     padding-right: 30px;
+    align-self: flex-start;
+    position: sticky;
+    top: 30px;
 
     h2 {
         display: flex;

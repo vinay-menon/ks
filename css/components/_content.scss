@@ -1,6 +1,4 @@
 .content-header {
-    margin-bottom: 1px;
-
     display: flex;
     }
 
@@ -83,7 +81,7 @@
             border-right: 1px solid $sectionBorderColor;
             }
         &:hover {
-            background-color: #ffffff;
+            // background-color: #ffffff;
             }
         }
     }

@@ -1,0 +1,34 @@
+.kathakali-intro {
+    min-height: 500px;
+    background-color: #222;
+    }
+
+.kathakali-intro-header {
+    z-index: 2;
+    max-width: 500px;
+    padding: 30px;
+    top: 100px;
+    }
+
+.kathakali-intro-bg {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+    }
+
+.kathakali-columns {
+    display: flex;
+    flex-wrap: wrap;
+    }
+.kathakali-column {
+    width: 50%;
+    padding: 30px;
+
+    h2 {
+        background-color: #222;
+        padding: 100px 10px 0;
+        }
+    }

@@ -1599,4 +1599,30 @@ h2 {
   background-color: #222;
   padding: 100px 10px 0;
 }
+
+.navarasam {
+  padding: 30px;
+  display: flex;
+}
+
+.navarasam-header {
+  width: 500px;
+}
+
+.navarasam-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.navarasam-item {
+  width: 33.333%;
+  background: #222;
+}
+
+.navarasam-img img {
+  max-width: 100%;
+  width: 100%;
+  padding: 10px;
+}
 /*# sourceMappingURL=style.css.map */

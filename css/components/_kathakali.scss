@@ -29,8 +29,52 @@
 
     h2 {
         background-color: #222;
-        padding: 100px 10px 0;
+        background-size: 
+            100% 100px,
+            cover;
+        background-position: 
+            0 bottom,
+            50% 50%;
+        background-repeat: no-repeat;
+        padding: 200px 10px 0;
         }
+    }
+
+.kathakali-column-chutti {
+    background-image: 
+        linear-gradient(
+            hsla(0,0,0,0),
+            50%,
+            hsla(0,0,0,1)
+            ),
+        url(../images/kathakali-page/chutti-bg.jpg);
+    }
+.kathakali-column-expressions {
+    background-image: 
+        linear-gradient(
+            hsla(0,0,0,0),
+            50%,
+            hsla(0,0,0,1)
+            ),
+        url(../images/kathakali-page/expressions-bg.jpg);
+    }
+.kathakali-column-mudras {
+    background-image: 
+        linear-gradient(
+            hsla(0,0,0,0),
+            50%,
+            hsla(0,0,0,1)
+            ),
+        url(../images/kathakali-page/mudra-bg.jpg);
+    }
+.kathakali-column-ensemble {
+    background-image: 
+        linear-gradient(
+            hsla(0,0,0,0),
+            50%,
+            hsla(0,0,0,1)
+            ),
+        url(../images/kathakali-page/ensemble-bg.jpg);
     }
 
 .navarasam {

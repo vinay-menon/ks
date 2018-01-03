@@ -23,71 +23,42 @@
     display: flex;
     flex-wrap: wrap;
     }
+
 .kathakali-column {
     width: 50%;
     padding: 30px;
-    display: flex;
-    flex-direction: column;
 
     h2 {
-        height: 220px;
-        display: flex;
-        align-items: flex-end;
-        padding: 0 15px;
         margin: 0;
-
+        padding-top: 200px;
         background-size: cover;
-        background-position: 50% 50%;
 
         span {
-            background-color: hsla(0,0,0,.7);
-            padding: 15px;
-            width: 100%;
+            background-color: hsla(0,0,0,.8);
+            display: block;
+            margin: 0 15px;
+            padding: 10px 30px;
+            line-height: 1;
             }
         }
     p {
-        background-color: hsla(0,0,0,.7);
-        padding: 15px;
-        margin: 0 15px;    
-        flex: 1;
+        background-color: hsla(0,0,0,.5);
+        margin: 0 15px;
+        padding: 10px 30px 20px;
         }
     }
 
 .kathakali-column-chutti {
-    background-image: 
-        linear-gradient(
-            hsla(0,0,0,0),
-            50%,
-            hsla(0,0,0,1)
-            ),
-        url(../images/kathakali-page/chutti-bg.jpg);
+    background-image: url(../images/kathakali-page/chutti-bg.jpg);
     }
 .kathakali-column-expressions {
-    background-image: 
-        linear-gradient(
-            hsla(0,0,0,0),
-            50%,
-            hsla(0,0,0,1)
-            ),
-        url(../images/kathakali-page/expressions-bg.jpg);
+    background-image: url(../images/kathakali-page/expressions-bg.jpg);
     }
 .kathakali-column-mudras {
-    background-image: 
-        linear-gradient(
-            hsla(0,0,0,0),
-            50%,
-            hsla(0,0,0,1)
-            ),
-        url(../images/kathakali-page/mudra-bg.jpg);
+    background-image: url(../images/kathakali-page/mudra-bg.jpg);
     }
 .kathakali-column-ensemble {
-    background-image: 
-        linear-gradient(
-            hsla(0,0,0,0),
-            50%,
-            hsla(0,0,0,1)
-            ),
-        url(../images/kathakali-page/ensemble-bg.jpg);
+    background-image: url(../images/kathakali-page/ensemble-bg.jpg);
     }
 
 .navarasam {

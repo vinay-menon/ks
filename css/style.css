@@ -1593,14 +1593,31 @@ h2 {
 .kathakali-column {
   width: 50%;
   padding: 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 .kathakali-column h2 {
-  background-color: #222;
-  background-size: 100% 100px, cover;
-  background-position: 0 bottom, 50% 50%;
-  background-repeat: no-repeat;
-  padding: 200px 10px 0;
+  height: 220px;
+  display: flex;
+  align-items: flex-end;
+  padding: 0 15px;
+  margin: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.kathakali-column h2 span {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  width: 100%;
+}
+
+.kathakali-column p {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  margin: 0 15px;
+  flex: 1;
 }
 
 .kathakali-column-chutti {

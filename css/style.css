@@ -1604,22 +1604,21 @@ h2 {
   padding: 0 15px;
   margin: 0;
   font-size: 1.4rem;
-  font-weight: 300;
   background-size: cover;
   background-position: 0 100%;
   background-repeat: no-repeat;
 }
 
 .kathakali-column h2 span {
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 15px 15px 10px;
+  background-image: linear-gradient(135deg, rgba(83, 133, 79, 0.803), rgba(235, 145, 37, 0.8));
+  padding: 15px 30px 10px;
   width: 100%;
   line-height: 1;
 }
 
 .kathakali-column p {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 15px;
+  padding: 15px 30px 30px;
   margin: 0 15px;
   flex: 1;
 }

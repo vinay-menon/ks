@@ -504,7 +504,7 @@ h2 {
 }
 
 .content-header-nav.kathakali {
-  background-color: rgba(46, 159, 37, 0.803);
+  background-image: linear-gradient(rgba(83, 133, 79, 0.803), rgba(235, 185, 77, 0.524));
   color: #ffffff;
 }
 
@@ -1592,7 +1592,7 @@ h2 {
 
 .kathakali-column {
   width: 50%;
-  padding: 30px;
+  padding: 30px 15px 0;
   display: flex;
   flex-direction: column;
 }
@@ -1603,14 +1603,18 @@ h2 {
   align-items: flex-end;
   padding: 0 15px;
   margin: 0;
+  font-size: 1.4rem;
+  font-weight: 300;
   background-size: cover;
-  background-position: 50% 50%;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
 }
 
 .kathakali-column h2 span {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 5px 15px 0;
+  padding: 15px 15px 10px;
   width: 100%;
+  line-height: 1;
 }
 
 .kathakali-column p {

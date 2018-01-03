@@ -8,7 +8,11 @@
     padding-bottom: 30px;
 
     &.kathakali {
-        background-color: rgba(46, 159, 37, 0.803);
+        background-image: 
+            linear-gradient(
+                rgba(83, 133, 79, 0.803),
+                rgba(235, 185, 77, 0.524)
+                );
         color: #ffffff;
         }
 

@@ -1598,7 +1598,7 @@ h2 {
 }
 
 .kathakali-column h2 {
-  height: 220px;
+  height: 300px;
   display: flex;
   align-items: flex-end;
   padding: 0 15px;
@@ -1609,7 +1609,7 @@ h2 {
 
 .kathakali-column h2 span {
   background-color: rgba(0, 0, 0, 0.7);
-  padding: 15px;
+  padding: 5px 15px 0;
   width: 100%;
 }
 
@@ -1621,19 +1621,19 @@ h2 {
 }
 
 .kathakali-column-chutti {
-  background-image: linear-gradient(transparent, 50%, black), url(../images/kathakali-page/chutti-bg.jpg);
+  background-image: url(../images/kathakali-page/chutti-bg.jpg);
 }
 
 .kathakali-column-expressions {
-  background-image: linear-gradient(transparent, 50%, black), url(../images/kathakali-page/expressions-bg.jpg);
+  background-image: url(../images/kathakali-page/expressions-bg.jpg);
 }
 
 .kathakali-column-mudras {
-  background-image: linear-gradient(transparent, 50%, black), url(../images/kathakali-page/mudra-bg.jpg);
+  background-image: url(../images/kathakali-page/mudra-bg.jpg);
 }
 
 .kathakali-column-ensemble {
-  background-image: linear-gradient(transparent, 50%, black), url(../images/kathakali-page/ensemble-bg.jpg);
+  background-image: url(../images/kathakali-page/ensemble-bg.jpg);
 }
 
 .navarasam {

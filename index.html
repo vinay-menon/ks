@@ -189,13 +189,9 @@
         </section>
     </div>
     
-    <section class="main-about v-pad">
-       <div class="about-intro">
-            <div class="about-intro_img">
-                <img src="images/about-kathakali.jpg" alt="">
-            </div>
-            <div class="about-intro_text">
-                <h2>Kathakali School</h2>
+    <section class="hero-block">
+            <div class="floating-header">
+                <h2 class="content-heading">Kathakali School</h2>
                 <p>
                    Kathakali School Society, a centre for performing arts and culture is situated in Cheruthuruthy, Kerala, India since 1990. It is a unified effort by a group of enthusiasts led by Kalamandalam Gopalakrishnan. The staff at Kathakali School is highly qualified and they are eminent performers. Kathakali School Society was registered under the Societies Act on 10-09-2008 and bears the Reg. No. R-460/08.
                 </p>
@@ -203,7 +199,6 @@
                     We are primarily a teaching institution and the school concentrates on the classical performing art forms of Kerala – Kathakali and Mohiniyattam. Bharathanatyam and Kuchuppudi and several folk and martial-arts forms are also taught here. The School is a non-profit organization. We do not charge our regular students any fees. <a href="#">Read more about us.</a>
                 </p>
             </div>
-       </div>
 <!--
        <div class="about-address">
             <p>
@@ -221,9 +216,10 @@
             </p>
        </div>
 -->
-       <div class="about-map">
+       <!-- <div class="about-map">
            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15680.009935020682!2d76.279464!3d10.7342913!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc7a507ff83dc5ff8!2sKathakali+School!5e0!3m2!1sen!2sin!4v1511687164213" frameborder="0" style="border:0" allowfullscreen></iframe>
-       </div>
+       </div> -->
+        <img src="images/about-kathakali.jpg" class="hero-block_bg" alt="">
     </section>
     
     <div class="main-shows">
@@ -296,9 +292,9 @@
         </div>
     </div>
     
-    <div class="main-event-slides">
+    <!-- <div class="main-event-slides">
         <img src="images/event-highlights/national2015.jpg" alt="">
-    </div>
+    </div> -->
     
     <footer class="main-footer">
         <div class="main-nav-trigger">
@@ -331,7 +327,7 @@
     var flkty = new Flickity(
         '.flickity',
          { 
-             "cellAlign": "left", 
+             "imagesLoaded": true,
              "contain": true, 
              "autoPlay": 0,
              "prevNextButtons": true,

@@ -1,33 +1,20 @@
-.kathakali-intro {
-    min-height: 500px;
-    background-color: #222;
-    }
-
-.kathakali-intro-header {
-    z-index: 2;
-    max-width: 500px;
-    padding: 30px;
-    top: 100px;
-    }
-
-.kathakali-intro-bg {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    object-fit: cover;
-    }
-
 .kathakali-columns {
     display: flex;
     flex-wrap: wrap;
+    padding: 15px;
     }
 .kathakali-column {
     width: 50%;
-    padding: 30px 15px 0;
     display: flex;
+    padding-top: 30px;
     flex-direction: column;
+
+    &:nth-child(odd) {
+        padding-right: 15px;
+        }
+    &:nth-child(even) {
+        padding-left: 15px;
+        }
 
     h2 {
         height: 300px;

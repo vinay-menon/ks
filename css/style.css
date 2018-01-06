@@ -424,6 +424,7 @@ h2 {
 
 .nav-item:hover h2 {
   text-decoration: underline;
+  color: #ff82ff;
 }
 
 .nav-item:nth-child(n+4) {
@@ -569,6 +570,7 @@ h2 {
 .content-section {
   padding: 30px;
   display: flex;
+  margin-top: 30px;
 }
 
 .content-section-header.-half {
@@ -631,6 +633,39 @@ h2 {
 .content-block_label-translation {
   text-transform: uppercase;
   letter-spacing: 5px;
+}
+
+.hero-block {
+  min-height: 500px;
+  background-color: #222;
+  display: flex;
+}
+
+.hero-block > * {
+  z-index: 2;
+}
+
+.floating-header {
+  max-width: 500px;
+  padding: 30px;
+  margin: auto 0 auto;
+}
+
+.floating-header p {
+  letter-spacing: 1px;
+}
+
+.hero-block_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  object-fit: cover;
+  mix-blend-mode: color-dodge;
 }
 
 .main-footer {
@@ -745,6 +780,8 @@ h2 {
   content: '';
   height: 16px;
   width: 16px;
+  min-height: 16px;
+  min-width: 16px;
   background-color: #fff;
   opacity: .5;
 }
@@ -883,29 +920,11 @@ h2 {
         }
     }
 */
-.main-about {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
+.content-section--about {
+  background-image: url(../images/about-kathakali.jpg);
   background-size: cover;
-  margin-bottom: 5px;
-}
-
-.main-about > * {
-  padding: 30px;
-  flex: 1;
-}
-
-@media (max-width: 1000px) {
-  .main-about > * {
-    padding: 20px;
-  }
-}
-
-@media (max-width: 670px) {
-  .main-about > * {
-    padding: 10px;
-  }
+  min-height: 500px;
+  margin-top: 0;
 }
 
 .about-intro {
@@ -1005,6 +1024,7 @@ h2 {
 }
 
 .show-cell {
+  display: block;
   width: 30%;
   padding: 30px;
   background-color: white;
@@ -1046,6 +1066,7 @@ h2 {
 }
 
 .show-photo img {
+  display: block;
   width: 100%;
   max-width: 100%;
 }
@@ -1628,40 +1649,25 @@ h2 {
   display: none;
 }
 
-.kathakali-intro {
-  min-height: 500px;
-  background-color: #222;
-}
-
-.kathakali-intro-header {
-  z-index: 2;
-  max-width: 500px;
-  padding: 30px;
-  top: 100px;
-}
-
-.kathakali-intro-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  object-fit: cover;
-}
-
 .kathakali-columns {
   display: flex;
   flex-wrap: wrap;
+  padding: 15px;
 }
 
 .kathakali-column {
   width: 50%;
-  padding: 30px 15px 0;
   display: flex;
+  padding-top: 30px;
   flex-direction: column;
+}
+
+.kathakali-column:nth-child(odd) {
+  padding-right: 15px;
+}
+
+.kathakali-column:nth-child(even) {
+  padding-left: 15px;
 }
 
 .kathakali-column h2 {

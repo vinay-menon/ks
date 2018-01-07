@@ -1,10 +1,11 @@
 [class*="icon-"] {
     &:before {
-        opacity: .8;
+        // opacity: .8;
         padding: 0 0;
         margin-right: 8px;
         position: relative;
         // top: 2px;
+        filter: invert(1);
         }
     }
 

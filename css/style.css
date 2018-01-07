@@ -510,7 +510,7 @@ h2 {
 }
 
 .content-header-nav.training {
-  background-color: rgba(54, 129, 176, 0.803);
+  background-image: linear-gradient(rgba(126, 156, 226, 0.429), rgba(192, 64, 196, 0.803));
   color: #ffffff;
 }
 
@@ -570,6 +570,9 @@ h2 {
 .content-section {
   padding: 30px;
   display: flex;
+}
+
+.content-section + .content-section {
   margin-top: 30px;
 }
 
@@ -641,10 +644,6 @@ h2 {
   display: flex;
 }
 
-.hero-block > * {
-  z-index: 2;
-}
-
 .floating-header {
   max-width: 500px;
   padding: 30px;
@@ -655,7 +654,11 @@ h2 {
   letter-spacing: 1px;
 }
 
-.hero-block_bg {
+.block-w-bg > * {
+  z-index: 2;
+}
+
+.block-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -750,10 +753,10 @@ h2 {
 }
 
 [class*="icon-"]:before {
-  opacity: .8;
   padding: 0 0;
   margin-right: 8px;
   position: relative;
+  filter: invert(1);
 }
 
 .icon-info:before {
@@ -1028,7 +1031,7 @@ h2 {
   width: 30%;
   padding: 30px;
   background-color: white;
-  color: inherit;
+  color: #39532d;
   text-decoration: none;
   min-width: 300px;
 }
@@ -1263,14 +1266,14 @@ h2 {
   background-size: cover;
 }
 
-.artforms-main {
+.blocks-main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 5px;
 }
 
-.artforms-main .artform-block {
+.blocks-main .artform-block {
   width: 25%;
   min-height: 450px;
   display: flex;
@@ -1278,15 +1281,11 @@ h2 {
   justify-content: flex-end;
 }
 
-.artforms-main .artform-block:nth-child(4n) ~ .artform-block {
+.blocks-main .artform-block:nth-child(4n) ~ .artform-block {
   border-top: 1px solid white;
 }
 
-.artforms-main .artform-block + .artform-block {
-  border-left: 1px solid white;
-}
-
-.artforms-main .artform-block-header {
+.blocks-main .artform-block-header {
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
@@ -1294,11 +1293,11 @@ h2 {
   flex-direction: column;
 }
 
-.artforms-main .artform-block-header h2 {
+.blocks-main .artform-block-header h2 {
   font-size: 1.2rem;
 }
 
-.artforms-main .artform-block-header a {
+.blocks-main .artform-block-header a {
   color: white;
 }
 
@@ -1404,7 +1403,6 @@ h2 {
 
 .steps {
   flex: 1;
-  background-color: white;
   overflow: hidden;
 }
 
@@ -1619,7 +1617,6 @@ h2 {
 .artform-item {
   width: calc(100% / 6);
   padding: 5px;
-  background-size: cover;
   border: 1px solid #fff;
 }
 

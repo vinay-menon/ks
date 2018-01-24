@@ -27,8 +27,8 @@
     // background-position: bottom left;
     // padding-bottom: 8px;
     // padding: 10px;
-    display: flex;
     padding: 0 30px;
+    padding-left: 40px;
 
     &:hover {
         h2 {
@@ -47,8 +47,6 @@
     text-decoration: none;
     color: inherit;
     display: block;
-
-    // max-width: 85%;
     }
 .nav-item h2 {
     // font-weight: normal;
@@ -57,12 +55,10 @@
     margin-bottom: 10px;
     font-weight: 300;
     text-transform: uppercase;
-    // letter-spacing: 2px;
     }
 .nav-item p {
     font-size: .9rem;
     opacity: .8;
-    // padding-right: 20px;
     }
 .extended-links {
     display: none;
@@ -89,22 +85,5 @@
         }
     .nav-item:nth-child(n+4) {
         margin-top: 0;
-        }
-    }
-
-.main-nav-trigger {
-    position: fixed;
-    top: 0; left: 0; right: 0;
-    z-index: 4;
-    
-    background-color: white;
-    text-align: center;
-    height: 30px;
-    line-height: 30px;
-    display: none;
-    }
-@media (max-width: 670px) {
-    .main-nav-trigger {
-        display: block;
         }
     }

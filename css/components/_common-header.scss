@@ -4,7 +4,8 @@
     align-items: flex-start;
     justify-content: space-between;
 
-    &.-secondary {
+    &.-secondary .id-collection {
+        display: flex;
         justify-content: flex-start;
         }
 

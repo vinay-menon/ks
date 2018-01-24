@@ -16,7 +16,7 @@ $navTrigger.on("click", function(e){
         }
 });
 
-$mainHeader.on("keydown", function(e){
+$(document).on("keydown", function(e){
     e.preventDefault();
     if ($navTrigger.hasClass("is-active") && e.keyCode == 27) {
         $mainHeader.removeClass("nav-open");

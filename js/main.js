@@ -57,4 +57,5 @@ $("body").on("click", ".artform-item", function(e) {
         } else if ($(".selected-artforms-group").not(":has(.selected-artform)")) {
             $("#form-part-2").removeClass("is-active");
             }
+    $(".selected-artform-counter").html($(".selected-artform").length);
 });

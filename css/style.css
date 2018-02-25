@@ -1752,6 +1752,15 @@ body.no-scroll {
   object-fit: cover;
 }
 
+.artform-item-label {
+  padding: 10px;
+}
+
+.artform-item-label .name {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
 .progress-tracker {
   flex: 1;
   background-color: white;
@@ -1791,20 +1800,40 @@ body.no-scroll {
   padding-right: 10px;
 }
 
-#form-part-2 h2 {
+#form-part-2 header {
   display: none;
   padding: 10px;
   background-color: #ffc62a;
   color: #222;
   margin-bottom: 10px;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+#form-part-2 header h2 {
+  font-size: 1.4rem;
+}
+
+#form-part-2 header .selected-artform-counter {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  font-size: 1.2rem;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  margin-left: auto;
+  margin-right: 10px;
 }
 
 #form-part-2.is-active {
   width: 25%;
 }
 
-#form-part-2.is-active h2 {
-  display: block;
+#form-part-2.is-active header {
+  display: flex;
 }
 
 .selected-artforms-group {

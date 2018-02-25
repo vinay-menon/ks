@@ -52,6 +52,16 @@
         object-fit: cover;
         }
     }
+        
+.artform-item-label {
+    padding: 10px;
+
+    .name {
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        }
+    }
+
 
 .progress-tracker {
     flex: 1;
@@ -90,19 +100,39 @@
     transition: .3s;
     padding-right: 10px;
 
-    h2 {
+    header {
         display: none;
         padding: 10px;
         background-color: rgb(255, 198, 42);
         color: #222;
         margin-bottom: 10px;
+        justify-content: flex-start;
+        align-content: center;
+
+        h2 {
+            font-size: 1.4rem;
+            }
+
+        .selected-artform-counter {
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            font-size: 1.2rem;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-self: flex-start;
+            margin-left: auto;
+            margin-right: 10px;
+            }
         }
 
     &.is-active {
         width: 25%;
 
-        h2 {
-            display: block;
+        header {
+            display: flex;
             }
         }
     }

@@ -299,13 +299,14 @@
                 <header>
                     <h2>Selected Artforms: </h2>
                     <div class="selected-artform-counter"></div>
-                    <p>
-                        If you have finished selecting art forms, proceed to <button>next step</button>.
+                    <p class="artform-selection-instruction-1">
+                        If you have finished selecting art forms, proceed to <button class="artform-selection-final-step-btn">next step</button>.
+                    </p>
+                    <p class="artform-selection-instruction-2">
+                        Select more artforms? <button class="artform-selection-prev-step-btn">previous step</button>.
                     </p>
                 </header>
-                <div class="selected-artforms-group">
-
-                </div>
+                <div class="selected-artforms-group"></div>
             </div>
 
             <div id="form-part-3">
@@ -324,6 +325,10 @@
                     </label>
                     <label for="user-place">
                         <div class="label">Place</div>
+                        <input type="text" id="user-place">
+                    </label>
+                    <label for="user-place">
+                        <div class="label">Date of Event</div>
                         <input type="text" id="user-place">
                     </label>
                     <label for="user-message">

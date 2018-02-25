@@ -1,43 +1,27 @@
-$(function () {
+// $(function () {
 
-    var sticky = $('.content-header-lnk-group');
+//     var sticky = $('.content-header-lnk-group');
 
-    var top = sticky.offset().top - parseFloat(sticky.css('margin-top').replace(/auto/, 0));
+//     var top = sticky.offset().top - parseFloat(sticky.css('margin-top').replace(/auto/, 0));
 
-    $(window).on('scroll', function(event) {
-        // what the y position of the scroll is
-        var y = $(this).scrollTop();
+//     $(window).on('scroll', function(event) {
+//         // what the y position of the scroll is
+//         var y = $(this).scrollTop();
 
-        // whether that's below the form
-        if (y >= top) {
-            // if so, ad the fixed class
-            if ( sticky.is('.is-fixed') ) {
-                return;
-            }
-            sticky.addClass('is-fixed');
-        } else {
-            // otherwise remove it
-            sticky.removeClass('is-fixed');
-        }
-    });
+//         // whether that's below the form
+//         if (y >= top) {
+//             // if so, ad the fixed class
+//             if ( sticky.is('.is-fixed') ) {
+//                 return;
+//             }
+//             sticky.addClass('is-fixed');
+//         } else {
+//             // otherwise remove it
+//             sticky.removeClass('is-fixed');
+//         }
+//     });
 
-});
-
-// REFACTOR
-// TODO: VERIFY BEFORE NEXT STEP
-
-$(".progress-1").on("click", function(e) {
-    e.preventDefault();
-    $("#content").removeClass("on-step-2").removeClass("on-step-3").addClass("on-step-1");
-});
-$(".progress-2").on("click", function(e) {
-    e.preventDefault();
-    $("#content").removeClass("on-step-1").removeClass("on-step-3").addClass("on-step-2");
-});
-$(".progress-3").on("click", function(e) {
-    e.preventDefault();
-    $("#content").removeClass("on-step-1").removeClass("on-step-2").addClass("on-step-3");
-});
+// });
 
 $("body").on("click", ".artform-item", function(e) {
     e.preventDefault();
@@ -47,7 +31,7 @@ $("body").on("click", ".artform-item", function(e) {
 
 	if($(this).hasClass("is-selectable")){
 		$(this).removeClass("is-selectable").addClass("is-selected");
-		$(".selected-artforms-group").prepend("<div class='selected-artform " + $label + "'><button class='selected-artform-close'>X</button>" + "<label><span class='selected-artform-name'>" + $label + "</span><span class='selected-artform-msg'>No. of Artists Required:</span></label>" + "<input type='number' min='" + $minMembers + "' value='" + $minMembers + "'></div>");
+		$(".selected-artforms-group").prepend("<div class='selected-artform " + $label + "'><button class='selected-artform-close'>X</button>" + "<div class='selected-artform-img'><img src='" + $(this).find("img").attr("src") + "'></div>" + "<label><span class='selected-artform-name'>" + $label + "</span><span class='selected-artform-msg'>No. of Artists Required:</span>" + "<input type='number' min='" + $minMembers + "' value='" + $minMembers + "'></label></div>");
 	} else if ($(this).hasClass("is-selected")) {
 		$(".selected-artforms-group ."+$label).remove();
 		$(this).removeClass("is-selected").addClass("is-selectable");
@@ -72,4 +56,17 @@ $("body").on("click", ".selected-artform-close", function() {
             $("#form-part-2").removeClass("is-active");
             }
     $(".selected-artform-counter").html($(".selected-artform").length);
+});
+
+$("body").on("click", ".selected-artform:only-child .selected-artform-close", function() {
+    $(".forms").removeClass("final-step");
+});
+
+$(".artform-selection-final-step-btn").on("click", function(e) {
+    e.preventDefault();
+    $(".forms").addClass("final-step");
+});
+$(".artform-selection-prev-step-btn").on("click", function(e) {
+    e.preventDefault();
+    $(".forms").removeClass("final-step");
 });

@@ -47,11 +47,25 @@ $("body").on("click", ".artform-item", function(e) {
 
 	if($(this).hasClass("is-selectable")){
 		$(this).removeClass("is-selectable").addClass("is-selected");
-		$(".selected-artforms-group").prepend("<div class='selected-artform " + $label + "'>" + "<label><span class='selected-artform-name'>" + $label + "</span><span class='selected-artform-msg'>No. of Artists Required:</span></label>" + "<input type='number' min='" + $minMembers + "' value='" + $minMembers + "'></div>");
+		$(".selected-artforms-group").prepend("<div class='selected-artform " + $label + "'><button class='selected-artform-close'>X</button>" + "<label><span class='selected-artform-name'>" + $label + "</span><span class='selected-artform-msg'>No. of Artists Required:</span></label>" + "<input type='number' min='" + $minMembers + "' value='" + $minMembers + "'></div>");
 	} else if ($(this).hasClass("is-selected")) {
 		$(".selected-artforms-group ."+$label).remove();
 		$(this).removeClass("is-selected").addClass("is-selectable");
 	   }
+    if ($(".selected-artform").length > 0) {
+        $("#form-part-2").addClass("is-active");
+        } else if ($(".selected-artforms-group").not(":has(.selected-artform)")) {
+            $("#form-part-2").removeClass("is-active");
+            }
+    $(".selected-artform-counter").html($(".selected-artform").length);
+});
+
+$("body").on("click", ".selected-artform-close", function() {
+	var mlap = $(this).parent().attr("class").toLowerCase().replace("selected-artform ", "");
+
+	$(".artform-item[data-label='" + mlap + "']").removeClass("is-selected").addClass("is-selectable");
+	console.log(mlap);
+	$(".selected-artform."+mlap).remove();
     if ($(".selected-artform").length > 0) {
         $("#form-part-2").addClass("is-active");
         } else if ($(".selected-artforms-group").not(":has(.selected-artform)")) {

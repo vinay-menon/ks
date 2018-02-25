@@ -50,6 +50,7 @@
     }
 
 .lnk-prom {
+    display: inline-block;
     padding: 10px;
     background-color: rgb(87, 214, 87);
     color: white;
@@ -57,4 +58,12 @@
     text-decoration: none;
     font-weight: bold;
     align-self: flex-start;
+    box-shadow: 0 2px 2px rgb(73, 142, 73);
+    transition: .2s;
+
+    &:hover {
+        background-color: rgb(104, 209, 104);
+        box-shadow: 0 5px 5px rgb(138, 165, 138);
+        transform: translateY(-2px);
+        }
     }

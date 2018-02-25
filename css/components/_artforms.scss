@@ -6,21 +6,17 @@
 
     .artform-block {
         width: 25%;
-        min-height: 450px;
+        // min-height: 350px;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
-
-        &:nth-child(4n) ~ .artform-block {
-            border-top: 1px solid white;
-            }
+        border: 1px solid transparent;
 
         + .artform-block {
             // border-left: 1px solid white;
             }
         }
     .artform-block-header { 
-        padding: 20px;
         background-color: hsla(0,0,0,.6);
         color: white;
         display: flex;
@@ -29,15 +25,12 @@
         h2 {
             font-size: 1.2rem;
             }
-        a {
-            color: white;
-            }
         }
     }
 
 .artform-block {
     background-size: cover;
-    background-position: center center;
+    background-position: 50% 20%;
     
     &.kathakali {
         background-image: url(../images/artforms/kathakali.jpg);
@@ -54,9 +47,58 @@
     &.chutti {
         background-image: url(../images/artforms/chutti.jpg);
         }
+    
+    h2 {
+        margin: 10px 0;
+        }
+    }
+
+.artforms-main {
+    display: flex;
+
+    .artform-block {
+        min-height: 450px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        color: white;
+        text-decoration: none;
+        margin: 10px 5px;
+
+        &:first-child {
+            margin-left: 10px;
+            }
+        &:last-child {
+            margin-right: 10px;
+            }
+
+        header {
+            padding: 10px 20px;
+            padding-top: 0; // h2 has margin-top: 10px so evens out
+            background-color: hsla(0,0,0,.6);
+            }
+
+        h2 {
+            background-image: url(../images/assets/arrow-r.svg);
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: 20px auto;
+            margin-bottom: 0;
+            }
+        }
+    }
+
+.artform-block-header-text {
+    padding: 20px; 
+    background-color: #fff;
+    color: #222; 
     }
 
 .artforms-multi-col {
+    padding: 5px;
+    padding-bottom: 0; //column items have 5px pad-bottom
+
     column-count: 4;
     column-gap: 5px;
     
@@ -74,8 +116,27 @@
         }
     }
 
+.artform-blocks_training .artform-block {
+    width: 33.333%;
+    padding: 5px;
+
+    .artform-block-header {
+        flex-direction: row;
+
+        .artform-block-header-text {
+            flex: 1;
+            }
+        }
+    }
+
+.artform-blocks_training .artform-block-img img {
+    object-fit: cover;
+    object-position: 50% 10%;
+    height: 350px;
+    }
+
 .artform-block-img {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
     }
 .artform-block-img img {
     width: 100%;

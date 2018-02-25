@@ -1,11 +1,55 @@
+.forms {
+    display: flex;
+    overflow-x: hidden;
+    }
+
 .artform-selection {
     display: flex;
     flex-wrap: wrap;
-    // margin: 0 -5px;
-    transition: 2s;
+    align-content: flex-start;
+    padding: 10px;
+    }
 
-    &.hide-section {
-        display: none;
+.artform-item {
+    width: calc(100% / 6);
+    flex: 0 0 calc(100% / 6 - 10px);
+    cursor: pointer;
+    margin: 5px;
+    border: 0;
+
+    &:focus {
+        outline: 3px solid dodgerblue;
+        }
+
+    &.is-selected {
+        background-image: linear-gradient(
+            rgb(51, 165, 51),
+            rgb(71, 207, 71)
+            );
+        background-repeat: no-repeat;
+        background-size: calc(100% ) calc(100%);
+
+        &:after {
+            content: "✔";
+            position: absolute;
+            z-index: 9;
+            top: 5px; right: 5px;
+            color: white;
+            padding: 5px;
+            background-color: rgb(71, 207, 71);
+            }
+        
+        .artform-item-label {
+            color: #fff;
+            }
+        }
+    
+    img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: 300px;
+        object-fit: cover;
         }
     }
 
@@ -41,218 +85,89 @@
         }
     }
 
-.on-step-1 .progress-1,
-.on-step-2 .progress-2,
-.on-step-3 .progress-3 {
-    background-color: hsl(51, 100%, 61%);
-    }
+#form-part-2 {
+    width: 0;
+    transition: .3s;
+    padding-right: 10px;
 
-.steps {
-    flex: 1;
-    overflow: hidden;
-
-    .step-2,
-    .step-3 {
+    h2 {
         display: none;
+        padding: 10px;
+        background-color: rgb(255, 198, 42);
+        color: #222;
+        margin-bottom: 10px;
         }
-    }
 
-.on-step-2 {
-    .step-1 {
-        display: none;
-        }
-    .step-2 {
-        display: block;
-        }
-    } 
-.on-step-3 {
-    .step-1,
-    .step-2 {
-        display: none;
-        }
-    .step-3 {
-        display: block;
-        }
-    }   
+    &.is-active {
+        width: 25%;
 
-    
-.artform-input-fields > [for^="art-"] {
-    display: none;
-    }
-    
-.checkbox-hax {
-    display: none;
-
-    &#kathakali:checked ~ .artform-selection label[for="kathakali"],
-    &#mohiniyattam:checked ~ .artform-selection label[for="mohiniyattam"],
-    &#kalaripayattu:checked ~ .artform-selection label[for="kalaripayattu"],
-    &#bharathanatyam:checked ~ .artform-selection label[for="bharathanatyam"],
-    &#theyyam:checked ~ .artform-selection label[for="theyyam"],
-    &#thiruvathirakali:checked ~ .artform-selection label[for="thiruvathirakali"],
-    &#panchavadhyam:checked ~ .artform-selection label[for="panchavadhyam"],
-    &#pookkavadi:checked ~ .artform-selection label[for="pookkavadi"],
-    &#kuchipudi:checked ~ .artform-selection label[for="kuchipudi"],
-    &#mayooranritham:checked ~ .artform-selection label[for="mayooranritham"],
-    &#poothankali:checked ~ .artform-selection label[for="poothankali"],
-    &#poothan-thira:checked ~ .artform-selection label[for="poothan-thira"],
-    &#pulikali:checked ~ .artform-selection label[for="pulikali"],
-    &#kummatti:checked ~ .artform-selection label[for="kummatti"],
-    &#poothankali:checked ~ .artform-selection label[for="poothankali"],
-    &#nilakavadi:checked ~ .artform-selection label[for="nilakavadi"] {
-        background-image: linear-gradient(
-            rgb(51, 165, 51),
-            rgb(71, 207, 71)
-            );
-        background-repeat: no-repeat;
-        background-size: calc(100% ) calc(100%);
-
-        &:after {
-            content: "✔";
-            position: absolute;
-            z-index: 9;
-            top: 5px; right: 5px;
-            color: white;
-            padding: 5px;
-            background-color: rgb(71, 207, 71);
-            }
-        
-        .artform-item-label {
-            color: #fff;
+        h2 {
+            display: block;
             }
         }
-    
-    &#kathakali:checked ~ #form-part-2 [for="art-kathakali"],
-    &#mohiniyattam:checked ~ #form-part-2 [for="art-mohiniyattam"],
-    &#kalaripayattu:checked ~ #form-part-2 [for="art-kalaripayattu"],
-    &#bharathanatyam:checked ~ #form-part-2 [for="art-bharathanatyam"],
-    &#theyyam:checked ~ #form-part-2 [for="art-theyyam"],
-    &#thiruvathirakali:checked ~ #form-part-2 [for="art-thiruvathirakali"],
-    &#panchavadhyam:checked ~ #form-part-2 [for="art-panchavadhyam"],
-    &#pookkavadi:checked ~ #form-part-2 [for="art-pookkavadi"],
-    &#kuchipudi:checked ~ #form-part-2 [for="art-kuchipudi"],
-    &#mayooranritham:checked ~ #form-part-2 [for="art-mayooranritham"],
-    &#poothankali:checked ~ #form-part-2 [for="art-poothankali"],
-    &#poothan-thira:checked ~ #form-part-2 [for="art-poothan-thira"],
-    &#pulikali:checked ~ #form-part-2 [for="art-pulikali"],
-    &#kummatti:checked ~ #form-part-2 [for="art-kummatti"],
-    &#poothankali:checked ~ #form-part-2 [for="art-poothankali"],
-    &#nilakavadi:checked ~ #form-part-2 [for="art-nilakavadi"] {
-        display: flex;
-        flex-direction: column;
+    }
+
+.selected-artforms-group {
+    display: flex;
+    flex-direction: column;
+
+    .selected-artform {
+        background-color: #fff;
+        padding: 10px;
+        color: #222;
+        margin-bottom: 10px;
+
+        animation: 
+            .3s slide-in-right forwards,
+            2s fade-in-bg forwards;
+        }
+    label, input {
+        display: block;
+        }
+    label {
+        text-transform: capitalize;
+        margin-bottom: 10px;
+
+        span {
+            display: block;
+            font-size: 1.4rem;
+
+            + span {
+                margin-top: 5px;
+                font-size: .9rem;
+                }
+            }
+        }
+    input {
+        padding: 5px;
         }
     }
 
-#form-part-1,
-#form-part-2,
+@keyframes slide-in-right {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+        }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+        }
+    }
+@keyframes fade-in-bg {
+    0% {
+        background-color: #FFC62A;
+        }
+    100% {
+        background-color: #fff;
+        }
+    }
+
 #form-part-3 {
     display: none;
     }
 
 .on-step-1 #form-part-1 {
     display: flex;
-    }
-.on-step-2 #form-part-2 {
-    display: flex;
-    }
-.on-step-3 #form-part-3 {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    padding: 30px;
-
-    .user-form {
-        width: 100%;
-        max-width: 800px;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        }
-    
-    label {
-        display: flex;
-        flex-direction: row;
-        padding: 10px;
-        }
-
-    .label {
-        width: 200px;
-        display: flex;
-        justify-content: flex-end;
-        padding: 0 10px;
-        }
-    input, textarea {
-        flex: 1;
-        padding: 10px;
-        border: 1px solid #999;
-        font-family: inherit;
-        }
-    button {
-        padding: 20px;
-        width: 200px;
-        border: 0;
-        margin-left: auto;
-        margin-right: 10px;
-        background-color: rgb(87, 214, 87);
-        color: white;
-        font-weight: bold;
-        }
-    }
-
-.artform-input-fields {
-    flex: 1;
-    display: flex;
-    flex-wrap: wrap;
-
-    label {
-        padding: 30px;
-        width: calc(20% - 2px);
-        background-color: white;
-
-        + label {
-            margin-left: 1px;
-            }
-
-        &:nth-child(5n),
-        &:nth-child(5n) ~ label {
-            margin-top: 2px;
-            }
-        }
-    .label {
-        font-size: 1.2rem;
-        margin-bottom: 10px;
-        }
-    [type=number] {
-        border: 1px solid #999;
-        padding: 10px;
-        }
-    }
-
-.artform-item {
-    width: calc(100% / 6);
-    padding: 5px;
-    border: 1px solid #fff;
-    
-    img {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        height: 300px;
-        object-fit: cover;
-        }
-    }
-
-.artform-item-label {
-    color: #222;
-    padding: 5px 0;
-
-    .name {
-        font-weight: bold;
-        margin-bottom: 5px;
-        }
-    .desc {
-        font-size: .9rem;
-        }
     }
 
 .hide {

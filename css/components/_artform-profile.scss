@@ -1,0 +1,52 @@
+.artform-profile {
+    display: flex;
+    }
+
+
+.artform-portrait {
+    max-width: 25%;
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        position: sticky;
+        top: 0;
+        }
+    }
+
+.artform-profile-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 40px;
+    }
+
+.artform-profile-content_intro {
+    margin-bottom: 40px;
+    
+    p {
+        font-size: 1.4rem;
+
+        + p {
+            margin-top: 20px;
+            }
+        }
+    }
+
+.artform-profile-images {
+    margin-bottom: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    }
+
+.artform-profile-content_body {
+    p {
+        font-size: 1.2rem;
+
+        + p {
+            margin-top: 20px;
+            }
+        }
+    }

@@ -1,0 +1,32 @@
+.about-content {
+    }
+
+.about-content-banner img {
+    width: 100%;
+    max-width: 100%;
+    }
+
+.about-content-header {
+    text-align: center;
+    margin-top: -4rem;
+    background-color: rgba(34, 34, 34, 0.592);
+
+    h2 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        padding: 0;
+        }
+    p {
+        font-size: 3rem;
+        }
+    }
+
+.about-content-body {
+    padding: 30px;
+    column-count: 3;
+
+    p {
+        margin-bottom: 30px;
+        }
+    }

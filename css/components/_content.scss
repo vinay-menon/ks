@@ -4,6 +4,7 @@
 
 .content-header-nav {
     @extend .main-heading;
+    margin-bottom: 0;
     flex-direction: column;
     padding-bottom: 30px;
 
@@ -151,8 +152,11 @@
     }
 .content-header-lnk-group {
     display: flex;
-    margin-top: auto;
-    border-top: 1px solid $sectionBorderColor;
+    // margin-top: auto;
+
+    &:not(:only-child) {
+        border-top: 1px solid $sectionBorderColor;
+        }
 
     a {
         padding: 30px;

@@ -698,6 +698,7 @@ body.no-scroll {
 }
 
 .content-header-nav {
+  margin-bottom: 0;
   flex-direction: column;
   padding-bottom: 30px;
 }
@@ -792,7 +793,9 @@ body.no-scroll {
 
 .content-header-lnk-group {
   display: flex;
-  margin-top: auto;
+}
+
+.content-header-lnk-group:not(:only-child) {
   border-top: 1px solid rgba(204, 204, 204, 0.183);
 }
 
@@ -2150,5 +2153,36 @@ body.no-scroll {
 
 .artform-profile-content_body p + p {
   margin-top: 20px;
+}
+
+.about-content-banner img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-content-header {
+  text-align: center;
+  margin-top: -4rem;
+  background-color: rgba(34, 34, 34, 0.592);
+}
+
+.about-content-header h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.about-content-header p {
+  font-size: 3rem;
+}
+
+.about-content-body {
+  padding: 30px;
+  column-count: 3;
+}
+
+.about-content-body p {
+  margin-bottom: 30px;
 }
 /*# sourceMappingURL=style.css.map */

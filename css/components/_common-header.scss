@@ -91,6 +91,15 @@
 .logo-title br {
     display: none;
     }
+.title-svg {
+    width: 400px;
+    margin-right: 15px;
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        }
+    }
 @media (max-width: 1080px) {
     .logo-title {
         font-size: 2rem;

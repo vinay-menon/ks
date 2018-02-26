@@ -39,6 +39,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+a {
+  color: inherit;
+}
+
 .p30 {
   padding: 30px;
 }
@@ -207,6 +211,16 @@ h2 {
 
 .logo-title br {
   display: none;
+}
+
+.title-svg {
+  width: 400px;
+  margin-right: 15px;
+}
+
+.title-svg img {
+  max-width: 100%;
+  width: 100%;
 }
 
 @media (max-width: 1080px) {
@@ -1953,6 +1967,8 @@ body.no-scroll {
 
 .forms.final-step .artform-selection * {
   opacity: 0;
+  width: 0;
+  height: 0;
   pointer-events: none;
   transition: .3s;
 }
@@ -2090,6 +2106,7 @@ body.no-scroll {
 
 .artform-portrait {
   max-width: 25%;
+  width: 25%;
 }
 
 .artform-portrait img {
@@ -2101,6 +2118,7 @@ body.no-scroll {
 }
 
 .artform-profile-content {
+  width: 75%;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;

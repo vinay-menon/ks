@@ -5,6 +5,7 @@
 
 .artform-portrait {
     max-width: 25%;
+    width: 25%;
 
     img {
         width: 100%;
@@ -16,6 +17,7 @@
     }
 
 .artform-profile-content {
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;

@@ -89,6 +89,29 @@
         }
     }
 
+@media (max-width: 1200px) {
+    .artforms-main {
+        flex-wrap: wrap;
+        }
+    .artforms-main .artform-block {
+        flex: 0 0 50%;
+        margin: 0 0;
+
+        &:first-child {
+            margin-left: 0;
+            }
+        &:last-child {
+            margin-right: 0;
+            display: none;
+            }
+        }
+    }
+@media (max-width: 530px) {
+    .artforms-main .artform-block {
+        flex: 0 0 100%;
+        }
+    }
+
 .artform-block-header-text {
     padding: 20px; 
     background-color: #fff;
@@ -113,6 +136,11 @@
         
         // firefox hack
         overflow: hidden;
+        }
+    }
+@media (max-width: 730px) {
+    .artforms-multi-col {
+        column-count: 2;
         }
     }
 .artform-blocks_training {

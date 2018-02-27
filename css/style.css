@@ -1130,7 +1130,7 @@ body.no-scroll {
   color: #222;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 1000px) {
   .intersection {
     flex-direction: column;
   }
@@ -1152,6 +1152,12 @@ body.no-scroll {
 
 .intersection-content p + p {
   margin-top: 30px;
+}
+
+@media (max-width: 1050px) {
+  .intersection-content {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 820px) {
@@ -1341,6 +1347,12 @@ body.no-scroll {
   justify-content: space-between;
 }
 
+@media (max-height: 768px) {
+  .main-banners {
+    max-height: 350px;
+  }
+}
+
 .banner {
   width: 25%;
   color: #fff;
@@ -1431,6 +1443,15 @@ body.no-scroll {
   margin-bottom: 0;
   text-transform: uppercase;
   letter-spacing: 0px;
+}
+
+@media (max-height: 768px) {
+  .banner-header h2 {
+    font-size: 1.2rem;
+  }
+  .banner-header p {
+    display: none;
+  }
 }
 
 @media (max-width: 1000px) {

@@ -20,6 +20,7 @@
 
 .col-wrap {
     display: flex;
+    flex-wrap: wrap;
     }
 .col-wrap > * {
     flex: 1;

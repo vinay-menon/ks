@@ -66,6 +66,7 @@ a {
 
 .col-wrap {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .col-wrap > * {
@@ -1643,7 +1644,7 @@ body.no-scroll {
 
 .event-slides {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: 500px;
   margin-bottom: 5px;
 }
 
@@ -1774,6 +1775,13 @@ body.no-scroll {
 .video-list {
   padding: 30px;
   background-color: white;
+  color: #222;
+}
+
+@media (max-width: 1200px) {
+  .events-list, .video-list {
+    width: 100%;
+  }
 }
 
 .training-artforms {
@@ -2057,6 +2065,20 @@ body.no-scroll {
   object-fit: cover;
 }
 
+@media (max-width: 1300px) {
+  .artform-item {
+    width: 33.333%;
+    flex: 0 0 calc(100% / 3 - 10px);
+  }
+}
+
+@media (max-width: 720px) {
+  .artform-item {
+    width: 50%;
+    flex: 0 0 calc(100% / 2 - 10px);
+  }
+}
+
 .artform-item-label {
   padding: 10px;
 }
@@ -2157,6 +2179,20 @@ body.no-scroll {
   display: flex;
 }
 
+@media (max-width: 1300px) {
+  #form-part-2.is-active {
+    width: 33.333%;
+  }
+}
+
+@media (max-width: 1200px) {
+  #form-part-2 header .selected-artform-counter {
+    border-radius: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
 .selected-artforms-group {
   display: flex;
   flex-direction: column;
@@ -2182,6 +2218,7 @@ body.no-scroll {
 
 .selected-artforms-group label, .selected-artforms-group input {
   display: block;
+  max-width: 100%;
 }
 
 .selected-artforms-group label {
@@ -2201,6 +2238,7 @@ body.no-scroll {
 
 .selected-artforms-group input {
   padding: 5px;
+  max-width: 100%;
 }
 
 .selected-artform-close {
@@ -2282,6 +2320,12 @@ body.no-scroll {
   flex: 1;
 }
 
+@media (max-width: 720px) {
+  .forms.final-step .artform-selection .selected-artform-img {
+    display: none;
+  }
+}
+
 .user-form {
   display: flex;
   width: 100%;
@@ -2312,6 +2356,7 @@ body.no-scroll {
 
 .user-form .user-form-radio input {
   width: auto;
+  max-width: 100%;
 }
 
 .user-form input,

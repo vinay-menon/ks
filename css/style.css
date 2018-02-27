@@ -236,6 +236,9 @@ a {
   .logo-title {
     font-size: 1.6rem;
   }
+  .logo-about {
+    font-size: .8rem;
+  }
 }
 
 .logo-about {

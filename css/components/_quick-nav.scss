@@ -1,7 +1,8 @@
 .quick-nav {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     border-bottom: 1px solid $sectionBorderColor;
     padding: 0 30px;
     
@@ -18,9 +19,9 @@
 .breadcrumbs {
     display: flex;
     padding: 20px 0;
-    order: 2;
     font-family: "Poppins", sans-serif;
     font-size: .9rem;
+    margin-right: 20px;
 
     img {
         display: block;
@@ -41,6 +42,13 @@
             text-decoration: underline;
             font-weight: 700;
             }
+        }
+    }
+
+@media (max-width: 1050px) {
+    .breadcrumbs {
+        width: 100%;
+        justify-content: center;
         }
     }
 
@@ -67,5 +75,17 @@
         h2 {
             color: inherit;
             }
+        }
+    }
+
+@media (max-width: 1050px) {
+    .quick-links {
+        border-left: 0;
+        margin: 0 auto;
+        }
+    }
+@media (max-width: 700px) {
+    .quick-links {
+        display: none;
         }
     }

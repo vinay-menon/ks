@@ -836,6 +836,53 @@ body.no-scroll {
   font-weight: 300;
 }
 
+@media (max-width: 1400px) {
+  .content-header-nav h1 {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .content-header {
+    flex-wrap: wrap;
+  }
+  .content-header-nav {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+  }
+  .content-header-nav h1 {
+    font-size: 2.4rem !important;
+    margin-right: 20px;
+  }
+  .content-header-links {
+    flex-direction: row;
+  }
+  .content-header-links a + a {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 850px) {
+  .content-header-nav {
+    flex-direction: column;
+  }
+  .content-header-nav h1 {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 670px) {
+  .content-header-links {
+    flex-direction: column;
+  }
+  .content-header-links a + a {
+    margin-left: 0;
+  }
+}
+
 .content-header-links {
   display: flex;
   flex-direction: column;
@@ -890,6 +937,18 @@ body.no-scroll {
 
 .content-header-lnk-group a:not(:last-child) {
   border-right: 1px solid rgba(204, 204, 204, 0.183);
+}
+
+@media (max-width: 670px) {
+  .content-header-lnk-group {
+    flex-direction: column;
+  }
+  .content-header-lnk-group a {
+    padding: 15px;
+  }
+  .content-header-lnk-group a + a {
+    border-top: 1px solid rgba(204, 204, 204, 0.183);
+  }
 }
 
 .content-section {
@@ -1100,8 +1159,9 @@ body.no-scroll {
 
 .quick-nav {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-bottom: 1px solid rgba(204, 204, 204, 0.183);
   padding: 0 30px;
 }
@@ -1118,9 +1178,9 @@ body.no-scroll {
 .breadcrumbs {
   display: flex;
   padding: 20px 0;
-  order: 2;
   font-family: "Poppins", sans-serif;
   font-size: .9rem;
+  margin-right: 20px;
 }
 
 .breadcrumbs img {
@@ -1140,6 +1200,13 @@ body.no-scroll {
 .breadcrumbs a.is-active {
   text-decoration: underline;
   font-weight: 700;
+}
+
+@media (max-width: 1050px) {
+  .breadcrumbs {
+    width: 100%;
+    justify-content: center;
+  }
 }
 
 .quick-links {
@@ -1164,6 +1231,19 @@ body.no-scroll {
 
 .quick-links:hover h2 {
   color: inherit;
+}
+
+@media (max-width: 1050px) {
+  .quick-links {
+    border-left: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .quick-links {
+    display: none;
+  }
 }
 
 [class*="icon-"]:before {

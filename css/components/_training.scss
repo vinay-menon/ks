@@ -22,6 +22,7 @@
 .training-artform-img {
     width: 100%;
     max-width: 250px;
+    flex: 1;
     // display: none;
     }
 .training-artform-img img {
@@ -33,6 +34,7 @@
 .training-block-info {
     padding: 0 30px;
     display: flex;
+    flex: 1;
     flex-direction: column;
     align-items: flex-start;
     color: white;

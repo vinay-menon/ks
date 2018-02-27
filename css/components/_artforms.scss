@@ -132,6 +132,17 @@
         }
     }
 
+@media (max-width: 1300px) {
+    .artform-blocks_training .artform-block {
+        width: 50%;
+        }
+    }
+@media (max-width: 870px) {
+    .artform-blocks_training .artform-block {
+        width: 100%;
+        }
+    }
+
 .artform-blocks_training .artform-block-img img {
     object-fit: cover;
     object-position: 50% 10%;

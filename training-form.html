@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- in the head because don't wanna load the page unless reqs are met -->
+    <script src="js/jq.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            trainingForm();
+        });
+    </script>
     
     <title>Kathakali School</title>
     <link rel="apple-touch-icon" sizes="57x57" href="images/assets/favicon/apple-icon-57x57.png">
@@ -161,7 +170,8 @@
         <div class="quick-nav">
             <nav class="breadcrumbs">
                 <a href="#"><img src="images/assets/icons/home.png" alt=""></a>
-                <a href="#">Training</a>
+                <a href="./training.html">Training</a>
+                <a href="#" class="is-active">Join a Course</a>
             </nav>
             <nav class="quick-links">
                 <h2>Quick Links:</h2>
@@ -174,164 +184,70 @@
 
         <header class="content-header">
             <div class="content-header-nav training">
-                <h1>Training</h1>
-                <nav class="content-header-links">
+                <h1>Join a Course</h1>
+                <!-- <nav class="content-header-links">
                     <a class="icon-fwd-c" href="aboutschool.html">Faculty</a>
                     <a class="icon-fwd-c" href="#">International Students</a>
                     <a class="icon-fwd-c" href="#">School Facilities</a>
-                </nav>
+                </nav> -->
             </div>
 
             <div class="content-header-body">
                 <p>
-                    The traditional system of Indian education ‘Gurukula’ is the spearhead of our classical art forms. In Kathakali also, the norms and conditions of the above maintained thoroughly from the beginning itself.
-                </p>
-                <p>
-                    Kathakali School is an academy for training in Classical Indian dances.
-                    We make enthusiasts in the field into professionals.
-                    Kathakali School conducts short term courses (2 weeks, 1 month & 3 months) for
-                    Kathakali, Mohiniyattam, Bharathanatyam, Kuchupudi, Kalaripayattu and other Kerala Arts.
-                    We provide accomodation and other facilities for foreign students.
-                    If required, we can conduct classes in your country.
-
+                    Please provide us with your requirements in the form below.
                 </p>
                 <div class="content-header-lnk-group">
-                    <a href="#" class="icon-info">Learn about the art forms of Kerala.</a>
-                    <a href="#" class="icon-msg">Send us a message with your requirements.</a>
+                    <a href="#" class="icon-info">View more art forms.</a>
+                    <a href="#" class="icon-msg">Send us a message in case you require specialzed classes.</a>
                 </div>
             </div>
         </header>
-        
-        <div class="blocks-main artform-blocks_training">
-            <div class="artform-block">
-                <header class="artform-block-header">
-                    <div class="artform-block-img">
-                        <img src="images/artforms/kathakali.jpg" alt="">
-                    </div>
-                    <div class="artform-block-header-text">
-                        <h2>Kathakali</h2>
-                        <p>
-                            Learn more about this art form <a href="#">here</a>.
-                        </p>
-                        <a href="training-form.html?q=kathakali" class="lnk-prom">
-                            Join Course
-                        </a>
-                    </div>
-                </header>
+
+        <div class="training-form">
+            <div class="artform-portrait">
+                <img src="images/portraits/kalaripayyattu.jpg" alt="">
             </div>
-            <div class="artform-block">
-                <header class="artform-block-header">
-                    <div class="artform-block-img">
-                        <img src="images/artforms/chutti.jpg" alt="">
+            <div class="training-form-content">
+                <div class="user-form">
+                    <h3>Kathakali</h3>
+                    <label for="user-name">
+                        <div class="label">Name</div>
+                        <input type="text" id="user-name">
+                    </label>
+                    <label for="user-email">
+                        <div class="label">Email</div>
+                        <input type="text" id="user-email">
+                    </label>
+                    <label for="user-phone">
+                        <div class="label">Phone</div>
+                        <input type="text" id="user-phone">
+                    </label>
+                    <label for="user-place">
+                        <div class="label">Place</div>
+                        <input type="text" id="user-place">
+                    </label>
+                    <div for="user-place">
+                        <div class="label">Would you like us to arrange for your accomodation and food?</div>
+                        <label for="" class="user-form-radio">
+                            <div class="label">Yes</div>
+                            <input type="radio" name="accomodation" id="user-place">
+                        </label>
+                        <label for="" class="user-form-radio">
+                            <div class="label">No</div>
+                            <input type="radio" name="accomodation" id="user-place">
+                        </label>
                     </div>
-                    <div class="artform-block-header-text">
-                        <h2>Chutti (Makeup) &amp; Costume</h2>
-                        <p>
-                            Learn more about this art form <a href="#">here</a>.
-                        </p>
-                        <a href="training-form.html?q=chutti" class="lnk-prom">
-                            Join Course
-                        </a>
-                    </div>
-                </header>
-            </div>
-            <div class="artform-block">
-                <header class="artform-block-header">
-                    <div class="artform-block-img">
-                        <img src="images/artforms/mohiniyattam.JPG" alt="">
-                    </div>
-                    <div class="artform-block-header-text">
-                        <h2>Mohiniyattam</h2>
-                        <p>
-                            Learn more about this art form <a href="#">here</a>.
-                        </p>
-                        <a href="training-form.html?q=mohiniyattam" class="lnk-prom">
-                            Join Course
-                        </a>
-                    </div>
-                </header>
-            </div>
-            <div class="artform-block">
-                <header class="artform-block-header">
-                    <div class="artform-block-img">
-                        <img src="images/artforms/bharathanatyam.JPG" alt="">
-                    </div>
-                    <div class="artform-block-header-text">
-                        <h2>Bharathanatyam</h2>
-                        <p>
-                            Learn more about this art form <a href="#">here</a>.
-                        </p>
-                        <a href="training-form.html?q=bharathanatyam" class="lnk-prom">
-                            Join Course
-                        </a>
-                    </div>
-                </header>
-            </div>
-            <div class="artform-block">
-                <header class="artform-block-header">
-                    <div class="artform-block-img">
-                        <img src="images/artforms/mohiniyattam.JPG" alt="">
-                    </div>
-                    <div class="artform-block-header-text">
-                        <h2>Kuchipudi</h2>
-                        <p>
-                            Learn more about this art form <a href="#">here</a>.
-                        </p>
-                        <a href="training-form.html?q=kuchipudi" class="lnk-prom">
-                            Join Course
-                        </a>
-                    </div>
-                </header>
-            </div>
-            <div class="artform-block">
-                <header class="artform-block-header">
-                    <div class="artform-block-img">
-                        <img src="images/artforms/kalari.jpg" alt="">
-                    </div>
-                    <div class="artform-block-header-text">
-                        <h2>Kalaripayyattu</h2>
-                        <p>
-                            Learn more about this art form <a href="#">here</a>.
-                        </p>
-                        <a href="training-form.html?q=kalaripayyattu" class="lnk-prom">
-                            Join Course
-                        </a>
-                    </div>
-                </header>
-            </div>
-            <div class="artform-block chenda">
-                <header class="artform-block-header">
-                    <div class="artform-block-img">
-                        <img src="images/artforms/kalari.jpg" alt="">
-                    </div>
-                    <div class="artform-block-header-text">
-                        <h2>Chenda</h2>
-                        <p>
-                            Learn more about this art form <a href="#">here</a>.
-                        </p>
-                        <a href="training-form.html?q=chenda" class="lnk-prom">
-                            Join Course
-                        </a>
-                    </div>
-                </header>
-            </div>
-            <div class="artform-block theyyam-makeup">
-                <header class="artform-block-header">
-                    <div class="artform-block-img">
-                        <img src="images/artforms/kalari.jpg" alt="">
-                    </div>
-                    <div class="artform-block-header-text">
-                        <h2>Theyyam Makeup</h2>
-                        <p>
-                            Learn more about this art form <a href="#">here</a>.
-                        </p>
-                        <a href="training-form.html?q=theyyam" class="lnk-prom">
-                            Join Course
-                        </a>
-                    </div>
-                </header>
+                    <label for="user-message">
+                        <div class="label">Message</div>
+                        <textarea name="" id="user-message" rows="5"></textarea>
+                    </label>
+
+                    <button>Send</button>
+                </div>
             </div>
         </div>
+        
+
     </section><!-- #content -->
     
     <footer class="main-footer">
@@ -354,22 +270,8 @@
                 Design &amp; Development: Crow Creative Crew
             </div> -->
         </div>
-    </footer>
-    
-<script src="js/jq.js"></script>
-<script src="js/flickity.pkgd.min.js"></script>
-<script>
-    var flkty = new Flickity(
-        '.flickity',
-         { 
-             "cellAlign": "left", 
-             "contain": true, 
-             "autoPlay": 2000,
-             "prevNextButtons": true,
-             "pageDots": 0
-         }
-    );
-</script>
+    </footer>    
+
 <script>
     function debugLayout(state,elem) {
         state == "on" ? $(elem).css("outline", "1px solid red") : $(elem).css("outline", "0");

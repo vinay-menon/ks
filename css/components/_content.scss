@@ -302,6 +302,8 @@
     max-width: 500px;
     padding: 30px;
     margin: auto 0 auto;
+    background-color: #fff;
+    color: #333;
 
     p {
         letter-spacing: 1px;
@@ -320,6 +322,34 @@
     height: 100%;
     z-index: 1;
     object-fit: cover;
+    // object-position: top center;
 
     // mix-blend-mode: color-dodge;
+    }
+
+.intersection {
+    display: flex;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.653);
+    }
+
+.intersection-content {
+    margin-left: 30px;
+    max-width: 600px;
+    color: #222;
+    order: 1;
+
+    p + p {
+        margin-top: 30px;
+        }
+    }
+
+.intersection-img {
+    flex: 1;
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        }
     }

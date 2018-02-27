@@ -23,14 +23,10 @@
     }
 @media (max-width: 1000px) {
     .main-header {
-        padding: 20px;
         padding-right: 0;
         }
     }
-@media (max-width: 670px) {
-    .main-header {
-        padding: 20px 10px;
-        }
+@media (max-width: 800px) {
     .main-fold .main-header {
         order: 1;
         }
@@ -43,8 +39,8 @@
     }
 @media (max-width: 670px) {
     .logo {
-        margin: auto;
-        text-align: center;
+        width: 100%;
+        border-bottom: 1px solid $sectionBorderColor;
         }
     }
 .logo-group {
@@ -58,13 +54,14 @@
     }
 @media (max-width: 750px) {
     .logo-group {
-        align-items: flex-start;
+        // align-items: flex-start;
+        justify-content: center;
         }
     }
 @media (max-width: 670px) {
     .logo-group {
-/*        flex-direction: row;*/
-        // align-items: center;
+        align-items: flex-end;
+        padding-left: 10px;
         }
     }
 .logo-text {
@@ -106,19 +103,13 @@
         }
     }
 @media (max-width: 750px) {
-    .logo-title {
-        font-size: 1.4rem;
-        }
     .logo-title br {
         display: none;
         }
     }
 @media (max-width: 670px) {
     .logo-title {
-        font-size: 2.3rem;
-        }
-    .logo-title br {
-/*        display: block;*/
+        font-size: 1.6rem;
         }
     }
 .logo-about {
@@ -189,14 +180,14 @@
     }
 @media (max-width: 1080px) {
     .logo-img {
-        width: 50px;
+        // width: 50px;
         }
     }
 @media (max-width: 750px) {
     .logo-img {
         display: flex;
 /*        justify-content: space-around;*/
-        width: 130px;
+        // width: 130px;
         }
     .logo-img-wrap {
         width: 80px;
@@ -210,9 +201,13 @@
 .main-extra {
     display: flex;
     width: 100%;
-    // padding-left: 30px;
     border-top: 1px solid $sectionBorderColor;
     border-right: 1px solid $sectionBorderColor;
+    }
+@media (max-width: 480px) {
+    .main-extra {
+        flex-wrap: wrap;
+        }
     }
 .-secondary .main-extra {
     width: auto;
@@ -283,6 +278,17 @@
         &:last-child {
             margin-bottom: 0;
             }
+        }
+    }
+
+@media (max-width: 480px) {
+    .main-extra .socmed {
+        flex-direction: row;
+        margin-left: 0;
+        flex: 1;
+        justify-content: space-around;
+        border-left: 0;
+        border-top: 1px solid $sectionBorderColor;
         }
     }
 .-secondary .socmed {

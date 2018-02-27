@@ -26,6 +26,12 @@
         }
     }
 
+@media (max-width: 1000px) {
+    .main-banners {
+        min-height: 300px;
+        }
+    }
+
 @media (max-width: 670px) {
     .banner {
         width: 50%;

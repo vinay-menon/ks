@@ -298,6 +298,25 @@
     label {
         margin-bottom: 20px;
         }
+    
+    .user-form-radio {
+        display: flex;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-left: 20px;
+
+        &:last-child {
+            margin-bottom: 20px;
+            }
+
+        .label {
+            width: 30px;
+            }
+
+        input {
+            width: auto;
+            }
+        }
 
     input,
     textarea {

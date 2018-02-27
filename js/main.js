@@ -70,3 +70,41 @@ $(".artform-selection-prev-step-btn").on("click", function(e) {
     e.preventDefault();
     $(".forms").removeClass("final-step");
 });
+
+function GetURLParameter(sParam) {
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) {
+            return decodeURIComponent(sParameterName[1]);
+        }
+    }
+}
+
+function trainingForm() {
+    var course = GetURLParameter('q');
+
+    $(".user-form h3").html(course);
+    $(".artform-portrait img").attr("src", "images/portraits/" + course + ".jpg");
+
+    if (course == "kathakali") {
+        console.log("kadakalee");
+        } else if (course == "chutti") {
+        console.log("chutti");
+        } else if (course == "mohiniyattam") {
+        console.log("mohiniyattam");
+        } else if (course == "bharathanatyam") {
+        console.log("bharathanatyam");
+        } else if (course == "kuchipudi") {
+        console.log("kuchipudi");
+        } else if (course == "kalaripayyattu") {
+        console.log("kalaripayyattu");
+        } else if (course == "chenda") {
+        console.log("chenda");
+        } else if (course == "theyyam") {
+        console.log("theyyam");
+        } else {
+        window.location = "./training.html";
+        }
+    }

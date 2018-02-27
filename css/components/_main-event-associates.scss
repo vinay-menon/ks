@@ -6,6 +6,12 @@
     width: 30%;
     max-width: 30%;
     }
+@media (max-width: 1000px) {
+    .main-shows .main-heading {
+        width: auto;
+        max-width: 100%;
+        }
+    }
 .show-cell {
     display: block;
     width: 30%;

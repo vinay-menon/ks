@@ -8,8 +8,17 @@
 
 .about-content-header {
     text-align: center;
+    margin: 0 auto;
     margin-top: -4rem;
-    background-color: rgba(34, 34, 34, 0.592);
+
+    max-width: 800px;
+    background-image: 
+        linear-gradient(
+            rgba(83, 133, 79, 0.803),
+            rgba(235, 185, 77, 0.524)
+            );
+
+    color: rgb(255, 252, 174);
 
     h2 {
         font-size: 3rem;

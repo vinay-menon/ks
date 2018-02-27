@@ -20,6 +20,10 @@
     .main-header {
         align-items: flex-start;
         }
+    .id-collection {
+        width: 100%;
+        border-bottom: 1px solid $sectionBorderColor;
+        }
     }
 @media (max-width: 1000px) {
     .main-header {
@@ -102,9 +106,12 @@
         font-size: 2rem;
         }
     }
-@media (max-width: 750px) {
-    .logo-title br {
-        display: none;
+@media (max-width: 970px) {
+    .-secondary .logo-title {
+        font-size: 1.6rem;
+        }
+    .-secondary .logo-about {
+        font-size: .8rem;
         }
     }
 @media (max-width: 670px) {
@@ -207,17 +214,50 @@
     border-top: 1px solid $sectionBorderColor;
     border-right: 1px solid $sectionBorderColor;
     }
-@media (max-width: 480px) {
-    .main-extra {
-        flex-wrap: wrap;
-        }
-    }
 .-secondary .main-extra {
     width: auto;
     align-self: stretch;
     padding-left: 0;
     align-items: stretch;
     border-top: 0;
+    }
+@media (max-width: 1200px) {
+    .-secondary .logo {
+        border-right: 0;
+        }
+    .-secondary .logo-group {
+        align-items: flex-end;
+        }
+    .-secondary .main-extra {
+        border-top: 1px solid $sectionBorderColor;
+        border-left: 1px solid $sectionBorderColor;
+        border-right: 0;
+        justify-content: center;
+        align-content: center;
+        margin-left: auto;
+
+        .socmed {
+            margin-left: 0;
+            }
+        }
+    }
+@media (max-width: 890px) {
+    .-secondary .logo {
+        margin: auto;
+        border-right: 0;
+        }
+    .id-collection {
+        flex-wrap: wrap;
+        }
+    .-secondary .main-extra {
+        width: 100%;
+        border-left: 0;
+        }
+    }
+@media (max-width: 480px) {
+    .main-extra, .-secondary .main-extra  {
+        flex-wrap: wrap;
+        }
     }
 .emp-logo {
     display: flex;

@@ -33,6 +33,11 @@
             }
         }
     }
+@media (max-width: 1200px) {
+    .-secondary .main-nav-trigger {
+        margin: 20px auto;
+        }
+    }
 @media (max-width: 670px) {
     .main-nav-trigger {
         margin: 20px auto;

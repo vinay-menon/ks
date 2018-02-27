@@ -278,6 +278,9 @@ a {
 }
 
 @media (max-width: 670px) {
+  .main-contact {
+    flex: 1;
+  }
   .phone {
     margin-right: 0;
   }
@@ -358,6 +361,16 @@ a {
   max-width: 80px;
   display: block;
   align-self: center;
+}
+
+@media (max-width: 670px) {
+  .emp-logo {
+    width: 20%;
+  }
+  .emp-logo img {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 
 .emp-mcr {

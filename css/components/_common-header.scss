@@ -145,10 +145,6 @@
     justify-content: space-between;
     font-size: .9rem;
     padding: 15px;
-
-    .phone, .email {
-        // padding: 10px 0 0;
-        }
     }
 .-secondary .main-contact {
     justify-content: space-around;
@@ -157,6 +153,9 @@
     margin-right: 20px;
     }
 @media (max-width: 670px) {
+    .main-contact {
+        flex: 1;
+        }
     .phone {
         margin-right: 0;
         }
@@ -241,6 +240,15 @@
     max-width: 80px;
     display: block;
     align-self: center;
+    }
+@media (max-width: 670px) {
+    .emp-logo {
+        width: 20%;
+        }
+    .emp-logo img {
+        min-width: 100%;
+        max-width: 100%;
+        }
     }
 .emp-mcr {
     max-width: 100px;

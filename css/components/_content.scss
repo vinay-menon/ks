@@ -278,6 +278,17 @@
             }
         }
     }
+@media (max-width: 1200px) {
+    .content-section-header {
+        &.-half {
+            width: 100%;
+            padding-right: 0;
+            }
+        &.-sticky {
+            position: static;
+            }
+        }
+    }
 .content-section_content {
     display: flex;
     flex-wrap: wrap;
@@ -304,6 +315,19 @@
         height: 100%;
         object-fit: cover;
         object-position: center right;
+        }
+    }
+
+@media (max-width: 568px) {
+    #navarasam .-third,
+    #mudras .-fourth {
+        width: 50%;
+        }
+    }
+@media (max-width: 436px) {
+    #navarasam .-third,
+    #mudras .-fourth {
+        width: 100%;
         }
     }
 
@@ -353,6 +377,16 @@
 
 .content-block_label {
     font-size: 2rem;
+    }
+@media (max-width: 806px) {
+    .content-block_label {
+        font-size: 1.2rem;
+        }
+    }
+@media (max-width: 506px) {
+    .content-block_label {
+        font-size: 2rem;
+        }
     }
 .content-block_label-translation {
     text-transform: uppercase;

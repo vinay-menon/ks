@@ -1008,6 +1008,16 @@ body.no-scroll {
   background-position: center center;
 }
 
+@media (max-width: 1200px) {
+  .content-section-header.-half {
+    width: 100%;
+    padding-right: 0;
+  }
+  .content-section-header.-sticky {
+    position: static;
+  }
+}
+
 .content-section_content {
   display: flex;
   flex-wrap: wrap;
@@ -1036,6 +1046,20 @@ body.no-scroll {
   height: 100%;
   object-fit: cover;
   object-position: center right;
+}
+
+@media (max-width: 568px) {
+  #navarasam .-third,
+  #mudras .-fourth {
+    width: 50%;
+  }
+}
+
+@media (max-width: 436px) {
+  #navarasam .-third,
+  #mudras .-fourth {
+    width: 100%;
+  }
 }
 
 #members .content-block {
@@ -1083,6 +1107,18 @@ body.no-scroll {
 
 .content-block_label {
   font-size: 2rem;
+}
+
+@media (max-width: 806px) {
+  .content-block_label {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 506px) {
+  .content-block_label {
+    font-size: 2rem;
+  }
 }
 
 .content-block_label-translation {

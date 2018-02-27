@@ -643,6 +643,7 @@ body.no-scroll {
   min-width: 100%;
   order: 1;
   align-self: flex-start;
+  flex-wrap: wrap;
   margin: 0;
   margin-bottom: auto;
   padding: 60px 30px;
@@ -650,10 +651,11 @@ body.no-scroll {
 }
 
 .nav-open .nav-item {
-  width: 25%;
+  width: 50%;
   opacity: 0;
   animation: .5s fade-in forwards;
   animation-delay: .09s;
+  margin-bottom: 30px;
 }
 
 .nav-open .nav-item:nth-child(2) {
@@ -699,7 +701,6 @@ body.no-scroll {
 }
 
 .nav-open .extended-links {
-  display: flex;
   flex-direction: column;
   padding: 20px 0;
   width: 100%;
@@ -713,6 +714,21 @@ body.no-scroll {
 
 .nav-open .extended-links a:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .nav-open .main-nav h2 {
+    font-size: 1.4rem;
+  }
+  .nav-open .main-nav .nav-item:nth-child(n+5) {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-open .nav-item {
+    width: 100%;
+  }
 }
 
 @keyframes fade-in {
@@ -732,7 +748,7 @@ body.no-scroll {
   width: 0;
   z-index: 3;
   border-radius: 50%;
-  background-image: radial-gradient(rgba(29, 49, 13, 0.66), rgba(95, 37, 4, 0.469)), url(../images/menu-bg-2.jpg);
+  background-image: radial-gradient(rgba(29, 49, 13, 0.769), rgba(95, 37, 4, 0.633)), url(../images/menu-bg-2.jpg);
   background-attachment: fixed;
   background-size: cover;
   opacity: 0;

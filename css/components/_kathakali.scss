@@ -27,7 +27,7 @@
         // font-weight: 300;
 
         background-size: cover;
-        background-position: 0 100%;
+        background-position: 50% 100%;
         background-repeat: no-repeat;
 
         span {
@@ -52,6 +52,22 @@
         }
     }
 
+@media (max-width: 980px) {
+    .kathakali-columns {
+        flex-direction: column;
+        }
+    .kathakali-column {
+        width: 100%;
+
+        &:nth-child(odd) {
+            padding-right: 0;
+            }
+        &:nth-child(even) {
+            padding-left: 0;
+            }
+        }
+    }
+
 .kathakali-column-chutti {
     background-image: url(../images/kathakali-page/chutti-bg.jpg);
     }
@@ -68,5 +84,25 @@
 #mudras {
     img {
         filter: invert(1);
+        }
+    }
+
+@media (max-width: 670px) {
+    .kathakali-profile-hero {
+        flex-direction: column;
+
+        .floating-header {
+            max-width: 100%;
+            order: 1;
+            margin: 0 0 0;
+            padding: 20px;
+            padding-top: 10px;
+            }
+        .block-bg {
+            position: relative;
+            }
+        .content-heading {
+            font-size: 1.5rem;
+            }
         }
     }

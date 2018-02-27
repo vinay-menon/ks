@@ -1084,8 +1084,6 @@ body.no-scroll {
   max-width: 500px;
   padding: 30px;
   margin: auto 0 auto;
-  background-color: #fff;
-  color: #333;
 }
 
 .floating-header p {
@@ -2304,7 +2302,7 @@ body.no-scroll {
   margin: 0;
   font-size: 1.4rem;
   background-size: cover;
-  background-position: 0 100%;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
 }
 
@@ -2320,6 +2318,21 @@ body.no-scroll {
   padding: 15px 30px 30px;
   margin: 0 15px;
   flex: 1;
+}
+
+@media (max-width: 980px) {
+  .kathakali-columns {
+    flex-direction: column;
+  }
+  .kathakali-column {
+    width: 100%;
+  }
+  .kathakali-column:nth-child(odd) {
+    padding-right: 0;
+  }
+  .kathakali-column:nth-child(even) {
+    padding-left: 0;
+  }
 }
 
 .kathakali-column-chutti {
@@ -2340,6 +2353,25 @@ body.no-scroll {
 
 #mudras img {
   filter: invert(1);
+}
+
+@media (max-width: 670px) {
+  .kathakali-profile-hero {
+    flex-direction: column;
+  }
+  .kathakali-profile-hero .floating-header {
+    max-width: 100%;
+    order: 1;
+    margin: 0 0 0;
+    padding: 20px;
+    padding-top: 10px;
+  }
+  .kathakali-profile-hero .block-bg {
+    position: relative;
+  }
+  .kathakali-profile-hero .content-heading {
+    font-size: 1.5rem;
+  }
 }
 
 .artform-profile {

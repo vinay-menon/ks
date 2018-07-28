@@ -1,25 +1,48 @@
 .main-banners {
-    min-height: 450px;
+    min-height: 500px;
     display: flex;
-    flex: 1;
+    // flex: 1;
     flex-wrap: wrap;
     justify-content: space-between;
     // margin-bottom: 1px;
+    // background-image: url(../images/banner/01.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    }
+
+@media (max-width: 1000px) {
+    .main-banners {
+        min-height: 300px;
+        }
     }
 @media (max-height: 768px) {
     .main-banners {
-        max-height: 350px;
+        // max-height: 350px;
+        }
+    }
+@media (max-width: 1024px) {
+    .main-banners {
+        max-height: 450px;
+        }
+    }
+@media (max-width: 720px) {
+    .main-banners {
+        min-height: 200px;
+        max-height: 200px;
         }
     }
 .banner {
     width: 25%;
-    color: #fff;
+    align-self: flex-end;
+    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     text-decoration: none;
     background-size: cover;
     opacity: 0;
+    z-index: 9;
     // transform: scale(0,0);
     transform-origin: center center;
     animation: .7s fade-in ease-in-out forwards;
@@ -30,10 +53,10 @@
         transform: scale(1,1);
         }
     }
-
-@media (max-width: 1000px) {
-    .main-banners {
-        min-height: 300px;
+@media (max-height: 768px) {
+    .banner {
+        // max-height: 350px;
+        display: none;
         }
     }
 
@@ -44,19 +67,19 @@
         }
     }
 .banner-training {
-    background-image: url(../images/banner/train_0.jpg);
+    // background-image: url(../images/banner/train_0.jpg);
     animation-delay: .3s;
     }
 .banner-artists {
-    background-image: url(../images/banner/book-artforms.jpg); 
+    // background-image: url(../images/banner/book-artforms.jpg); 
     animation-delay: .2s;
     }
 .banner-productions {
-    background-image: url(../images/banner/productions.jpg);
+    // background-image: url(../images/banner/productions.jpg);
     animation-delay: .1s;
     }
 .banner-performances {
-    background-image: url(../images/banner/performances.jpg);
+    // background-image: url(../images/banner/performances.jpg);
     }
 .banner + .banner {
     // border-left: 1px solid #ddd;
@@ -74,16 +97,16 @@
     text-shadow: 0 0 3px hsla(0,0,0,.3);
     }
 .banner-training .banner-header {
-    background-color: rgba(73, 67, 43, 0.599);
+    background-color: rgba(73, 67, 43, 0.816);
     }
 .banner-artists .banner-header {
-    background-color: rgba(145, 85, 47, 0.707);
+    background-color: rgba(145, 85, 47, 0.83);
     }
 .banner-productions .banner-header {
-    background-color: rgba(196, 48, 43, 0.701);
+    background-color: rgba(196, 48, 43, 0.837);
     }
 .banner-performances .banner-header {
-    background-color: rgba(236, 173, 25, 0.707);
+    background-color: rgba(236, 173, 25, 0.769);
     }
 .banner-header h2 {
     background-image: url(../images/assets/arrow-r.svg);

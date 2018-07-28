@@ -31,7 +31,7 @@ $("body").on("click", ".artform-item", function(e) {
 
 	if($(this).hasClass("is-selectable")){
 		$(this).removeClass("is-selectable").addClass("is-selected");
-		$(".selected-artforms-group").prepend("<div class='selected-artform " + $label + "'><button class='selected-artform-close'>X</button>" + "<div class='selected-artform-img'><img src='" + $(this).find("img").attr("src") + "'></div>" + "<label><span class='selected-artform-name'>" + $label + "</span><span class='selected-artform-msg'>No. of Artists Required:</span>" + "<input type='number' min='" + $minMembers + "' value='" + $minMembers + "'></label></div>");
+		$(".selected-artforms-group").prepend("<div class='selected-artform " + $label + "'><button class='selected-artform-close'>X</button>" + "<div class='selected-artform-img'><img src='" + $(this).find("img").attr("src") + "'></div>" + "<label><span class='selected-artform-name'>" + $label + "</span><span class='selected-artform-msg'>No. of Artists Required:</span>" + "<input type='number' min='" + $minMembers + "' value='" + $minMembers + "' name='no-" + $label + "' id='no-" + $label + "'></label>" + "<input style='display:none' value='" + $label + ": ' name='art-" + $label + "' id='art-" + $label + "'></div>");
 	} else if ($(this).hasClass("is-selected")) {
 		$(".selected-artforms-group ."+$label).remove();
 		$(this).removeClass("is-selected").addClass("is-selectable");
@@ -65,6 +65,7 @@ $("body").on("click", ".selected-artform:only-child .selected-artform-close", fu
 $(".artform-selection-final-step-btn").on("click", function(e) {
     e.preventDefault();
     $(".forms").addClass("final-step");
+    $("#form-part-3").offset().top
 });
 $(".artform-selection-prev-step-btn").on("click", function(e) {
     e.preventDefault();
@@ -85,26 +86,26 @@ function GetURLParameter(sParam) {
 function trainingForm() {
     var course = GetURLParameter('q');
 
-    $(".user-form h3").html(course);
+    $(".course-subject").val(course);
     $(".artform-portrait img").attr("src", "images/portraits/" + course + ".jpg");
 
     if (course == "kathakali") {
         console.log("kadakalee");
         } else if (course == "chutti") {
-        console.log("chutti");
+            console.log("chutti");
         } else if (course == "mohiniyattam") {
-        console.log("mohiniyattam");
+            console.log("mohiniyattam");
         } else if (course == "bharathanatyam") {
-        console.log("bharathanatyam");
+            console.log("bharathanatyam");
         } else if (course == "kuchipudi") {
-        console.log("kuchipudi");
+            console.log("kuchipudi");
         } else if (course == "kalaripayyattu") {
-        console.log("kalaripayyattu");
+            console.log("kalaripayyattu");
         } else if (course == "chenda") {
-        console.log("chenda");
+            console.log("chenda");
         } else if (course == "theyyam") {
-        console.log("theyyam");
+            console.log("theyyam");
         } else {
-        window.location = "./training.html";
+            window.location = "./training.html";
         }
     }

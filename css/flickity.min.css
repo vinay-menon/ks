@@ -106,3 +106,7 @@ http://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
 	opacity: 1;
 }
+
+.flickity-resize .show-cell {
+  min-height: 100%;
+}

@@ -1,0 +1,7 @@
+* sort background images in main header on front page
+
+* when hovering over each link, display (fade in,out) appropriate photo as header bg
+
+// REFACTORING
+
+*

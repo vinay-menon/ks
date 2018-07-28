@@ -1,0 +1,223 @@
+.gallery-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #444;
+    background-image: 
+    linear-gradient(
+        75deg,
+        rgba(236, 47, 47, 0.585),
+        rgba(43, 104, 189, 0.619)
+        );
+
+    &.gallery-mode {
+        visibility: hidden;
+        }
+    }
+
+.gallery-sec-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #444;
+    background-image: 
+    linear-gradient(
+        75deg,
+        rgba(236, 47, 47, 0.585),
+        rgba(43, 104, 189, 0.619)
+        );
+    padding: 20px;
+
+    > .gal-col-item {
+        width: calc(100%/4 - 40px);
+        }
+    }
+
+@media (max-width: 875px) {
+    .gallery-sec-container > .gal-col-item {
+        width: calc(100%/3 - 20px);
+        }
+    }
+@media (max-width: 560px) {
+    .gallery-sec-container > .gal-col-item {
+        width: calc(100%/2 - 20px);
+        }
+    }
+@media (max-width: 400px) {
+    .gallery-sec-container > .gal-col-item {
+        width: 100%;
+        }
+    }
+
+.gallery-main-col {
+    flex: 1;
+    margin: 1px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    h2 {
+        border-radius: 30px;
+        padding: 8px 20px;
+        font-size: .8rem;
+        text-align: center;
+        color: #ffffff;
+
+        a {
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                }
+            }
+
+        &.icon-fwd-c:before {display: none;}
+        &.icon-fwd-c::after {
+            content: url(../images/assets/icons/fwd-c.png);
+            position: relative;
+            top: 3px;
+            filter: invert(1);
+            margin-left: 8px;
+            }
+        }
+    
+    &:nth-child(1) {
+        h2 {
+            background-color: rgb(64, 76, 78);
+            }
+        }
+    &:nth-child(2) {
+        h2 {
+            background-color: rgb(71, 51, 73);
+            }
+        }
+    &:nth-child(3) {
+        h2 {
+            background-color: rgb(73, 79, 68);
+            }
+        }
+    &:nth-child(4) {
+        h2 {
+            background-color: rgb(54, 51, 66);
+            }
+        }
+    
+    + .gallery-main-col:before {
+        content: "";
+        position: absolute;
+        left: 0; top: 0; bottom: 0;
+        margin: auto;
+        height: 90%;
+        width: 1px;
+        background-image: 
+            linear-gradient(
+                rgba(255, 255, 255, 0),
+                rgba(0, 0, 0, 0.646),
+                rgba(255, 255, 255, 0)
+                );
+        }
+    }
+
+.gal-col-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    header {
+        order: 1;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.762);
+
+        h3 {
+            font-size: .9rem;
+            }
+        }
+}
+
+.gal-cover {
+    img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        }
+    }
+
+.gallery-mode > a {
+    width: calc(100% / 6);
+    transition: .5s;
+    transform-origin: 50% 50%;
+    visibility: visible;
+
+    img {
+        display: block;
+        width: 100%;
+        max-width: 100%;;
+        }
+    }
+
+@media (max-width: 830px) {
+    .gallery-mode > a {
+        width: calc(100% / 5);
+        }
+    }
+@media (max-width: 630px) {
+    .gallery-mode > a {
+        width: calc(100% / 3);
+        }
+    }
+
+.gallery-mode:hover > a {
+    filter: grayscale(1);
+
+    &:hover {
+        filter: none;
+        transform: scale(1.2,1.2);
+        z-index: 9;
+        }
+    }
+
+.gal-vid-box {
+    position: fixed;
+    z-index: 9999;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(34, 34, 34, 0.959);
+    display: flex;
+    }
+
+.gal-vid-container {
+    width: 70%;
+    margin: auto;
+    }
+@media (max-width: 830px) {
+    .gal-vid-container {
+        width: 100%;
+        }
+    }
+.aspect-ratio-box_56 {
+    position: relative;
+    height: 0;
+    padding-top: 56.25%;
+
+    iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        }
+    }
+
+.gal-vid-box-dismiss {
+    position: absolute;
+    top: 5px; right: 5px;
+    cursor: pointer;
+    }
+

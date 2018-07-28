@@ -5,9 +5,9 @@
         margin-right: 8px;
         position: relative;
         top: 2px;
-        filter: invert(1);
         // transform: scale(1.2,1.2);
         display: inline-block;
+        transform-origin: 50% 50%;
         }
     }
 
@@ -21,9 +21,13 @@
     content: url(../images/assets/icons/msg.png);
     }
 .icon-fwd-c:before {
-    content: url(../images/assets/icons/fwd-c.png);
+    content: url(../images/assets/icons/arrow.png);
+    transform: rotate(-90deg);
     }
-.icon-home:before {
+.icon-dl:before {
+    content: url(../images/assets/icons/arrow.png);
+    }
+.icon-home:before { 
     content: url(../images/assets/icons/home.png);
     }
 .icon-white-block:before {

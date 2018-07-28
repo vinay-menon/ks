@@ -2,7 +2,13 @@
     display: flex;
     }
 .content-header-nav {
-    @extend .main-heading;
+    display: flex;
+    padding: 20px 30px;
+    min-width: 25%;
+    max-width: 25%;
+    border-right: 1px solid $sectionBorderColor;
+    text-transform: uppercase;
+    font-weight: 300;
     margin-bottom: 0;
     flex-direction: column;
     padding-bottom: 30px;
@@ -107,7 +113,8 @@
     }
 @media (max-width: 1200px) {
     .content-header {
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
+        display: block;
         }
     .content-header-nav {
         width: 100%;
@@ -196,7 +203,6 @@
     p {
         padding: 30px 30px;
         font-size: 1.2rem;
-        margin: auto;
 
         + p {
             padding-top: 0;
@@ -320,13 +326,19 @@
 
 @media (max-width: 568px) {
     #navarasam .-third,
-    #mudras .-fourth {
+    #mudras .-fourth,
+    #dedication .-fourth,
+    #students .-third {
         width: 50%;
+        }
+    #dedication .-fourth .content-block_label {
+        font-size: 1.2rem;
         }
     }
 @media (max-width: 436px) {
     #navarasam .-third,
-    #mudras .-fourth {
+    #mudras .-fourth,
+    #dedication .-fourth {
         width: 100%;
         }
     }
@@ -385,7 +397,7 @@
     }
 @media (max-width: 506px) {
     .content-block_label {
-        font-size: 2rem;
+        font-size: 1.4rem;
         }
     }
 .content-block_label-translation {
@@ -489,3 +501,14 @@
         min-width: 100%;
         }
     }
+
+
+.seasonal-banner img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    }
+
+.section-heading {
+    
+}
